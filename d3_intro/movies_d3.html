@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Movies</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/movies.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <script type="text/javascript">
+    const dataPromise = d3.json("data/movies.json");
+  </script>
+</head>
+
+<body>
+  <div class="chart" id="wgm">
+    <h1>Worldwide Gross</h1>
+  </div>
+  <script type="text/javascript">
+    dataPromise.then((data) => {
+      const maxWorldwideGross = data.reduce((a, x) => {
+        return x.Worldwide_Gross_M > a ? x.Worldwide_Gross_M : a;
+      }, 0);
+
+      d3.select("#wgm").selectAll("div.h-bar")
+        .data(data)
+        .enter()
+          .append("div")
+            .attr("class", "h-bar")
+          .append("span");
+      d3.select("#wgm").selectAll("div.h-bar")
+        .data(data) 
+          .sort((x,y) => y.Worldwide_Gross_M-x.Worldwide_Gross_M)
+          .style('width', x => `${100*x.Worldwide_Gross_M/maxWorldwideGross}%`)
+          // .style('width', x => `100%`)
+          .style('padding-right', '10px')
+          .select("span")
+            .text(x => x.Film);
+    });
+  </script>
+
+  <hr>
+  <div class="chart" id="budget">
+    <h1>Budget</h1>
+  </div>
+  <script type="text/javascript">
+    dataPromise.then((data) => {
+      const maxBudget = data.reduce((a, x) => {
+        return x.Budget_M > a ? x.Budget_M : a;
+      }, 0);
+
+      d3.select("#budget").selectAll("div.h-bar")
+        .data(data)
+        .enter()
+          .append("div")
+            .attr("class", "h-bar")
+          .append("span");
+      d3.select("#budget").selectAll("div.h-bar")
+        .data(data) 
+          .sort((x,y) => y.Budget_M-x.Budget_M)
+          .style('width', x => `${100*x.Budget_M/maxBudget}%`)
+          // .style('width', x => `100%`)
+          .style('padding-right', '10px')
+          .select("span")
+            .text(x => x.Film);
+    });
+  </script>
+
+  <hr>
+  <div class="chart" id="profit">
+    <h1>Profit</h1>
+  </div>
+  <script type="text/javascript">
+    dataPromise.then((data) => {
+      const profits = data.map(x => ({
+        Film: x.Film,
+        Profit_M: x.Worldwide_Gross_M - x.Budget_M
+      }))
+      const maxProfit = profits.reduce((a, x) => {
+        return x.Profit_M > a ? x.Profit_M : a;
+      }, 0);
+
+      d3.select("#profit").selectAll("div.h-bar")
+        .data(profits)
+        .enter()
+          .append("div")
+            .attr("class", "h-bar")
+          .append("span");
+      d3.select("#profit").selectAll("div.h-bar")
+        .data(profits) 
+          .sort((x,y) => y.Profit_M-x.Profit_M)
+          .style('width', x => `${100*x.Profit_M/maxProfit}%`)
+          // .style('width', x => `100%`)
+          .style('padding-right', '10px')
+          .select("span")
+            .text(x => x.Film);
+    });
+  </script>
+
+  <hr>
+  <div class="chart" id="gbg">
+    <h1>Gross by Genre</h1>
+  </div>
+  <script type="text/javascript">
+    dataPromise.then((data) => {
+      const grossByGenre = Object.entries(data.reduce((a,x) => {
+        a[x.Genre] = (a[x.Genre] || 0) + x.Worldwide_Gross_M;
+        return a;
+      }, {}));
+
+      const maxGross = grossByGenre.reduce((a, [, x]) => {
+        return x > a ? x : a;
+      }, 0)
+
+      d3.select("#gbg").selectAll("div.h-bar")
+        .data(grossByGenre)
+        .enter()
+          .append("div")
+            .attr("class", "h-bar")
+          .append("span");
+      d3.select("#gbg").selectAll("div.h-bar")
+        .data(grossByGenre) 
+          .sort(([, x],[, y]) => y-x)
+          .style('width', ([, gross]) => `${100*gross/maxGross}%`)
+          .style('padding-right', '10px')
+          .select("span")
+            .text(([genre]) => genre);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+div.chart {
+	margin: 0 auto;
+	width: 70vw;
+	border: solid black 10px;	
+}
+
+h1 {
+	text-align: center;
+}

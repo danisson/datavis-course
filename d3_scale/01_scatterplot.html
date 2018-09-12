@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Scatterplot</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+<div id="chart"></div>
+<script type="text/javascript">
+  let w = 500;
+  let h = 100;
+  let dataset = [
+      [5, 20], [480, 90], [250, 50],
+      [100, 33], [330, 95], [410, 12],
+      [475, 44], [25, 67], [85, 21],
+      [220, 88] ];
+
+  let xScale = d3.scaleLinear()
+                .domain([0, d3.max(dataset, ([x,y]) => x)])
+                .range([0, w])
+
+  let yScale = d3.scaleLinear()
+                .domain([0, d3.max(dataset, ([x,y]) => y)])
+                .range([h, 0])
+
+  // Crie o elemento svg
+  let svg = d3.select('#chart')
+              .append('svg')
+              .attr('width', w)
+              .attr('height', h);
+  // Depois adicione os elementos círculos
+  svg.selectAll('circle')
+     .data(dataset)
+     .enter()
+     .append('circle')
+     .attr('cx', ([x,y]) => xScale(x))
+     .attr('cy', ([x,y]) => yScale(y))
+     .attr('r', 5);
+  // Depois adicione os labels
+  svg.selectAll('text')
+     .data(dataset)
+     .enter()
+     .append('text')
+     .attr('x', ([x,y]) => xScale(x))
+     .attr('y', ([x,y]) => yScale(y))
+     .attr('font-family', 'sans-serif')
+     .attr('font-size', '11px')
+     .attr('fill', 'red')
+     .text(([x,y]) => `${x},${y}`)
+</script>
+</body>
+</html>

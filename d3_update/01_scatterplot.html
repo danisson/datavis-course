@@ -111,6 +111,11 @@
     let circle = svg.selectAll('circle').data(dataset);
 
     circle.exit()
+          .transition()
+          .delay((d,i) => i/dataset.length * 1000)
+          .duration(1000)
+          .attr('cx', ([x,y]) => 0)
+          .attr('cy', ([x,y]) => 0)
           .remove();
 
     circle.enter()

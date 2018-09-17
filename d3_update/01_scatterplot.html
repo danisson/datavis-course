@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Scatterplot</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+<p>O gráfico possui <span id="number">??</span> pontos.</p>
+<div id="chart"></div>
+<button id="clique">Novos Dados</button>
+<script type="text/javascript">
+  // Primeiro definimos o objeto margin
+  let margin = {top: 40, right: 40, bottom: 40, left: 40};
+  
+  // Depois definimos w e h como as dimensões internas
+  // da área do gráfico (área útil)
+  let w = 800 - margin.left - margin.right;
+  let h = 250 - margin.top - margin.bottom;
+
+  // Depois um elemento g no svg que vai transladar a origem 
+  // do gráfico como sendo a origem da área útil do gráfico
+
+  let svg = d3.select('#chart')
+      .append('svg')
+        .attr('width', w + margin.left + margin.right)
+        .attr('height', h + margin.top + margin.bottom)
+      .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+  let dataset = generateRandomDataset();
+  d3.select('#number').text(dataset.length);
+
+  // Criando as escalas
+
+  let xScale = d3.scaleLinear()
+          .domain([0, d3.max(dataset, function(d) {
+          return d[0];
+          })])
+          .range([0,w]);
+  let yScale = d3.scaleLinear()
+          .domain([0, d3.max(dataset, function(d) {
+          return d[1];
+          })])
+          .range([h,0]);       
+
+  let xAxis = d3.axisBottom()
+          .scale(xScale)
+          .ticks(5);
+          //.tickValues([0, 150, 300, 450, 600]);
+  let yAxis = d3.axisLeft()
+          .scale(yScale)
+          .ticks(5);
+
+  // Depois adicione os elementos círculos
+  svg.selectAll('circle')
+    .data(dataset)
+    .enter()
+    .append('circle')
+    .attr('cx', ([x,y]) => xScale(x))
+    .attr('cy', ([x,y]) => yScale(y))
+    .attr('r', 4);
+
+  // Depois adicione os labels
+  svg.append('g')
+     .attr('transform', 'translate(0,' + h + ')')
+     .attr('class', 'x axis')
+     .call(xAxis);
+
+  svg.append('text')             
+    .attr('transform', 'translate(' + (w/2) + ',' + (h + margin.bottom) + ')')
+    .attr('class', 'label')
+    .text('Eixo X');
+
+  svg.append('g')
+     .attr('class', 'y axis')
+     .call(yAxis);
+
+  svg.append('text')
+    .attr('class', 'label')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x',0 - (h / 2))
+    .attr('dy', '10')
+    .text('Eixo Y');
+
+  function generateRandomDataset() {
+    let dataset = [];
+    let numDataPoints = Math.ceil(Math.random() * 100);
+    let xRange = Math.random() * 1000;
+    let yRange = Math.random() * 1000;
+
+    for (let i=0; i < numDataPoints; i++) {
+      let newNumber1 = Math.floor(Math.random() * xRange);
+      let newNumber2 = Math.floor(Math.random() * yRange);
+      dataset.push([newNumber1, newNumber2]);
+    }
+    return dataset;
+  }
+  
+  d3.select('#clique').on('click', () => {
+    dataset = generateRandomDataset();
+    d3.select('#number').text(dataset.length);
+    xScale.domain([0, d3.max(dataset, ([x,y]) => x)]);
+    yScale.domain([0, d3.max(dataset, ([x,y]) => y)]);
+    svg.select('.x.axis').transition().duration(1000).call(xAxis);
+    svg.select('.y.axis').transition().duration(1000).call(yAxis);
+
+    let circle = svg.selectAll('circle').data(dataset);
+
+    circle.exit()
+          .remove();
+
+    circle.enter()
+          .append('circle')
+          .transition()
+          .duration(1000)
+          .attr('cx', ([x,y]) => xScale(x))
+          .attr('cy', ([x,y]) => yScale(y))
+          .attr('r', 4);
+
+    circle.transition()
+          .delay((d,i) => i/dataset.length * 1000)
+          .duration(1000)
+          .attr('cx', ([x,y]) => xScale(x))
+          .attr('cy', ([x,y]) => yScale(y));
+  })
+</script>
+</body>
+</html>

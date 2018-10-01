@@ -14,13 +14,13 @@
 <script type="text/javascript">
   // Primeiro definimos o objeto margin
   let margin = {top: 40, right: 40, bottom: 40, left: 40};
-  
+
   // Depois definimos w e h como as dimensões internas
   // da área do gráfico (área útil)
   let w = 800 - margin.left - margin.right;
   let h = 250 - margin.top - margin.bottom;
 
-  // Depois um elemento g no svg que vai transladar a origem 
+  // Depois um elemento g no svg que vai transladar a origem
   // do gráfico como sendo a origem da área útil do gráfico
 
   let svg = d3.select('#chart')
@@ -44,7 +44,7 @@
           .domain([0, d3.max(dataset, function(d) {
           return d[1];
           })])
-          .range([h,0]);       
+          .range([h,0]);
 
   let xAxis = d3.axisBottom()
           .scale(xScale)
@@ -69,7 +69,7 @@
      .attr('class', 'x axis')
      .call(xAxis);
 
-  svg.append('text')             
+  svg.append('text')
     .attr('transform', 'translate(' + (w/2) + ',' + (h + margin.bottom) + ')')
     .attr('class', 'label')
     .text('Eixo X');
@@ -99,7 +99,7 @@
     }
     return dataset;
   }
-  
+
   d3.select('#clique').on('click', () => {
     dataset = generateRandomDataset();
     d3.select('#number').text(dataset.length);

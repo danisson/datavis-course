@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Movies d3 dc</title>
+    <link rel="stylesheet" href="css/dc.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/crossfilter.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/dc.min.js"></script>
+
+</head>
+<body>
+    <div style="height: 500px;">
+        <h1> Bilheteria por Ano</h1>
+        <div id="chart"></div>
+    </div>
+    <div>
+        <h1> Bilheteria por Gênero</h1>
+        <div id="chart2"></div>
+    </div>
+    <script type="text/javascript">
+        let bilAno = dc.barChart('#chart');
+        let bilGen = dc.barChart('#chart2');
+
+        d3.json("data/movies.json").then(data => {
+            //criando um crossfilter
+            let facts = crossfilter(data);
+            let yearDim = facts.dimension(d => d.Year);
+            let genDim = facts.dimension(d => d.Genre);
+            let grossByYear = yearDim.group()
+                                    .reduceSum(d => d.Worldwide_Gross_M);
+            let grossByGen = genDim.group()
+                                    .reduceSum(d => d.Worldwide_Gross_M);
+
+            bilAno.width(800)
+                     .height(400)
+                     .margins({top: 30, right: 50, bottom: 50, left: 40})
+                     .dimension(yearDim)
+                     .group(grossByYear)
+                     .x(d3.scaleBand())
+                     .xUnits(dc.units.ordinal)
+                     .renderHorizontalGridLines(true)
+                     .yAxisLabel('Bilheteria em milhões')
+                     .xAxisLabel('Ano')
+
+            bilGen.width(800)
+                     .height(400)
+                     .margins({top: 30, right: 50, bottom: 50, left: 40})
+                     .dimension(genDim)
+                     .group(grossByGen)
+                     .x(d3.scaleBand())
+                     .xUnits(dc.units.ordinal)
+                     .renderHorizontalGridLines(true)
+                     .yAxisLabel('Bilheteria em milhões')
+                     .xAxisLabel('Gênero')
+
+            dc.renderAll();
+
+        }).catch(e => console.error(e));
+    </script>
+</body>
+</html>

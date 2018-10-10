@@ -7,4 +7,5 @@
 * [D3 Crossfilter - 24/09](d3_crossfilter/index.md)
 * [Earthquakes - 26/09](d3_crossfilter_2/earthquakes.html)
 * [Earthquakes - 03/10](leaflet/earthquakes.html)
-* [Earthquakes - 03/10](leaflet/chicago.html)
+* [Crimes Chicago - 03/10](leaflet/chicago.html)
+* [D3 Networks/Trees - 10/10](d3_network_tree/index.md)

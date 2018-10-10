@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+
+  <title>Chicago Crimes</title>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/dc.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/crossfilter.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js/dc.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+</head>
+<body class="chicago">
+  <h1>Crimes de Chicago em Setembro 2018</h1>
+  <div id="map" class="centered"></div>
+  <div id="barchart" class="centered"></div>
+  <div id="serieschart" class="centered"></div>
+  <script type="text/javascript">
+  d3.csv('data/chicago.csv').then(data => {
+    let parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
+    data = data.map(d => ({
+      id: +d['ID'],
+      tipo: d['Primary Type'],
+      lat: +d['Latitude'],
+      lon: +d['Longitude'],
+      date: parseTime(d['Date']),
+    }));
+
+    let colorScale = d3.scaleOrdinal()
+                       .domain(["HOMICIDE", "ROBBERY", "BURGLARY"])
+                       .range(["#ca0020", "#0571b0", "#fdae61"]);
+
+    let facts = crossfilter(data);
+    let dims = {};
+    let groups ={};
+
+
+    dims.date = facts.dimension(d => [d.tipo, d3.timeDay(d.date)]);
+    groups.date = dims.date.group();
+
+    dims.tipo = facts.dimension(d => d.tipo);
+    groups.tipo = dims.tipo.group();
+
+    let map = L.map('map').setView([41.85,-87.62], 10);
+    L.tileLayer(
+      (
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/' +
+        'light_all/{z}/{x}/{y}.png'
+      ),
+      {
+        attribution: (
+          'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, ' +
+          'under ODbL.'
+        ),
+        maxZoom: 17
+      }
+    ).addTo(map);
+
+    let pointsLayer = L.layerGroup().addTo(map);
+    for (let d of data) {
+      pointsLayer.addLayer(
+        L.circle([d.lat, d.lon], { color: colorScale(d.tipo) })
+      );
+    }
+
+    facts.onChange(() =>{
+      pointsLayer.clearLayers();
+      for (let d of facts.allFiltered()) {
+        pointsLayer.addLayer(
+          L.circle([d.lat, d.lon], { color: colorScale(d.tipo) })
+        );
+      }
+    });
+
+    dc.seriesChart('#serieschart')
+      .dimension(dims.date)
+      .group(groups.date)
+      .colors(colorScale)
+      .yAxisLabel("Ocorrências")
+      .seriesAccessor(d => d.key[0])
+      .colorAccessor(d => d.key[0])
+      .keyAccessor(d => d.key[1])
+      .valueAccessor(d => d.value)
+      .x(d3.scaleTime().domain(d3.extent(data, d => d.date)))
+
+    dc.barChart('#barchart')
+      .dimension(dims.tipo)
+      .group(groups.tipo)
+      .colors(colorScale)
+      .colorAccessor(d => d.key)
+      .yAxisLabel("Ocorrências")
+      .x(d3.scaleBand())
+      .xUnits(dc.units.ordinal)
+
+    dc.renderAll();
+  }).catch(console.error);
+  </script>
+   <!-- Bootstrap javascript files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

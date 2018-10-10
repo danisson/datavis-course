@@ -27,3 +27,21 @@ h2 span {
     width: 650px;
     height: 450px;
 }
+
+#serieschart {
+    height: 450px;
+}
+
+#map {
+    height: 450px;
+}
+
+.centered {
+    margin: 10px auto;
+    float: none !important;
+}
+
+body.chicago {
+    margin: 0 auto;
+    width: 900px;
+}

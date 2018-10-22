@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taxa de desemprego nos EUA em agosto de 2016</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <style>
+
+    .counties {
+      fill: none;
+    }
+
+    .states {
+      fill: none;
+      stroke: #eee;
+      stroke-linejoin: round;
+    }
+
+  </style>
+</head>
+<body>
+  <main role="main" class="container">
+    <header>
+     <h1>Taxa de desemprego nos EUA em agosto de 2016</h1>
+   </header>
+   <div id="map"></div>
+  </main>
+  
+<script>
+  let width = 960;
+  let height = 600;
+
+  let rateById = d3.map();
+  let path = d3.geoPath();
+  
+  let colorScale = d3.scaleQuantize().domain([2,10]).range(d3.schemeGreens[9]);
+
+  let svg = d3.select("#map").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  Promise.all([
+    d3.json("data/us.json"),
+    d3.tsv("data/unemployment.tsv", d => rateById.set(d.id, +d.rate))
+  ])
+  .then(([us]) => {
+    svg.append("g")
+       .attr("class", "counties")
+       .selectAll("path")
+       .data(topojson.feature(us, us.objects.counties).features)
+       .enter().append("path")
+       .attr("fill", d => colorScale(rateById.get(d.id)))
+       .attr("d", path)
+       .append('title').text(d => (
+          `${d.properties.name}\n` +
+          `Unemployment rate: ${rateById.get(d.id)}%`
+        ));
+
+    svg.append("path")
+       .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
+       .attr("class", "states")
+       .attr("d", path);
+  })
+  .catch(console.error);
+</script>
+<!-- Bootstrap javascript files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -2801,7 +2801,8 @@
         "value": "×2"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/55_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/55_hires.png",
+    "nationalPokedexNumber": 803
   },
   {
     "id": "sm6-56",
@@ -2866,7 +2867,8 @@
         "value": "×2"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/56_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/56_hires.png",
+    "nationalPokedexNumber": 804
   },
   {
     "id": "sm6-57",
@@ -5784,7 +5786,8 @@
         "value": "×2"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/121_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/121_hires.png",
+    "nationalPokedexNumber": 804
   },
   {
     "id": "sm6-122",
@@ -6461,7 +6464,8 @@
         "value": "×2"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/134_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/sm6/134_hires.png",
+    "nationalPokedexNumber": 804
   },
   {
     "id": "sm6-135",

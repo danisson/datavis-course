@@ -3,14 +3,29 @@
 <head>
   <meta charset=utf-8>
   <title>Test</title>
+  <link rel="stylesheet" type="text/css" href="third-party/pokesprite.min.css">
+  <style type="text/css">
+    span.spriteHolder {
+      height: 40px !important;
+      width: 40px;
+      position: relative;
+      border-radius: 20px;
+    }
+    i.sprite {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  </style>
 </head>
 <body>
-  <ul id="list">
-  </ul>
+  <ol id="list">
+  </ol>
 
   <script src="third-party/js/crossfilter.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="third-party/js/dc.min.js"></script>
+  <script src="third-party/js/pokesprite.min.js"></script>
   <script type="module" type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

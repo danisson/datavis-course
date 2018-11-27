@@ -1611,7 +1611,8 @@
         "value": "-20"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM30_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM30_hires.png",
+    "nationalPokedexNumber": 785
   },
   {
     "id": "smp-SM31",
@@ -1665,7 +1666,8 @@
         "value": "-20"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM31_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM31_hires.png",
+    "nationalPokedexNumber": 785
   },
   {
     "id": "smp-SM32",
@@ -1725,7 +1727,8 @@
         "text": "Heal all damage from this Pokémon. (You can't use more than 1 GX attack in a game.)"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM32_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM32_hires.png",
+    "nationalPokedexNumber": 787
   },
   {
     "id": "smp-SM33",
@@ -1780,7 +1783,8 @@
         "text": "This attack does 50 damage times the amount of Energy attached to all of your opponent's Pokémon. (You can't use more than 1 GX attack in a game.)"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM33_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM33_hires.png",
+    "nationalPokedexNumber": 785
   },
   {
     "id": "smp-SM34",
@@ -2767,7 +2771,8 @@
         "text": "This attack does 50 damage times the amount of Energy attached to all of your opponent's Pokémon. (You can't use more than 1 GX attack in a game.)"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM50_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM50_hires.png",
+    "nationalPokedexNumber": 785
   },
   {
     "id": "smp-SM51",
@@ -6820,7 +6825,8 @@
         "value": "×2"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM122_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM122_hires.png",
+    "nationalPokedexNumber": 718
   },
   {
     "id": "smp-SM123",
@@ -7001,7 +7007,8 @@
         "value": "×2"
       }
     ],
-    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM125_hires.png"
+    "imageUrlHiRes": "https://images.pokemontcg.io/smp/SM125_hires.png",
+    "nationalPokedexNumber": 804
   },
   {
     "id": "smp-SM127",

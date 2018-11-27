@@ -16,7 +16,7 @@ const legalSets = [
 
 function cleanCard(card) {
   const {
-    id, name, hp, rarity, types, weaknesses,
+    id, set, artist, name, hp, rarity, types, weaknesses, nationalPokedexNumber
   } = card;
 
   const attacks = (card.attacks || []).map((a) => {
@@ -42,8 +42,11 @@ function cleanCard(card) {
   return [id,{
     // Basic information
     name,
+    id,
+    nationalPokedexNumber,
     rarity,
     imageURL: card.imageUrl,
+    artist,
 
     // Game Information
     hp,
@@ -62,14 +65,14 @@ const cleanedLegalCards = (
 
 const prices = d3.tsv('data/prices.tsv');
 
-function Type(name, color) {
-  return { name, color }
-}
+// function Type(name, color) {
+//   return { name, color }
+// }
 
 
-export const legalCards = Promise.all([cleanedLegalCards,prices]).then(d => {
+export const legalCardsPromise = Promise.all([cleanedLegalCards,prices]).then(d => {
   const [ cards, prices ] = d;
-  const indexedCards = new Map(cards)
+  const indexedCards = new Map(cards);
   for (const entry of prices) {
     const card = indexedCards.get(`${entry.set}-${entry.num}`);
     if (card) {
@@ -80,16 +83,16 @@ export const legalCards = Promise.all([cleanedLegalCards,prices]).then(d => {
   return indexedCards;
 });
 
-export const types = [
-  new Type('Grass'    , '#7DB808'),
-  new Type('Fire'     , '#E24242'),
-  new Type('Water'    , '#5bc7e5'),
-  new Type('Lightning', '#fab536'),
-  new Type('Fighting' , '#ff501f'),
-  new Type('Psychic'  , '#a65e9a'),
-  new Type('Colorless', '#e5d6d0'),
-  new Type('Darkness' , '#2c2e2b'),
-  new Type('Metal'    , '#8a776e'),
-  new Type('Dragon'   , '#c6a114'),
-  new Type('Fairy'    , '#e03a83'),
-]
+export const types = {
+  'Grass'    : '#7DB808',
+  'Fire'     : '#E24242',
+  'Water'    : '#5bc7e5',
+  'Lightning': '#fab536',
+  'Fighting' : '#ff501f',
+  'Psychic'  : '#a65e9a',
+  'Colorless': '#e5d6d0',
+  'Darkness' : '#2c2e2b',
+  'Metal'    : '#8a776e',
+  'Dragon'   : '#c6a114',
+  'Fairy'    : '#e03a83',
+}

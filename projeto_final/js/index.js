@@ -1,4 +1,5 @@
 import {
+  baseCardsPromise,
   legalCardsPromise,
   types
 } from './cards.js';
@@ -27,19 +28,18 @@ function createPokémonIcon(dexNumber, type) {
   let dexn = String(dexNumber).padStart(3,'0');
   let span = document.createElement('span');
   span.className = `spriteHolder pkspr pkmn-${dexn}`;
-  PkSpr.decorate(span);
-  span.children[0].className = 'sprite';
-  
-  if (type) {
-    span.style.backgroundColor = types[type];
-  }
+  span.style.backgroundColor = type ? types[type] : '#fff';
 
+  if (dexNumber > 0) {
+    PkSpr.decorate(span);
+    span.children[0].className = 'sprite';
+  }
   return span;
 }
 
 (async () => {
   const list = document.querySelectorAll('ol#list')[0];
-  let cards = await legalCardsPromise;
+  let cards = await baseCardsPromise;
   let pokedex = await pokedexPromise;
   
   let cfCards = crossfilter([...cards.values()]);
@@ -47,20 +47,21 @@ function createPokémonIcon(dexNumber, type) {
   let groups = {};
   
   
-  dimensions.price = cfCards.dimension(x => x.price);
+  // dimensions.price = cfCards.dimension(x => x.price);
   dimensions.type = cfCards.dimension(x => x.types, true);
   dimensions.pokedexNumber = cfCards.dimension(x => x.nationalPokedexNumber);
   
   groups.pokedexNumber = dimensions.pokedexNumber.group();
+  groups.type = dimensions.type.group();
 
-  // let fragments = document.createDocumentFragment();
-  // cfCards.all().slice(150,300).forEach(o => {
-  //   let e = document.createElement('li');
-  //   e.appendChild(createPokémonIcon(o.nationalPokedexNumber, o.types[0]));
-  //   e.appendChild(document.createTextNode(o.name));
-  //   fragments.appendChild(e);
-  // })
-  // list.appendChild(fragments);
+  let fragments = document.createDocumentFragment();
+  groups.pokedexNumber.top(10).forEach(o => {
+    let e = document.createElement('li');
+    e.appendChild(createPokémonIcon(o.key));
+    e.appendChild(document.createTextNode(`${o.value} cartas`));
+    fragments.appendChild(e);
+  })
+  list.appendChild(fragments);
   
   window.groups = groups;
   window.dimensions = dimensions;

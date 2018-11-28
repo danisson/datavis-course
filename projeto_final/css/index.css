@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+span.spriteHolder {
+  height: 40px !important;
+  width: 40px;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+
+i.sprite {
+  position: absolute;
+  top: 50%;
+  transform: translate(-2px, -50%);
+}

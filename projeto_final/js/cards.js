@@ -1,17 +1,27 @@
 const damageRegex = /(\d+)(\+|×|-)?/u;
 
 const legalSets = [
-  'Sun & Moon.json',
-  'Guardians Rising.json',
-  'Burning Shadows.json',
-  'Shining Legends.json',
-  'Crimson Invasion.json',
-  'Ultra Prism.json',
-  'Forbidden Light.json',
-  'Celestial Storm.json',
-  'Dragon Majesty.json',
-  'Lost Thunder.json',
-  'Sun & Moon Black Star Promos.json',
+  'Sun & Moon',
+  'Guardians Rising',
+  'Burning Shadows',
+  'Shining Legends',
+  'Crimson Invasion',
+  'Ultra Prism',
+  'Forbidden Light',
+  'Celestial Storm',
+  'Dragon Majesty',
+  'Lost Thunder',
+  'Sun & Moon Black Star Promos',
+];
+
+const originalSets = [
+  'Base',
+  'Jungle',
+  'Fossil',
+  'Base Set 2',
+  'Team Rocket',
+  'Gym Heroes',
+  'Gym Challenge'
 ];
 
 function cleanCard(card) {
@@ -58,16 +68,12 @@ function cleanCard(card) {
 }
 
 const cleanedLegalCards = (
-  Promise.all(legalSets.map(s => d3.json(`data/${s}`)))
+  Promise.all(legalSets.map(s => d3.json(`data/${s}.json`)))
          .then(d => [].concat(...d))
          .then(d => d.filter(x => x.supertype === 'Pokémon').map(cleanCard))
 );
 
 const prices = d3.tsv('data/prices.tsv');
-
-// function Type(name, color) {
-//   return { name, color }
-// }
 
 
 export const legalCardsPromise = Promise.all([cleanedLegalCards,prices]).then(d => {
@@ -82,6 +88,13 @@ export const legalCardsPromise = Promise.all([cleanedLegalCards,prices]).then(d 
 
   return indexedCards;
 });
+
+export const baseCardsPromise = (
+  Promise.all(originalSets.map(s => d3.json(`data/${s}.json`)))
+         .then(d => [].concat(...d))
+         .then(d => d.filter(x => x.supertype === 'Pokémon').map(cleanCard))
+         .then(d => new Map(d))
+)
 
 export const types = {
   'Grass'    : '#7DB808',

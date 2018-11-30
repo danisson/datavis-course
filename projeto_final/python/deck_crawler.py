@@ -3,7 +3,7 @@ import sys
 import re
 from bs4 import BeautifulSoup
 import requests
-import IPython.display as ipd
+import pandas as pd
 
 base_url = r'https://pkmncards.com/page/{1}/?s=set%3A{0}&display=list&sort=number&order=asc'
 
@@ -84,7 +84,7 @@ def parse_deck(url):
     
 
 i = 1
-d = []
+decks = []
 base_url = r'http://limitlesstcg.com/decks/?time=1819&format=standard&split=yes&pg={}'
 while True:
   current_url = base_url.format(i)
@@ -104,10 +104,18 @@ while True:
     deck_link = deck.contents[1].a['href']
     deck_name = deck.contents[1].a.text
     points = float(deck.contents[3].text)
-    d.append((deck_name, points, parse_deck(deck_link)))
+    decks.append((deck_name, points, parse_deck(deck_link)))
 #     print(deck_name, points, parse_deck(deck_link))
   
   i += 1
   time.sleep(5)
   
-dsp = pd.DataFrame([(d[0],d[1],sum([x[1] for x in d[2]]),x[0],x[1]) for d in ds for x in d[2]], columns=['deck','cp','#pkmn','card','#'])
+dsp = pd.DataFrame(
+  [(
+    d[0],d[1],sum([x[1] for x in d[2]]),x[0],x[1]) for d in decks for x in d[2]
+  ],
+  columns=['deck','cp','#pkmn','card','#']
+)
+
+pd.concat([dsp['card'],dsp['cp']*dsp['#']/dsp['#pkmn']],axis=1)
+  .groupby(dsp['card']).sum().sort_values(0,ascending=False).to_csv('../data/cp.csv')

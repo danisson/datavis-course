@@ -15,3 +15,31 @@ i.sprite {
   top: 50%;
   transform: translate(-2px, -50%);
 }
+
+ol.pokelist li {
+  margin-bottom: 0.5rem;
+}
+
+ol.pokelist li > span{
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+ol.pokelist li > span > span.spriteHolder {
+  margin-right: 5px;
+}
+
+ol#gen1-prices-by-dexnumber {
+  columns: 2;
+}
+
+div.favorite {
+  width: 100%;
+  text-align: center;
+  margin: 1.3rem;
+}
+
+p {
+  text-align: justify;
+}

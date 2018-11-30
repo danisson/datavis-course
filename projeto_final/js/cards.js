@@ -52,6 +52,7 @@ function cleanCard(card) {
   return [id,{
     // Basic information
     name,
+    set,
     id,
     nationalPokedexNumber,
     rarity,
@@ -67,34 +68,29 @@ function cleanCard(card) {
   }];
 }
 
-const cleanedLegalCards = (
-  Promise.all(legalSets.map(s => d3.json(`data/${s}.json`)))
+function loadAndCleanSet(set) {
+  return Promise.all(set.map(s => d3.json(`data/${s}.json`)))
          .then(d => [].concat(...d))
-         .then(d => d.filter(x => x.supertype === 'Pokémon').map(cleanCard))
-);
+         .then(d => d.filter(x => x.supertype === 'Pokémon').map(cleanCard));
+}
 
 const prices = d3.tsv('data/prices.tsv');
-
-
-export const legalCardsPromise = Promise.all([cleanedLegalCards,prices]).then(d => {
-  const [ cards, prices ] = d;
-  const indexedCards = new Map(cards);
-  for (const entry of prices) {
-    const card = indexedCards.get(`${entry.set}-${entry.num}`);
-    if (card) {
-      card.price = +entry.price;
+function setPrices(cleanedCards) {
+  return Promise.all([cleanedCards,prices]).then(d => {
+    const [ cards, prices ] = d;
+    const indexedCards = new Map(cards);
+    for (const entry of prices) {
+      const card = indexedCards.get(`${entry.set}-${entry.num}`);
+      if (card && +entry.price) {
+        card.price = +entry.price;
+      }
     }
-  }
+    return indexedCards;
+  });
+}
 
-  return indexedCards;
-});
-
-export const baseCardsPromise = (
-  Promise.all(originalSets.map(s => d3.json(`data/${s}.json`)))
-         .then(d => [].concat(...d))
-         .then(d => d.filter(x => x.supertype === 'Pokémon').map(cleanCard))
-         .then(d => new Map(d))
-)
+export const legalCardsPromise = setPrices(loadAndCleanSet(legalSets));
+export const baseCardsPromise = setPrices(loadAndCleanSet(originalSets));
 
 export const types = {
   'Grass'    : '#7DB808',
@@ -109,3 +105,5 @@ export const types = {
   'Dragon'   : '#c6a114',
   'Fairy'    : '#e03a83',
 }
+
+export const typesColors = (x) => types[x];

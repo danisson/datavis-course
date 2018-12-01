@@ -36,20 +36,22 @@ function reduceInitAvg() {
   return obj;
 }
 
-var currencyFormatter = d3.format(".2f");
+const currencyFormatter = d3.format(".2f");
+const spreadGroup = x => [x.key, x.value];
+
 
 let favoriteFirstGen = '1';
-let firstGenSelector = document.querySelector('#gen1-favorite');
+const firstGenSelector = document.querySelector('#gen1-favorite');
 
 (async () => {
-  let cards = await baseCardsPromise;
-  let pokedex = await pokedexPromise;
+  const cards = await baseCardsPromise;
+  const pokedex = await pokedexPromise;
 
-  let cfCards = crossfilter([...cards.values()]);
-  let dimensions = {};
-  let groups = {};
-  let maps = {};
-  let lists = {};
+  const cfCards = crossfilter([...cards.values()]);
+  const dimensions = {};
+  const groups = {};
+  const maps = {};
+  const lists = {};
   window.pokedex = pokedex;
   window.groups = groups;
   window.dimensions = dimensions;
@@ -69,20 +71,30 @@ let firstGenSelector = document.querySelector('#gen1-favorite');
   groups.rankingAndPrice = dimensions.rankingAndPrice.group()
                                                      .reduceSum(x=>x.price);
   groups.type = dimensions.type.group();
+  groups.pokedexNumber = dimensions.pokedexNumber.group().reduceCount();
 
-  maps.pricesByDex = new Map(groups.priceByDex.all().map(x=>[x.key, x.value]));
+  maps.pricesByDex = new Map(groups.priceByDex.all().map(spreadGroup));
+  maps.cards = new Map(groups.pokedexNumber.all().map(spreadGroup));
 
   cfCards.onChange(() => { for (let key in lists) lists[key]();});
 
   function updateFirstGenFavorite() {
-    let icon = createPokémonIcon(favoriteFirstGen);
     document.querySelectorAll('.gen1f-icon').forEach(x => {
+      const icon = createPokémonIcon(favoriteFirstGen);
       x.childNodes[0].replaceWith(icon);
-    })
+    });
 
     document.querySelectorAll('.gen1f-name').forEach(x => {
       x.textContent = pokedex.get(+favoriteFirstGen).name;
-    })
+    });
+
+    document.querySelectorAll('.gen1f-cards').forEach(x => {
+      if (maps.cards.get(+favoriteFirstGen)) {
+          x.textContent = maps.cards.get(+favoriteFirstGen) + ' cartas';
+      } else {
+        x.textContent = "nenhuma carta";
+      }
+    });
 
     document.querySelectorAll('.gen1f-price').forEach(x => {
       if (maps.pricesByDex.get(+favoriteFirstGen)) {
@@ -90,15 +102,15 @@ let firstGenSelector = document.querySelector('#gen1-favorite');
             maps.pricesByDex.get(+favoriteFirstGen).avg
           ) + ' dólares';
       } else {
-        x.textContent = "sem preço registrado"
+        x.textContent = "sem preço registrado";
       }
-    })
+    });
   }
   updateFirstGenFavorite();
 
   for (let pokemon of pokedex.values()) {
     if (pokemon.generation != 1) continue;
-    let option = document.createElement('option');
+    const option = document.createElement('option');
     option.value = pokemon.pokedexNumber;
     option.appendChild(document.createTextNode(pokemon.name));
     firstGenSelector.childNodes[1].appendChild(option);
@@ -150,6 +162,12 @@ let firstGenSelector = document.querySelector('#gen1-favorite');
     '#gen1-prices-by-dexnumber',
     groups.priceByDex.top(10).filter(o => o.value >= 0),
     (o) => [[o.key], `${pokedex.get(o.key).name} ${currencyFormatter(o.value.avg)}\$`]
+  );
+
+  lists.mostRepresented = () => makePokeList(
+    '#gen1-most-represented',
+    groups.pokedexNumber.top(10).filter(o => o.value >= 0),
+    (o) => [[o.key], `${pokedex.get(o.key).name} ${o.value} cartas`]
   );
 
   for (let key in lists) lists[key]();

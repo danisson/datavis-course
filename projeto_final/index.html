@@ -25,21 +25,32 @@
     <p>Iremos começar nossa análise com as cartas da primeira geração. Essas
     cartas são as que contém os monstrinhos mais reconhecíveis, ela foi lançada junto com os primeiros jogos da série Pokémon.</p>
 
-    <p>Primeiramente, vamos análisar qual espécie de Pokémon tem as cartas
-    mais caras em média:</p>
-    <ol class="pokelist" id="gen1-prices-by-dexnumber"></ol><br>
+    <p>Cada carta tem um Pokémon, um tipo, HP e ataques. Vamos dar uma olhada nos top 10 Pokémon que mais tem cartas:</p>
+
+    <ol class="pokelist" id="gen1-most-represented"></ol><br>
+
     <p>O Pokémon que você mais gosta está nessa lista do 10 primeiros? Para
     todas as análises, podemos mostrar onde seu Pokémon favorito está em
     relação aos outros. Basta escolher ele aqui:</p>
 
     <div class="favorite">
-      <span class="gen1f-icon"><span></span></span>
+      <span class="gen1f-icon"> </span>
       <div id="gen1-favorite" class="select is-medium">
         <select class="favorite"></select>
       </div>
     </div>
 
-    <p>Por exemplo, podemos ver que o preço médio do <span class="gen1f-name"></span> é <span class="gen1f-price"></span>.</p>
+    <p>Por exemplo, podemos ver que a quantidade de cartas do <span class="gen1f-name"></span> é <span class="gen1f-cards"></span>.</p>
+
+    <p>Também podemos ver qual a quantidade de cartas por tipo de carta:</p>
+
+    <div id="gen1-types"></div>
+    <div class="comment">Ao selecionar alguma região do gráfico, a lista <a href="#gen1-most-represented">acima</a> irá atualizar automaticamente.</div>
+    <p>Aqui temos um fato curioso, ao contrário da tendência dos jogos, temos mais cartas do tipo <em>Grass</em> do que do tipo <em>Water</em>, que é o tipo mais comum nos jogos de videogame.</p>
+
+    <p>Agora, vamos análisar qual espécie de Pokémon tem as cartas mais caras em média:</p>
+    <ol class="pokelist" id="gen1-prices-by-dexnumber"></ol><br>
+    <p>Para o seu favorito (<span class="gen1f-name"></span>), podemos ver que o preço médio dele é <span class="gen1f-price"></span>.</p>
 
     <p>Parece que talvez exista uma correlação entre o preço de uma carta e a popularidade do Pokémon dela, afinal temos evoluções dos Pokémon inciais no top 3. Vamos tentar visualizar se existe uma tendência entre essas duas variáveis.</p>
 
@@ -47,10 +58,6 @@
     <div class="comment">Ao selecionar alguma região do gráfico, a lista <a href="#gen1-prices-by-dexnumber">acima</a> irá atualizar automaticamente.</div>
 
     <p>Podemos ver nesse gráfico uma tendência clara, se um Pokémon não é popular, ele não tem nenhuma carta cara.</p>
-
-    <p>Cada carta contém ao menos um tipo. </p>
-
-    <div id="gen1-types"></div>
 
 
   </main>

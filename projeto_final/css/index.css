@@ -30,7 +30,8 @@ ol.pokelist li > span > span.spriteHolder {
   margin-right: 5px;
 }
 
-ol#gen1-prices-by-dexnumber {
+ol#gen1-prices-by-dexnumber,
+ol#gen1-most-represented {
   columns: 2;
 }
 

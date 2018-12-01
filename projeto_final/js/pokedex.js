@@ -1,6 +1,6 @@
 export const pokedexPromise = d3.csv('data/pokemon.csv').then(d => {
   return new Map(d.map(x => [
-    x['pokedex_number'],{
+    +x.pokedex_number,{
       name: x.name,
       pokedexNumber: +x.pokedex_number,
       japaneseName: x.japanese_name,

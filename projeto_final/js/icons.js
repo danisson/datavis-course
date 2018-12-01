@@ -30,18 +30,21 @@ export function createPokémonIcon(dexNumber, type) {
 }
 
 export function makePokeList(selector, list, attrSelector) {
+  let tag = document.querySelector(selector);
+  tag.innerHTML = '';
+
   let fragments = document.createDocumentFragment();
   list.forEach(o => {
     let [iconData, text] = attrSelector(o);
-    
+
     let li = document.createElement('li');
     let e = document.createElement('span');
     let icon = createPokémonIcon(...iconData);
-    
+
     li.appendChild(e);
     e.appendChild(icon);
     e.appendChild(document.createTextNode(text));
     fragments.appendChild(li);
   })
-  document.querySelector(selector).appendChild(fragments);
+  tag.appendChild(fragments);
 }

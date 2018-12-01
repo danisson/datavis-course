@@ -43,3 +43,11 @@ div.favorite {
 p {
   text-align: justify;
 }
+
+div.comment {
+  width: 100%;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}

@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Test</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-  <link rel="stylesheet" type="text/css" href="third-party/pokesprite.min.css">
+  <link rel="stylesheet" type="text/css" href="third-party/css/dc.min.css">
+  <link rel="stylesheet" type="text/css" href="third-party/css/pokesprite.min.css">
   <link rel="stylesheet" type="text/css" href="third-party/css/modest.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
@@ -13,18 +14,18 @@
   <main>
     <h1>Pokémon TCG</h1>
     <h3>O que é?</h3>
-    
+
     <p>Pokémon Trading Card Game (TCG) é um jogo que envolve a coleção, a
     troca e o jogo de cartas baseadas na franquia Pokémon. Apesar do TCG
     seguir suas próprias regras, há influências claras dos jogos e filmes da
     franquia.</p>
-    
+
     <h4>Primeira Geração</h4>
 
     <p>Iremos começar nossa análise com as cartas da primeira geração. Essas
     cartas são as que contém os monstrinhos mais reconhecíveis, ela foi lançada junto com os primeiros jogos da série Pokémon.</p>
 
-    <p>Primeiramente, vamos análiser qual espécie de Pokémon tem as cartas
+    <p>Primeiramente, vamos análisar qual espécie de Pokémon tem as cartas
     mais caras em média:</p>
     <ol class="pokelist" id="gen1-prices-by-dexnumber"></ol><br>
     <p>O Pokémon que você mais gosta está nessa lista do 10 primeiros? Para
@@ -32,14 +33,23 @@
     relação aos outros. Basta escolher ele aqui:</p>
 
     <div class="favorite">
+      <span class="gen1f-icon"><span></span></span>
       <div id="gen1-favorite" class="select is-medium">
-        <span class="gen1-favorite-icon"></span>
         <select class="favorite"></select>
       </div>
     </div>
 
     <p>Por exemplo, podemos ver que o preço médio do <span class="gen1f-name"></span> é <span class="gen1f-price"></span>.</p>
-    
+
+    <p>Parece que talvez exista uma correlação entre o preço de uma carta e a popularidade do Pokémon dela, afinal temos evoluções dos Pokémon inciais no top 3. Vamos tentar visualizar se existe uma tendência entre essas duas variáveis.</p>
+
+    <div id="gen1-pop-by-price"></div>
+    <div class="comment">Ao selecionar alguma região do gráfico, a lista <a href="#gen1-prices-by-dexnumber">acima</a> irá atualizar automaticamente.</div>
+
+    <p>Podemos ver nesse gráfico uma tendência clara, se um Pokémon não é popular, ele não tem nenhuma carta cara.</p>
+
+    <p>Cada carta contém ao menos um tipo. </p>
+
     <div id="gen1-types"></div>
 
 

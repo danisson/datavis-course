@@ -10,3 +10,4 @@
 * [Crimes Chicago - 03/10](leaflet/chicago.html)
 * [D3 Networks/Trees - 10/10](d3_network_tree/index.md)
 * [D3 Colors - 22/10](color-d3/index.md)
+* [D3 Interactive - 31/10](d3_interactive/index.md)

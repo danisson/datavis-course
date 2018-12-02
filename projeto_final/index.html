@@ -25,11 +25,11 @@
     <p>Iremos começar nossa análise com as cartas da primeira geração. Essas
     cartas são as que contém os monstrinhos mais reconhecíveis, ela foi lançada junto com os primeiros jogos da série Pokémon.</p>
 
-    <p>Cada carta tem um Pokémon, um tipo, HP e ataques. Vamos dar uma olhada nos top 10 Pokémon que mais tem cartas:</p>
+    <p>Cada carta tem um Pokémon, um tipo, HP e ataques. Vamos dar uma olhada nos top dez Pokémon que mais tem cartas:</p>
 
     <ol class="pokelist" id="gen1-most-represented"></ol><br>
 
-    <p>O Pokémon que você mais gosta está nessa lista do 10 primeiros? Para
+    <p>O Pokémon que você mais gosta está nessa lista do dez primeiros? Para
     todas as análises, podemos mostrar onde seu Pokémon favorito está em
     relação aos outros. Basta escolher ele aqui:</p>
 
@@ -40,7 +40,9 @@
       </div>
     </div>
 
-    <p>Por exemplo, podemos ver que a quantidade de cartas do <span class="gen1f-name"></span> é <span class="gen1f-cards"></span>.</p>
+    <p>Por exemplo, podemos ver que <span class="gen1f-name"></span> tem <span class="gen1f-cards"></span>. Vamos ver <span class="gen1f-cards-count"></span> aqui:</p>
+
+    <div class="sampled-cards" id="gen1f-sampled-cards"></div><br>
 
     <p>Também podemos ver qual a quantidade de cartas por tipo de carta:</p>
 
@@ -48,21 +50,37 @@
     <div class="comment">Ao selecionar alguma região do gráfico, a lista <a href="#gen1-most-represented">acima</a> irá atualizar automaticamente.</div>
     <p>Aqui temos um fato curioso, ao contrário da tendência dos jogos, temos mais cartas do tipo <em>Grass</em> do que do tipo <em>Water</em>, que é o tipo mais comum nos jogos de videogame.</p>
 
-    <p>Agora, vamos análisar qual espécie de Pokémon tem as cartas mais caras em média:</p>
-    <ol class="pokelist" id="gen1-prices-by-dexnumber"></ol><br>
-    <p>Para o seu favorito (<span class="gen1f-name"></span>), podemos ver que o preço médio dele é <span class="gen1f-price"></span>.</p>
+    <p>As cartas de Pokémon TCG, com exceção das cartas especiais para eventos, não são distribuídas individualmente. Elas são dadas um nível de raridade e isso determina a probabilidade de uma certa carta estar no pacote de dez cartas aleatórias. Vamos análisar qual a distribuição dos preços dos revendedores das cartas em relação à raridade dela:</p>
 
-    <p>Parece que talvez exista uma correlação entre o preço de uma carta e a popularidade do Pokémon dela, afinal temos evoluções dos Pokémon inciais no top 3. Vamos tentar visualizar se existe uma tendência entre essas duas variáveis.</p>
+    <div id="gen1-prices-by-rarity"></div>
+
+    <p>Podemos ver que há uma tendência esperada na raridade de uma carta e o preço dela de mercado. Também podemos ver que as cartas de evento tem um <em>spread</em> maior nos preços porque havia diversos meios de distribuição e quantidades para cada carta.</p>
+
+    <p>Vamos dar uma olhada nas cinco cartas mais caras:</p>
+
+    <div class="sampled-cards" id="gen1-expensive-cards"></div><br>
+
+    <p>Agora, vamos análisar qual espécie de Pokémon tem as cartas mais caras em média:</p>
+    <ol class="pokelist" id="gen1-prices-by-dexnumber"></ol>
+    <ul class="pokelist"><li class="gen1f-price"></li></ul><br>
+
+    <p>Parece que talvez exista uma correlação entre o preço de uma carta e a popularidade do Pokémon dela, porque Pokémon bem populares no dez primeiros. Vamos tentar visualizar se existe uma tendência entre essas duas variáveis. O seu pokémon favorito está colorido de preto nesse gráfico.</p>
 
     <div id="gen1-pop-by-price"></div>
-    <div class="comment">Ao selecionar alguma região do gráfico, a lista <a href="#gen1-prices-by-dexnumber">acima</a> irá atualizar automaticamente.</div>
 
-    <p>Podemos ver nesse gráfico uma tendência clara, se um Pokémon não é popular, ele não tem nenhuma carta cara.</p>
+    <p>Podemos ver nesse gráfico uma tendência clara, quanto mais popular é um Pokémon, maior o preço máximo dele.</p>
+
+    <p>Agora vamos ver a quantidade de cartas por popularidade:</p>
+
+    <div id="gen1-pop-by-cards"></div>
+
+    <p>Parece que exceto Pokémon muito popular como Pikachu, não parece haver uma relação entre quantidade de cartas lançadas e popularidade</p>
 
 
   </main>
   <script src="third-party/js/crossfilter.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="third-party/js/d3-tip.js"></script>
   <script src="third-party/js/dc.min.js"></script>
   <script src="third-party/js/pokesprite.min.js"></script>
   <script type="module" type="text/javascript" src="js/index.js"></script>

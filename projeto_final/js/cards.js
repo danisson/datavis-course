@@ -18,15 +18,17 @@ const originalSets = [
   'Base',
   'Jungle',
   'Fossil',
-  'Base Set 2',
+  // 'Base Set 2',
   'Team Rocket',
   'Gym Heroes',
-  'Gym Challenge'
+  'Gym Challenge',
+  'Wizards Black Star Promos'
 ];
 
 function cleanCard(card) {
   const {
-    id, set, artist, name, hp, rarity, types, weaknesses, nationalPokedexNumber
+    id, set, number,
+    artist, name, hp, rarity, types, weaknesses, nationalPokedexNumber
   } = card;
 
   const attacks = (card.attacks || []).map((a) => {
@@ -53,6 +55,7 @@ function cleanCard(card) {
     // Basic information
     name,
     set,
+    number,
     id,
     nationalPokedexNumber,
     rarity,
@@ -75,7 +78,7 @@ function loadAndCleanSet(set) {
 }
 
 const prices = d3.tsv('data/prices.tsv');
-function setPrices(cleanedCards) {
+function setPricesAndIndex(cleanedCards) {
   return Promise.all([cleanedCards,prices]).then(d => {
     const [ cards, prices ] = d;
     const indexedCards = new Map(cards);
@@ -89,8 +92,12 @@ function setPrices(cleanedCards) {
   });
 }
 
-export const legalCardsPromise = setPrices(loadAndCleanSet(legalSets));
-export const baseCardsPromise = setPrices(loadAndCleanSet(originalSets));
+export const legalCardsPromise = setPricesAndIndex(loadAndCleanSet(legalSets));
+export const baseCardsPromise = setPricesAndIndex(
+  loadAndCleanSet(originalSets).then( cards =>
+    cards.filter(x => x[1].nationalPokedexNumber <= 151)
+  )
+);
 
 export const types = {
   'Grass'    : '#7DB808',
@@ -104,6 +111,7 @@ export const types = {
   'Metal'    : '#8a776e',
   'Dragon'   : '#c6a114',
   'Fairy'    : '#e03a83',
+  'Favorite' : '#000'
 }
 
 export const typesColors = (x) => types[x];

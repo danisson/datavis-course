@@ -1600,7 +1600,7 @@ base5	8	Dark Gyarados	2.44
 gym1	8	Lt. Surge’s Magneton	1.08
 gym2	8	Giovanni’s Persian	2.39
 smp	8	Litten	0.1
-base1	9	Magneton	0.01
+base1	9	Magneton	0.45
 base2	9	Pinsir	1
 base3	9	Kabutops	1.95
 base4	9	Magneton	0.96
@@ -2399,3 +2399,56 @@ smp	154	Salandit	None
 smp	155	Kingdra-GX	5
 smp	156	Dragonite-GX	6
 smp	157	Pikachu	3.92
+basep	1	Pikachu	0.81
+basep	2	Electabuzz	0.20
+basep	3	Mewtwo	0.79
+basep	4	Pikachu	0.99
+basep	5	Dragonite	0.49
+basep	6	Arcanine	0.91
+basep	7	Jigglypuff	1.80
+basep	8	Mew	0.09
+basep	9	Mew	4.95
+basep	10	Meowth	0.94
+basep	11	Eevee	1.00
+basep	12	Mewtwo	6.09
+basep	13	Venusaur	10.65
+basep	14	Mewtwo	0.48
+basep	15	Cool Porygon	3.95
+basep	16	Computer Error	0.25
+basep	17	Dark Persian	2.50
+basep	18	Team Rocket’s Meowth	0.49
+basep	19	Sabrina’s Abra	4.26
+basep	20	Psyduck	0.39
+basep	21	Moltres	0.98
+basep	22	Articuno	0.74
+basep	23	Zapdos	0.50
+basep	24	Birthday Pikachu	28.46
+basep	25	Flying Pikachu	4.99
+basep	26	Pikachu	3.83
+basep	27	Pikachu	0.81
+basep	28	Surfing Pikachu	0.89
+basep	29	Marill	0.30
+basep	30	Togepi	0.64
+basep	31	Cleffa	0.50
+basep	32	Smeargle	0.20
+basep	33	Scizor	0.82
+basep	34	Entei	0.26
+basep	35	Pichu	2.59
+basep	36	Igglybuff	0.94
+basep	37	Hitmontop	0.50
+basep	38	Unown J	1.25
+basep	39	Misdreavus	0.44
+basep	40	Pokémon Center	149.99
+basep	41	Lucky Stadium	399.94
+basep	42	Pokémon Tower	1.50
+basep	43	Machamp	1.45
+basep	44	Magmar	1.80
+basep	45	Scyther	2.74
+basep	46	Electabuzz	1.34
+basep	47	Mew	4.99
+basep	48	Articuno	9.00
+basep	49	Snorlax	14.99
+basep	50	Celebi	1.82
+basep	51	Rapidash	None
+basep	52	Ho-oh	3.58
+basep	53	Suicune	3.97

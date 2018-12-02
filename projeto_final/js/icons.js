@@ -1,3 +1,6 @@
+import { types } from './cards.js';
+import { pokedexPromise } from './pokedex.js';
+
 function createSVGIcon(x,y) {
   let height = 3054;
   let width = 1314;
@@ -16,11 +19,12 @@ function createSVGIcon(x,y) {
   return image;
 }
 
-export function createPokémonIcon(dexNumber, type) {
+export function createPokémonIcon(dexNumber, type, title) {
   let dexn = String(dexNumber).padStart(3,'0');
   let span = document.createElement('span');
   span.className = `spriteHolder pkspr pkmn-${dexn}`;
   span.style.backgroundColor = type ? types[type] : '#fff';
+  if (title) span.title = title;
 
   if (dexNumber > 0) {
     PkSpr.decorate(span);
@@ -29,22 +33,22 @@ export function createPokémonIcon(dexNumber, type) {
   return span;
 }
 
+export function makePokeItem(iconData, text) {
+  let li = document.createElement('li');
+  let e = document.createElement('span');
+  let icon = createPokémonIcon(...iconData);
+
+  li.appendChild(e);
+  e.appendChild(icon);
+  e.appendChild(document.createTextNode(text));
+  return li;
+}
+
 export function makePokeList(selector, list, attrSelector) {
   let tag = document.querySelector(selector);
   tag.innerHTML = '';
 
   let fragments = document.createDocumentFragment();
-  list.forEach(o => {
-    let [iconData, text] = attrSelector(o);
-
-    let li = document.createElement('li');
-    let e = document.createElement('span');
-    let icon = createPokémonIcon(...iconData);
-
-    li.appendChild(e);
-    e.appendChild(icon);
-    e.appendChild(document.createTextNode(text));
-    fragments.appendChild(li);
-  })
+  list.forEach(o => fragments.appendChild(makePokeItem(...attrSelector(o))));
   tag.appendChild(fragments);
 }

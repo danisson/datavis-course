@@ -15,15 +15,21 @@ sets = {
   # 'ces': 'sm7',
   # 'drm': 'sm75',
   # 'lot': 'sm8',
-  'smp': 'smp',
-  'bs' : 'base1',
-  'ju' : 'base2',
-  'fo' : 'base3',
-  'b2' : 'base4',
-  'tr' : 'base5',
-  'g1' : 'gym1',
-  'g2' : 'gym2',
+  # 'smp': 'smp',
+  # 'bs' : 'base1',
+  # 'ju' : 'base2',
+  # 'fo' : 'base3',
+  # 'b2' : 'base4',
+  # 'tr' : 'base5',
+  # 'g1' : 'gym1',
+  # 'g2' : 'gym2',
+  'wizards-black-star-promos': 'basep'
 }
+
+full_set_name = {
+  'wizards black star promos': 'basep'
+}
+
 sets_param = '%2C'.join(sets.keys())
 
 print('Sets:',sets.keys(), file=sys.stderr)
@@ -46,7 +52,12 @@ while True:
   print('Current:',i,'Cards:',len(entries), file=sys.stderr)
   for entry in entries:
     contents = entry.div.contents
-    cset = sets[contents[0].span.abbr.text.lower()]
+
+    if contents[0].span.abbr is not None:
+      cset = sets[contents[0].span.abbr.text.lower()]
+    else:
+      cset = full_set_name[contents[0].span.text.lower()]
+
     num = contents[1].span.text
     name = contents[2].a.text
     price = None if contents[-1].a is None else contents[-1].a.text[1:]

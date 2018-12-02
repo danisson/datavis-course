@@ -16,23 +16,26 @@ i.sprite {
   transform: translate(-2px, -50%);
 }
 
-ol.pokelist li {
+ol.pokelist,
+ul.pokelist {
+  columns: 2;
+}
+
+ol.pokelist li,
+ul.pokelist li {
   margin-bottom: 0.5rem;
 }
 
-ol.pokelist li > span{
+ol.pokelist li > span,
+ul.pokelist li > span {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
 }
 
-ol.pokelist li > span > span.spriteHolder {
+ol.pokelist li > span > span.spriteHolder,
+ul.pokelist li > span > span.spriteHolder {
   margin-right: 5px;
-}
-
-ol#gen1-prices-by-dexnumber,
-ol#gen1-most-represented {
-  columns: 2;
 }
 
 div.favorite {
@@ -51,4 +54,35 @@ div.comment {
   color: #aaa;
   font-size: 0.8rem;
   margin-bottom: 1rem;
+}
+
+.sampled-cards {
+  display: flex;
+  /*height: 330px;*/
+  width: 100%;
+  justify-content: space-around;
+}
+
+.sampled-cards > img {
+  margin: 0 10px;
+}
+
+.price-tool,
+.pokemon-tool {
+  min-width: 75px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+#gen1-types,
+#gen1-prices-by-rarity,
+#gen1-pop-by-price,
+#gen1-pop-by-cards {
+  height: 550px;
+  width: 100%;
 }

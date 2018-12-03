@@ -10,43 +10,20 @@ import {
   makePokeItem,
   createPokémonIcon,
 } from './icons.js';
-import { groupBy, shuffleArray } from './helper.js';
+import {
+  avgReducer, currencyFormatter, groupBy, shuffleArray, Filterable
+} from './helper.js';
 
+dc.config.defaultColors(d3.schemeAccent);
 
-function reduceAddAvg(attr) {
-  return function(p,v) {
-    ++p.count
-    p.sum += v[attr];
-    p.avg = p.sum/p.count;
-    return p;
-  };
-}
-function reduceRemoveAvg(attr) {
-  return function(p,v) {
-    --p.count
-    p.sum -= v[attr];
-    if (p.count == 0) {
-      p.avg = -1;
-    } else {
-      p.avg = p.sum/p.count;
-    }
-    return p;
-  };
-}
-function reduceInitAvg() {
-  const obj = {count:0, sum:0, avg:0};
-  obj.valueOf = function() {
-    return this.avg;
-  };
-  return obj;
-}
-
-const currencyFormatter = d3.format('.2f');
 const spreadGroup = x => [x.key, x.value];
-
 
 let favoriteFirstGen = '1';
 const firstGenSelector = document.querySelector('#gen1-favorite');
+const priceTicks = [
+  0.01, 0.02, 0.05,  0.10,  0.20,  0.30,  0.50,
+  1.00, 2.00, 5.00, 10.00, 20.00, 30.00, 50.00,
+];
 
 (async () => {
   const cards = await baseCardsPromise;
@@ -66,17 +43,20 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
   const maps = {};
   const lists = {};
   const charts = {};
+  const filterables = {};
+  
   window.cards = cards;
+  window.cfCards = cfCards;
   window.pokedex = pokedex;
   window.groups = groups;
   window.dimensions = dimensions;
   window.maps = maps;
 
-
   dimensions.rarity = cfCards.dimension(x => x.rarity || 'Black Star');
   dimensions.price = cfCards.dimension(x => x.price);
   dimensions.type = cfCards.dimension(x => x.types, true);
   dimensions.pokedexNumber = cfCards.dimension(x => x.nationalPokedexNumber);
+  dimensions.artist = cfCards.dimension(x => x.artist);
   dimensions.rankingAndPrice = cfCards.dimension(x =>[
     x.price,
     gen1Ranks.get(x.nationalPokedexNumber),
@@ -90,9 +70,8 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
     gen1Ranks.get(x.nationalPokedexNumber)
   ]);
 
-  groups.priceByDex = dimensions.pokedexNumber.group().reduce(
-    reduceAddAvg('price'), reduceRemoveAvg('price'), reduceInitAvg
-  );
+  groups.priceByDex = dimensions.pokedexNumber.group()
+                                              .reduce(...avgReducer('price'));
 
   groups.rankingAndDex = dimensions.rankingAndDex.group().reduceCount();
   groups.rankingAndPrice = dimensions.rankingAndPrice.group()
@@ -100,11 +79,25 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
   groups.type = dimensions.type.group().reduceCount();
   groups.pokedexNumber = dimensions.pokedexNumber.group().reduceCount();
 
-  maps.pricesByDex = new Map(groups.priceByDex.all().map(spreadGroup));
-  maps.cards = new Map(groups.pokedexNumber.all().map(spreadGroup));
-  maps.cardsByDex = groupBy(cards.values(), 'nationalPokedexNumber');
+  maps.pricesByDex = new Filterable(
+    () => new Map(groups.priceByDex.all().map(spreadGroup))
+  );
+  maps.cards = new Filterable(
+    () => new Map(groups.pokedexNumber.all().map(spreadGroup))
+  );
+  maps.cardsByDex = new Filterable(
+    () => groupBy(cfCards.allFiltered(), 'nationalPokedexNumber')
+  );
 
-  cfCards.onChange(() => { for (let key in lists) lists[key]();});
+  maps.cardsByArtist = new Filterable(
+    () => groupBy(cfCards.allFiltered(), 'artist')
+  );
+
+  cfCards.onChange(() => {
+    for (let key in maps) maps[key].refresh();
+    for (let key in filterables) filterables[key].refresh();
+    for (let key in lists) lists[key]();
+  });
 
   function updateFirstGenFavorite() {
     document.querySelectorAll('.gen1f-icon').forEach(x => {
@@ -117,39 +110,36 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
     });
 
     document.querySelectorAll('.gen1f-cards').forEach(x => {
-      const cards = maps.cards.get(+favoriteFirstGen);
+      const cards = maps.cards.value.get(+favoriteFirstGen);
       if (cards) {
           x.textContent = cards > 1 ? `${cards} cartas` : `${cards} carta`;
       } else {
-        x.textContent = 'nenhuma carta';
+        x.textContent = 'nenhuma carta no filtro atual';
       }
     });
 
     document.querySelectorAll('.gen1f-cards-count').forEach(x => {
-      const cards = maps.cards.get(+favoriteFirstGen);
+      const cards = maps.cards.value.get(+favoriteFirstGen);
       if (cards) {
-          x.textContent = cards > 5 ? 'algumas delas' : 'elas';
+          x.textContent  = 'Vamos ver '
+          x.textContent += cards > 5 ? 'algumas delas' : 'elas';
+          x.textContent += ' aqui:';
       } else {
         x.textContent = '';
       }
     });
 
-    document.querySelectorAll('span.gen1f-price').forEach(x => {
-      if (maps.pricesByDex.get(+favoriteFirstGen)) {
-          x.textContent = currencyFormatter(
-            maps.pricesByDex.get(+favoriteFirstGen).avg
-          ) + ' dólares';
-      } else {
-        x.textContent = 'sem preço registrado';
-      }
-    });
-
     document.querySelectorAll('li.gen1f-price').forEach(x => {
       const favorite = pokedex.get(+favoriteFirstGen);
-      const price = maps.pricesByDex.get(+favoriteFirstGen).avg;
+      const price = maps.pricesByDex.value.get(+favoriteFirstGen).avg;
+      let priceText;
+      if (price >= 0)
+        priceText = currencyFormatter(price)+'$';
+      else 
+        priceText = '[nenhuma carta no filtro atual]';
       const li = makePokeItem(
         [+favoriteFirstGen, undefined, favorite.name],
-        `${favorite.name} ${currencyFormatter(price)}\$`
+        `${favorite.name} ${priceText}`
       );
       x.innerHTML = li.innerHTML;
     })
@@ -157,7 +147,9 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
     {
       let div = document.querySelector('#gen1f-sampled-cards');
       div.innerHTML = '';
-      let cards = shuffleArray(maps.cardsByDex.get(+favoriteFirstGen));
+      let cards = shuffleArray(
+        maps.cardsByDex.value.get(+favoriteFirstGen) || []
+      );
       for (let card of cards.slice(0,5)) {
         let img = document.createElement('img');
         img.src = card.imageURL;
@@ -208,18 +200,15 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
     ];
     const yScale = d3.scaleLog().domain(yDomain).nice();
 
-    const yTicks = [
-      0.01, 0.02, 0.05,  0.10,  0.20,  0.30,  0.50,
-      1.00, 2.00, 5.00, 10.00, 20.00, 30.00, 50.00,
-    ].map(yScale);
+    const yTicks = priceTicks.map(yScale);
 
     groups.logPriceByRarity = dimensions.rarity.group().reduce(
       (p,v) => {
-        if (!isNaN(v.price)) p.push(yScale(v.price));
+        if (v.price && !isNaN(v.price)) p.push(yScale(v.price));
         return p;
       },
       (p,v) => {
-        if (!isNaN(v.price)) p.splice(p.indexOf(yScale(v.price)), 1)
+        if (v.price && !isNaN(v.price)) p.splice(p.indexOf(yScale(v.price)), 1)
         return p;
       },
       () => []
@@ -251,15 +240,6 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
         case 'Black Star': return 3;
       }
     });
-    const tooltip = d3.tip().html(d => {
-      return d.key;
-    });
-    chart.on('pretransition.add-tip', (chart, filter) => {
-      chart.selectAll('circle.outlier')
-          .call(tooltip)
-          .on('mouseover', tooltip.show)
-          .on('mouseout', tooltip.hide);
-    });
   }
 
   {
@@ -272,10 +252,7 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
     xDomain[0] = 0.01;
     xDomain[1] = 50;
 
-    const xTicks = [
-      0.01, 0.02, 0.05,  0.10,  0.20,  0.30,  0.50,
-      1.00, 2.00, 5.00, 10.00, 20.00, 30.00, 50.00,
-    ]
+    const xTicks = priceTicks;
 
     charts['gen1-pop-by-price'] = dc.scatterPlot('#gen1-pop-by-price');
     chart = charts['gen1-pop-by-price'];
@@ -291,6 +268,7 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
          .title(() => undefined)
          .dimension(dimensions.rankingAndPrice)
          .group(groups.rankingAndPrice)
+         .data(g => g.all().filter(x => !isNaN(x.value)))
          .xAxisLabel('Preço')
          .symbolSize(6);
     chart.yAxis().tickFormat(x => `${x==0?1:x}º`);
@@ -338,6 +316,7 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
          .othersGrouper(false)
          .ordering(d => d.key[1])
          .label(d => `${d.key[1]}º ${pokedex.get(d.key[0]).name}`)
+         .elasticX(true)
          .colors(['#003153']);
 
     const tooltip = d3.tip().html(d => {
@@ -354,19 +333,79 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
 
       return `<div class='pokemon-tool'>${e.innerHTML}</span>`;
     });
+
+    let firstTime = true;
+
     chart.on('pretransition.add-tip', (chart, filter) => {
-      chart.svg()
-          .append('text')
-          .attr('class', 'x-axis-label')
-          .attr('text-anchor', 'middle')
-          .attr('x', chart.width()/2)
-          .attr('y', chart.height()-3.5)
-          .text('Cartas');
+      if (firstTime) {
+        firstTime = false;
+        chart.svg()
+            .append('text')
+            .attr('class', 'x-axis-label')
+            .attr('text-anchor', 'middle')
+            .attr('x', chart.width()/2)
+            .attr('y', chart.height()-3.5)
+            .text('Cartas');
+      }
       chart.selectAll('g.row')
           .call(tooltip)
           .on('mouseover', tooltip.show)
           .on('mouseout', tooltip.hide);
     });
+  }
+
+  {
+    const yDomain = [
+      dimensions.price.bottom(1)[0].price,
+      dimensions.price.top(1)[0].price
+    ];
+    const yScale = d3.scaleLog().domain(yDomain).nice();
+
+    const yTicks = priceTicks.map(yScale);
+
+    groups.logPriceByArtist = dimensions.artist.group().reduce(
+      (p,v) => {
+        if (v.price && !isNaN(v.price)) p.push(yScale(v.price));
+        return p;
+      },
+      (p,v) => {
+        if (v.price && !isNaN(v.price)) p.splice(p.indexOf(yScale(v.price)), 1)
+        return p;
+      },
+      () => []
+    );
+
+    charts['gen1-price-by-artist'] = dc.boxPlot('#gen1-price-by-artist');
+    chart = charts['gen1-price-by-artist'];
+    chart.height(550)
+         .elasticX(true)
+         .dimension(dimensions.artist)
+         .group(groups.logPriceByArtist)
+         .data(g =>
+             g.all().map(d => (d.map = a => a.call(d, d), d))
+                    .filter(d => d.value.length > 0)
+                    .sort((a,b) => b.value.length-a.value.length)
+                    .slice(0,6)
+         )
+         .y(d3.scaleLinear().domain([yScale(0.009),yScale(50)]))
+         .tickFormat(x => {
+           x = yScale.invert(x)
+           if (x >= 1) return `${currencyFormatter(x)}\$`
+           else return `${Math.round(x*100)}¢`
+          });
+    chart.yAxis().tickValues(yTicks)
+         .tickFormat(x => {
+           x = yScale.invert(x)
+           if (x >= 1) return `${currencyFormatter(x)}\$`
+           else return `${Math.round(x*100)}¢`
+          });
+    
+    chart.xAxis().tickFormat(a =>{
+      let cards = maps.cardsByArtist.value.get(a);
+      return `${a} - ${cards.length}`;
+    });
+    chart.margins().left = 50;
+    chart.ordering(x => -x.value.length);
   }
 
   lists.pricesByDexNumber = () => makePokeList(
@@ -398,9 +437,8 @@ const firstGenSelector = document.querySelector('#gen1-favorite');
     }
   }
 
+  lists.favorites = updateFirstGenFavorite
+
   for (let key in lists) lists[key]();
-
-
-  updateFirstGenFavorite();
   dc.renderAll();
 })();

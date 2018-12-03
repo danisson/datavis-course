@@ -1,2454 +1,2454 @@
-set	num	name	price
-sm1	1	Caterpie	0.04
-sm2	1	Bellsprout	0.01
-sm3	1	Caterpie	0.03
-sm35	1	Bulbasaur	0.05
-sm4	1	Weedle	0.03
-sm5	1	Exeggcute	0.04
-sm6	1	Exeggcute	0.04
-sm7	1	Bellsprout	0.04
-sm75	1	Charmander	0.09
-sm8	1	Tangela	0.05
-sm1	2	Metapod	0.04
-sm2	2	Weepinbell	0.04
-sm3	2	Metapod	0.03
-sm35	2	Ivysaur	0.05
-sm4	2	Kakuna	0.05
-sm5	2	Yanma	0.03
-sm6	2	Alolan Exeggutor	0.77
-sm7	2	Weepinbell	0.05
-sm75	2	Charmeleon	0.12
-sm8	2	Tangrowth	0.1
-sm1	3	Butterfree	0.09
-sm2	3	Victreebel	0.08
-sm3	3	Butterfree	0.08
-sm35	3	Venusaur	0.15
-sm4	3	Beedrill	0.09
-sm5	3	Yanmega	0.05
-sm6	3	Snover	0.03
-sm7	3	Victreebel	0.14
-sm75	3	Charizard	1.7
-sm8	3	Scyther	0.05
-sm1	4	Paras	0.03
-sm2	4	Petilil	0.04
-sm3	4	Oddish	0.03
-sm35	4	Shroomish	0.04
-sm4	4	Exeggcute	0.04
-sm5	4	Roselia	0.03
-sm6	4	Abomasnow	0.06
-sm7	4	Scyther	0.09
-sm75	4	Torchic	0.1
-sm8	4	Pinsir	0.06
-sm1	5	Parasect	0.08
-sm2	5	Lilligant	0.04
-sm3	5	Gloom	0.03
-sm35	5	Breloom	0.06
-sm4	5	Cacnea	0.04
-sm5	5	Roserade	0.07
-sm6	5	Scatterbug	0.02
-sm7	5	Spinarak	0.03
-sm75	5	Combusken	0.1
-sm8	5	Chikorita	0.05
-sm1	6	Pinsir	0.05
-sm2	6	Phantump	0.04
-sm3	6	Vileplume	0.1
-sm35	6	Carnivine	0.05
-sm4	6	Cacturne	0.09
-sm5	6	Turtwig	0.03
-sm6	6	Scatterbug	0.02
-sm7	6	Ariados	0.2
-sm75	6	Blaziken	0.04
-sm8	6	Chikorita	0.05
-sm1	7	Surskit	0.02
-sm2	7	Trevenant	0.08
-sm3	7	Tangela	0.03
-sm35	7	Shaymin	0.1
-sm4	7	Karrablast	0.03
-sm5	7	Turtwig	0.02
-sm6	7	Spewpa	0.03
-sm7	7	Treecko	0.05
-sm75	7	Victini Prism Star	0.48
-sm8	7	Bayleef	0.09
-sm1	8	Masquerain	0.05
-sm2	8	Wimpod	0.02
-sm3	8	Tangrowth	0.1
-sm35	8	Virizion	0.15
-sm4	8	Shelmet	0.03
-sm5	8	Grotle	0.03
-sm6	8	Vivillon	0.07
-sm7	8	Treecko	0.03
-sm75	8	Darumaka	0.1
-sm8	8	Meganium	0.15
-sm1	9	Rowlet	0.06
-sm2	9	Golisopod	0.1
-sm3	9	Ledyba	0.03
-sm35	9	Shining Genesect	5
-sm4	9	Accelgor	0.04
-sm5	9	Torterra	0.2
-sm6	9	Skiddo	0.03
-sm7	9	Grovyle	0.05
-sm75	9	Darmanitan	0.1
-sm8	9	Spinarak	0.05
-sm1	10	Dartrix	0.08
-sm2	10	Victini	0.1
-sm3	10	Ledian	0.09
-sm35	10a	Entei-GX	1.75
-sm35	10	Entei-GX	1.66
-sm4	10	Skiddo	0.03
-sm5	10	Cherubi	0.03
-sm6	10	Gogoat	0.04
-sm7	10	Sceptile	0.15
-sm75	10	Heatmor	0.1
-sm8	10	Ariados	0.06
-sm1	11	Decidueye	0.05
-sm2	11	Litwick	0.04
-sm3	11	Heracross	0.09
-sm35	11	Torkoal	0.05
-sm4	11	Gogoat	0.1
-sm5	11	Cherrim	0.04
-sm6	11	Pheromosa	0.16
-sm7	11	Seedot	0.03
-sm75	11	Reshiram-GX	1.8
-sm8	11	Hoppip	0.05
-sm1	12	Decidueye-GX	7.99
-sm2	12	Lampent	0.04
-sm3	12	Pansage	0.03
-sm35	12	Larvesta	0.04
-sm4	12	Alolan Marowak	0.3
-sm5	12	Carnivine	0.04
-sm6	12	Alolan Marowak	0.1
-sm7	12	Seedot	0.03
-sm75	12	Litten	0.1
-sm8	12	Hoppip	0.06
-sm1	13	Grubbin	0.05
-sm2	13	Chandelure	0.09
-sm3	13	Simisage	0.05
-sm35	13	Volcarona	0.07
-sm4	13	Numel	0.01
-sm5	13	Leafeon-GX	2
-sm6	13	Heatran	0.07
-sm7	13	Nuzleaf	0.05
-sm75	13	Salandit	0.1
-sm8	13	Skiploom	0.15
-sm1	14	Fomantis	0.05
-sm2	14	Oricorio	0.08
-sm3	14	Dewpider	0.03
-sm35	14	Reshiram	0.1
-sm4	14	Camerupt	0.07
-sm5	14	Mow Rotom	0.09
-sm6	14	Fennekin	0.04
-sm7	14	Shiftry-GX	1.74
-sm75	14	Salazzle	0.1
-sm8	14	Jumpluff	4
-sm1	15	Lurantis-GX	1.5
-sm2	15	Salandit	0.03
-sm3	15	Araquanid	0.05
-sm35	15	Litten	0.04
-sm4	15	Staryu	0.03
-sm5	15	Shaymin	0.13
-sm6	15	Fennekin	0.04
-sm7	15	Surskit	0.03
-sm75	15	Horsea	0.05
-sm8	15	Pineco	0.05
-sm1	16	Morelull	0.03
-sm2	16	Salazzle	0.09
-sm3	16	Wimpod	0.04
-sm35	16	Torracat	0.06
-sm4	16	Starmie	0.08
-sm5	16	Dewpider	0.03
-sm6	16	Braixen	0.05
-sm7	16	Masquerain	0.05
-sm75	16	Horsea	0.05
-sm8	16	Shuckle	0.14
-sm1	17	Shiinotic	0.18
-sm2	17	Turtonator	0.07
-sm3	17	Golisopod-GX	1.58
-sm35	17	Incineroar	0.07
-sm4	17	Magikarp	0.04
-sm5	17	Araquanid	0.06
-sm6	17	Delphox	0.1
-sm7	17	Volbeat	0.05
-sm75	17	Seadra	0.1
-sm8	17	Shuckle-GX	2.6
-sm1	18	Bounsweet	0.03
-sm2	18	Turtonator-GX	1.5
-sm3	18	Charmander	0.05
-sm35	18	Totodile	0.05
-sm4	18	Gyarados-GX	1.75
-sm5	18	Magmar	0.04
-sm6	18	Litleo	0.02
-sm7	18	Illumise	0.05
-sm75	18	Kingdra-GX	2
-sm8	18	Heracross	0.08
-sm1	19	Steenee	0.05
-sm2	19a	Alolan Sandshrew	None
-sm2	19	Alolan Sandshrew	0.04
-sm3	19	Charmeleon	0.04
-sm35	19	Croconaw	0.05
-sm4	19	Swinub	0.03
-sm5	19	Magmortar	0.11
-sm6	19	Pyroar	0.1
-sm7	19	Cacnea	0.05
-sm75	19	Magikarp	0.05
-sm8	19	Celebi Prism Star	0.1
-sm1	20	Tsareena	0.1
-sm2	20	Alolan Sandslash	0.05
-sm3	20	Charizard-GX	6.74
-sm35	20	Feraligatr	0.09
-sm4	20	Piloswine	0.03
-sm5	20	Chimchar	0.04
-sm6	20	Palkia-GX	1
-sm7	20	Cacturne	0.05
-sm75	20	Gyarados	0.1
-sm8	20	Treecko	0.05
-sm1	21	Growlithe	0.04
-sm2	21a	Alolan Vulpix	None
-sm2	21	Alolan Vulpix	0.09
-sm3	21	Ho-Oh-GX	1.99
-sm35	21	Qwilfish	0.05
-sm4	21	Mamoswine	0.09
-sm5	21	Chimchar	0.03
-sm6	21	Froakie	0.04
-sm7	21	Tropius	0.05
-sm75	21	Lapras	0.1
-sm8	21	Grovyle	0.1
-sm1	22	Arcanine	0.25
-sm2	22	Alolan Ninetales-GX	1.8
-sm3	22	Pansear	0.03
-sm35	22	Buizel	0.06
-sm4	22	Remoraid	0.03
-sm5	22	Monferno	0.05
-sm6	22	Froakie	0.05
-sm7	22	Dhelmise	0.08
-sm75	22	Totodile	0.05
-sm8	22	Sceptile-GX	4.73
-sm1	23	Torkoal	0.03
-sm2	23	Tentacool	0.04
-sm3	23	Simisear	0.03
-sm35	23	Floatzel	0.05
-sm4	23	Octillery	0.05
-sm5	23	Infernape	0.25
-sm6	23	Frogadier	0.08
-sm7	23	Slugma	0.05
-sm75	23	Croconaw	0.1
-sm8	23	Wurmple	0.05
-sm1	24	Litten	0.03
-sm2	24	Tentacruel	0.04
-sm3	24	Heatmor	0.05
-sm35	24	Palkia	0.1
-sm4	24	Corphish	0.03
-sm5	24	Heat Rotom	0.1
-sm6	24	Greninja-GX	4
-sm7	24	Magcargo	0.45
-sm75	24	Feraligatr	0.1
-sm8	24	Wurmple	0.05
-sm1	25	Torracat	0.05
-sm2	25	Politoed	0.1
-sm3	25	Salazzle-GX	1.74
-sm35	25	Manaphy	0.09
-sm4	25	Crawdaunt	0.1
-sm5	25	Salandit	0.04
-sm6	25	Clauncher	0.04
-sm7	25	Torchic	0.03
-sm75	25	Wooper	0.1
-sm8	25	Silcoon	0.06
-sm1	26	Incineroar	0.09
-sm2	26	Delibird	0.04
-sm35	26	Keldeo	0.05
-sm4	26	Feebas	0.03
-sm5	26	Salazzle	0.1
-sm6	26	Clawitzer	0.01
-sm7	26	Torchic	0.03
-sm75	26	Quagsire	0.36
-sm8	26	Beautifly	0.1
-sm1	27	Incineroar-GX	2.8
-sm2	27	Carvanha	0.04
-sm3	26	Turtonator	0.05
-sm3	27	Alolan Vulpix	0.03
-sm35	27	Shining Volcanion	2.5
-sm4	27	Milotic	0.09
-sm5	27	Turtonator	0.04
-sm6	27	Amaura	0.04
-sm7	27	Combusken	0.05
-sm75	27	Corsola	0.05
-sm8	27	Cascoon	0.06
-sm1	28	Psyduck	0.03
-sm2	28	Sharpedo	0.05
-sm3	28	Alolan Ninetales	0.28
-sm35	28	Pikachu	0.05
-sm4	28	Regice	0.1
-sm5	28	Alolan Sandshrew	0.05
-sm6	28	Aurorus	0.1
-sm7	28	Blaziken-GX	1.74
-sm75	28	Feebas	0.05
-sm8	28	Dustox	0.1
-sm1	29	Golduck	0.04
-sm2	29	Wailmer	0.03
-sm3	29	Horsea	0.05
-sm35	29	Raichu-GX	1.99
-sm4	29	Shellos	0.01
-sm5	29	Alolan Sandslash	0.09
-sm6	29	Bergmite	0.03
-sm7	29	Torkoal	0.05
-sm75	29	Milotic	0.09
-sm8	29	Nincada	0.06
-sm1	30	Poliwag	0.04
-sm2	30	Wailord	0.08
-sm3	30	Seadra	0.05
-sm35	30	Voltorb	0.04
-sm4	30	Pikachu	0.05
-sm5	30	Alolan Vulpix	0.04
-sm6	30	Avalugg	0.07
-sm7	30	Oricorio	0.04
-sm75	30	Phione	0.1
-sm8	30	Ninjask	0.05
-sm1	31	Poliwhirl	0.05
-sm2	31	Snorunt	0.04
-sm3	31	Kingdra	0.12
-sm35	31	Electrode	0.05
-sm4	31	Alolan Raichu	0.21
-sm5	31	Piplup	0.04
-sm6	31	Volcanion Prism Star	0.45
-sm7	31	Articuno-GX	1.73
-sm75	31	Wishiwashi	0.1
-sm8	31	Combee	0.05
-sm1	32	Poliwrath	0.2
-sm2	32	Glalie	0.04
-sm3	32	Magikarp	0.05
-sm35	32	Raikou	0.1
-sm4	32	Alolan Geodude	0.04
-sm5	32	Piplup	0.04
-sm6	32	Dewpider	0.05
-sm7	32	Mudkip	0.03
-sm75	32	Trapinch	0.05
-sm8	32	Vespiquen	0.1
-sm1	33	Shellder	0.04
-sm2	33	Vanillite	0.04
-sm3	33	Gyarados	0.15
-sm35	33	Plusle	0.05
-sm4	33	Alolan Graveler	0.05
-sm5	33	Prinplup	0.04
-sm6	33	Araquanid	0.02
-sm7	33	Mudkip	0.03
-sm75	33	Hydreigon	0.1
-sm8	33	Shaymin	0.1
-sm1	34	Cloyster	0.09
-sm2	34	Vanillish	0.01
-sm3	34	Marill	0.03
-sm35	34	Minun	0.04
-sm4	34	Alolan Golem-GX	1.99
-sm5	34	Empoleon	0.12
-sm6	34	Magnemite	0.03
-sm7	34	Marshtomp	0.05
-sm75	34	Dratini	0.1
-sm8	34	Virizion-GX	1.59
-sm1	35	Lapras-GX	1.75
-sm2	35	Vanilluxe	0.08
-sm3	35	Azumarill	0.06
-sm35	35	Zekrom	0.12
-sm4	35	Emolga	0.04
-sm5	35	Buizel	0.04
-sm6	35	Magneton	0.05
-sm7	35	Swampert	0.15
-sm75	35	Dratini	0.1
-sm8	35	Skiddo	0.05
-sm1	36	Corsola	0.05
-sm2	36	Alomomola	0.02
-sm3	36	Panpour	0.02
-sm35	36	Ekans	0.04
-sm4	36	Gastly	0.03
-sm5	36	Floatzel	0.04
-sm6	36	Magnezone	0.1
-sm7	36	Lotad	0.03
-sm75	36	Dragonair	0.1
-sm8	36	Gogoat	0.05
-sm1	37	Wingull	0.04
-sm2	37	Wishiwashi	0.03
-sm3	37	Simipour	0.03
-sm35	37	Arbok	0.06
-sm4	37	Haunter	0.05
-sm5	37	Snover	0.04
-sm6	37	Helioptile	0.04
-sm7	37	Lombre	0.05
-sm75	37	Dragonite-GX	2.75
-sm8	37	Tapu Bulu	0.1
-sm1	38	Pelipper	0.04
-sm2	38	Wishiwashi-GX	1.65
-sm3	38	Bruxish	0.09
-sm35	38	Jynx	0.03
-sm4	38	Gengar	0.44
-sm5	38	Abomasnow	0.08
-sm6	38	Heliolisk	0.05
-sm7	38	Ludicolo	0.49
-sm75	38	Vibrava	0.1
-sm8	38	Moltres	0.1
-sm1	39	Popplio	0.01
-sm2	39	Mareanie	0.04
-sm3	39	Tapu Fini-GX	1.69
-sm35	39	Mewtwo-GX	2.29
-sm4	39	Misdreavus	0.02
-sm5	39	Glaceon-GX	2
-sm6	39	Xurkitree	0.1
-sm7	39	Wailmer	0.03
-sm75	39	Flygon	0.1
-sm8	39	Cyndaquil	0.06
-sm1	40	Brionne	0.03
-sm2	40	Alolan Geodude	0.04
-sm3	40	Pikachu	0.04
-sm35	40	Shining Mew	7.92
-sm4	40	Mismagius	0.08
-sm5	40	Wash Rotom	0.09
-sm6	40	Rotom	0.07
-sm7	40	Wailord	0.1
-sm75	40	Altaria	0.1
-sm8	40	Cyndaquil	0.06
-sm1	41	Primarina	0.1
-sm2	41	Alolan Graveler	0.04
-sm3	41	Raichu	0.18
-sm35	41	Latios	0.09
-sm4	41	Spoink	0.03
-sm5	41	Frost Rotom	0.1
-sm6	41	Uxie	0.05
-sm7	41	Clamperl	0.04
-sm75	41	Altaria-GX	1.98
-sm8	41	Quilava	0.08
-sm1	42	Primarina-GX	1.84
-sm2	42	Alolan Golem	0.11
-sm3	42	Electabuzz	0.03
-sm35	42	Shining Jirachi	1.99
-sm4	42	Grumpig	0.03
-sm5	42	Manaphy	0.04
-sm6	42	Mesprit	0.05
-sm7	42	Huntail	0.05
-sm75	42	Bagon	0.1
-sm8	42	Typhlosion	0.2
-sm1	43	Crabominable	0.09
-sm2	43	Helioptile	0.04
-sm3	43	Electivire	0.08
-sm35	43	Golett	0.03
-sm4	43	Chimecho	0.03
-sm5	43	Electabuzz	0.04
-sm6	43	Azelf	0.05
-sm7	43	Gorebyss	0.05
-sm75	43	Shelgon	0.1
-sm8	43	Slugma	0.06
-sm1	44	Wishiwashi	0.02
-sm2	44	Heliolisk	0.09
-sm3	44	Tynamo	0.03
-sm35	44	Golurk	0.07
-sm4	44	Pumpkaboo	0.04
-sm5	44	Electivire	0.08
-sm6	44	Espurr	0.04
-sm7	44	Luvdisc	0.03
-sm75	44	Salamence-GX	0.99
-sm8	44	Magcargo-GX	2
-sm1	45	Dewpider	0.03
-sm2	45	Vikavolt-GX	1.5
-sm3	45	Eelektrik	0.05
-sm35	45	Marshadow	1.24
-sm4	45	Gourgeist	0.1
-sm5	45	Shinx	0.04
-sm6	45	Meowstic	0.05
-sm7	45	Regice	0.04
-sm75	45	Druddigon	0.1
-sm8	45	Houndour	0.06
-sm1	46	Araquanid	0.05
-sm2	46	Oricorio	0.05
-sm3	46	Eelektross	0.06
-sm35	46	Stunfisk	0.04
-sm4	46	Salandit	0.04
-sm5	46	Shinx	0.03
-sm6	46	Honedge	0.05
-sm7	46	Kyogre	0.15
-sm75	46	Zekrom	0.1
-sm8	46	Houndoom	0.1
-sm1	47	Pyukumuku	0.05
-sm2	47	Tapu Koko-GX	1
-sm3	47	Togedemaru	0.05
-sm35	47	Spiritomb	0.06
-sm4	47	Salazzle	0.25
-sm5	47	Luxio	0.04
-sm6	47	Honedge	0.02
-sm7	47	Voltorb	0.03
-sm75	47	Kyurem	0.1
-sm8	47	Entei	0.1
-sm1	48	Bruxish	0.06
-sm2	48	Slowpoke	0.03
-sm3	48	Slowking	0.08
-sm35	48	Purrloin	0.04
-sm4	48	Oranguru	0.1
-sm5	48	Luxray	0.18
-sm6	48	Doublade	0.04
-sm7	48	Electrode-GX	1.66
-sm75	48	White Kyurem-GX	1.7
-sm8	48	Heatran	0.1
-sm1	49	Chinchou	0.03
-sm2	49	Slowbro	0.03
-sm3	49	Wobbuffet	0.05
-sm35	49	Liepard	0.05
-sm4	49	Nihilego-GX	1.99
-sm5	49	Pachirisu	0.03
-sm6	49	Aegislash	0.09
-sm7	49	Chinchou	0.03
-sm75	49	Zygarde	0.1
-sm8	49	Victini	0.1
-sm1	50	Lanturn	0.08
-sm2	50	Trubbish	0.05
-sm3	50	Seviper	0.05
-sm35	50	Scraggy	0.04
-sm4	50	Mankey	0.03
-sm5	50	Rotom	0.04
-sm6	50	Inkay	0.05
-sm7	50	Lanturn	0.03
-sm75	50	Turtonator	0.1
-sm8	50	Litleo	0.05
-sm1	51	Charjabug	0.08
-sm2	51	Garbodor	0.17
-sm2	51a	Garbodor	None
-sm3	51	Duskull	0.03
-sm35	51	Scrafty	0.01
-sm4	51	Primeape	0.08
-sm5	51	Drifloon	0.04
-sm6	51	Malamar	1.71
-sm7	51	Electrike	0.04
-sm75	51	Drampa	0.1
-sm8	51	Pyroar	0.1
-sm1	52	Vikavolt	1.07
-sm2	52	Gothita	0.01
-sm3	52	Dusclops	0.05
-sm35	52	Zorua	0.05
-sm4	52	Cubone	0.04
-sm5	52	Drifblim	0.05
-sm6	52	Skrelp	0.02
-sm7	52	Manectric	0.07
-sm75	52	Jangmo-o	0.1
-sm8	52	Blacephalon-GX	22.99
-sm1	53	Togedemaru	0.03
-sm2	53	Gothorita	0.03
-sm3	53	Dusknoir	0.1
-sm35	53	Zoroark-GX	5.47
-sm4	53	Regirock	0.09
-sm5	53	Spiritomb	0.04
-sm6	53	Dragalge	0.1
-sm7	53	Plusle	0.01
-sm75	53	Hakamo-o	0.05
-sm8	53	Alolan Vulpix	0.05
-sm1	54	Zubat	0.02
-sm2	54	Gothitelle	0.05
-sm3	54	Croagunk	0.04
-sm35	54	Yveltal	0.1
-sm4	54	Gastrodon	0.03
-sm5	54	Skorupi	0.03
-sm6	54	Hoopa	0.05
-sm7	54	Minun	0.03
-sm75	54	Kommo-o	0.1
-sm8	54	Slowpoke	0.05
-sm1	55	Golbat	0.05
-sm2	55	Oricorio	0.08
-sm3	55	Toxicroak	0.1
-sm35	55	Hoopa	0.25
-sm4	55	Stufful	0.03
-sm5	55	Drapion	0.07
-sm6	55	Poipole	0.1
-sm7	55	Oricorio	0.05
-sm75	55	Kangaskhan	0.05
-sm8	55	Slowking	0.09
-sm1	56	Crobat	0.1
-sm2	56	Oricorio	0.08
-sm3	56	Venipede	0.05
-sm35	56	Shining Rayquaza	4.25
-sm4	56	Bewear	0.12
-sm5	56	Croagunk	0.03
-sm6	56	Naganadel-GX	1.49
-sm7	56	Mr. Mime-GX	1.65
-sm75	56	Swablu	0.05
-sm8	56	Lapras	0.1
-sm1	57	Alolan Grimer	0.03
-sm2	57	Toxapex-GX	1.74
-sm3	57	Whirlipede	0.05
-sm35	57	Shining Arceus	8
-sm4	57	Buzzwole-GX	6.96
-sm5	57	Toxicroak	0.09
-sm6	57	Cubone	0.02
-sm7	57	Gulpin	0.03
-sm75	57	Swablu	0.05
-sm8	57	Delibird	0.09
-sm1	58	Alolan Muk	0.25
-sm2	58	Mimikyu	0.14
-sm3	58	Scolipede	0.08
-sm35	58	Damage Mover	0.02
-sm4	58	Houndour	0.04
-sm5	58	Giratina Prism Star	0.2
-sm6	58	Torterra	0.1
-sm7	58	Swalot	0.03
-sm75	58	Blaine’s Last Stand	0.1
-sm8	58	Mantine	0.06
-sm1	59	Drowzee	0.03
-sm2	59	Dhelmise	0.07
-sm3	59	Espurr	0.03
-sm35	59	Energy Retrieval	0.1
-sm4	59	Houndoom	0.1
-sm5	59	Cresselia	0.13
-sm6	59	Infernape	0.09
-sm7	59	Spoink	0.03
-sm75	59	Dragon Talon	0.1
-sm8	59	Suicune	0.14
-sm1	60	Hypno	0.04
-sm2	60	Tapu Lele-GX	18
-sm3	60	Meowstic	0.05
-sm35	60	Great Ball	0.08
-sm4	60	Deino	0.03
-sm5	60	Cosmog	0.05
-sm6	60	Gible	0.04
-sm7	60	Grumpig	0.05
-sm75	60	Fiery Flint	0.4
-sm8	60	Suicune-GX	1.27
-sm1	61	Espeon-GX	1.7
-sm2	61	Lunala	0.1
-sm3	61	Sandygast	0.04
-sm35	61	Hau	0.08
-sm4	61	Zweilous	0.03
-sm5	61	Cosmoem	0.07
-sm6	61	Gabite	0.07
-sm7	61	Lunatone	0.1
-sm75	61	Lance Prism Star	0.5
-sm8	61	Cubchoo	0.05
-sm1	62	Mareanie	0.05
-sm2	62	Machop	0.04
-sm3	62	Palossand	0.09
-sm35	62	Lillie	0.08
-sm4	62	Hydreigon	0.1
-sm5	62	Lunala Prism Star	0.5
-sm6	62	Garchomp	0.7
-sm7	62	Solrock	0.03
-sm75	62	Switch Raft	0.24
-sm8	62	Beartic	0.1
-sm1	63	Toxapex	0.17
-sm2	63	Machop	0.03
-sm3	63	Necrozma-GX	2.92
-sm35	63	Pokémon Breeder	0.1
-sm4	63	Guzzlord-GX	1.89
-sm4	63a	Guzzlord-GX	2
-sm5	63	Dawn Wings Necrozma-GX	1.95
-sm6	63	Croagunk	0.03
-sm7	63	Shuppet	0.03
-sm75	63	Wela Volcano Park	0.14
-sm8	63	White Kyurem	0.75
-sm1	64	Cosmog	0.04
-sm2	64	Machoke	0.04
-sm3	64	Machamp-GX	1.78
-sm35	64	Pokémon Catcher	0.07
-sm4	64	Mawile	0.03
-sm5	64	Cranidos	0.04
-sm6	64	Toxicroak	0.07
-sm7	64	Shuppet	0.04
-sm75	64	Zinnia	0.05
-sm8	64	Popplio	0.05
-sm1	65	Cosmoem	0.09
-sm2	65	Machamp	0.1
-sm3	65	Rhyhorn	0.05
-sm35	65	Sophocles	0.05
-sm4	65	Aron	0.03
-sm5	65	Rampardos	0.15
-sm6	65	Pancham	0.05
-sm7	65	Banette	0.05
-sm75	65	Reshiram-GX	5
-sm8	65	Popplio	0.05
-sm1	66	Lunala-GX	1.5
-sm2	66	Sudowoodo	0.04
-sm3	66	Rhydon	0.05
-sm35	66	Super Scoop Up	0.09
-sm4	66	Lairon	0.03
-sm5	66	Riolu	0.04
-sm6	66	Binacle	0.03
-sm7	66	Banette-GX	1.8
-sm75	66	Kingdra-GX	5
-sm8	66	Brionne	0.06
-sm1	67	Makuhita	0.02
-sm2	67	Gligar	0.02
-sm3	67	Rhyperior	0.13
-sm35	67	Switch	0.09
-sm4	67	Aggron	0.16
-sm5	67	Lucario	0.45
-sm6	67	Barbaracle	0.08
-sm7	67	Deoxys	3
-sm75	67	Dragonite-GX	6.75
-sm8	67	Primarina	0.1
-sm1	68	Hariyama	0.09
-sm2	68	Gliscor	0.04
-sm3	68	Lunatone	0.05
-sm35	68	Ultra Ball	0.2
-sm4	68	Registeel	0.1
-sm5	68	Hippopotas	0.04
-sm6	68	Tyrunt	0.05
-sm7	68	Deoxys	0.05
-sm75	68	Altaria-GX	2.7
-sm8	68	Mareanie	0.05
-sm1	69	Roggenrola	0.01
-sm2	69	Nosepass	0.04
-sm3	69	Solrock	0.05
-sm35	69	Double Colorless Energy	0.67
-sm4	69	Escavalier	0.08
-sm5	69	Hippowdon	0.05
-sm6	69	Tyrantrum	0.13
-sm7	69	Deoxys	0.05
-sm75	69	Blaine’s Last Stand	4.2
-sm8	69	Toxapex	0.1
-sm1	70	Boldore	0.01
-sm2	70	Barboach	0.02
-sm3	70	Riolu	0.05
-sm35	70	Warp Energy	0.05
-sm4	70	Kartana-GX	1.75
-sm5	70	Passimian	0.03
-sm6	70	Hawlucha	0.04
-sm7	70	Lunala	0.14
-sm75	70	Zinnia	11.23
-sm8	70	Bruxish	0.05
-sm1	71	Gigalith	0.09
-sm2	71	Whiscash	0.07
-sm3	71	Lucario	0.12
-sm35	71	Entei-GX	1.49
-sm4	71	Jigglypuff	0.05
-sm5	71	Murkrow	0.04
-sm6	71	Zygarde	0.04
-sm7	71	Onix	0.03
-sm75	71	Reshiram-GX	10
-sm8	71	Electabuzz	0.05
-sm1	72	Crabrawler	0.04
-sm2	72	Pancham	0.04
-sm3	72	Sawk	0.05
-sm35	72	Mewtwo-GX	2.79
-sm4	72	Wigglytuff	0.08
-sm5	72	Honchkrow	0.05
-sm6	72	Zygarde	0.08
-sm7	72	Phanpy	0.03
-sm75	72	Altaria-GX	7
-sm8	72	Electivire	0.1
-sm1	73	Passimian	0.03
-sm2	73	Rockruff	0.04
-sm3	73	Crabrawler	0.03
-sm35	73	Pokémon Breeder	1.7
-sm4	73	Xerneas	0.19
-sm5	73	Sneasel	0.05
-sm6	73	Zygarde-GX	2.42
-sm7	73	Donphan	0.05
-sm75	73	Salamence-GX	9.39
-sm8	73	Chinchou	0.06
-sm1	74	Sandygast	0.02
-sm2	74	Lycanroc-GX	4
-sm3	74	Crabominable	0.06
-sm35	74	Entei-GX	10.76
-sm4	74	Alolan Exeggutor-GX	1.97
-sm5	74	Weavile	2
-sm6	74	Diancie Prism Star	1.93
-sm7	74	Larvitar	0.03
-sm75	74	White Kyurem-GX	8.5
-sm8	74	Lanturn	0.1
-sm1	75	Palossand	0.06
-sm2	75	Mudbray	0.04
-sm3	75	Lycanroc	0.1
-sm35	75	Raichu-GX	12
-sm4	75	Jangmo-o	0.03
-sm5	75	Stunky	0.04
-sm6	75	Rockruff	0.02
-sm7	75	Pupitar	0.05
-sm75	75	Dragon Talon	6.26
-sm8	75	Mareep	0.06
-sm1	76	Alolan Rattata	0.04
-sm2	76	Mudsdale	0.1
-sm3	76	Lycanroc	0.08
-sm35	76	Mewtwo-GX	27.08
-sm4	76	Hakamo-o	0.03
-sm5	76	Skuntank	0.03
-sm6	76	Lycanroc	0.08
-sm7	76	Meditite	0.03
-sm75	76	Fiery Flint	8
-sm8	76	Mareep	0.05
-sm1	77	Alolan Raticate	0.05
-sm2	77	Minior	0.12
-sm3	77	Mudbray	0.03
-sm35	77	Zoroark-GX	18.28
-sm4	77	Kommo-o	0.08
-sm5	77	Darkrai Prism Star	0.2
-sm6	77	Buzzwole	0.95
-sm7	77	Medicham	0.05
-sm75	77	Switch Raft	8.86
-sm8	77	Flaaffy	0.09
-sm1	78	Alolan Meowth	0.04
-sm2	78	Murkrow	0.04
-sm3	78	Mudsdale	0.06
-sm35	78	Mewtwo-GX	11.75
-sm4	78	Miltank	0.04
-sm5	78	Alolan Diglett	0.04
-sm6	78	Pangoro	0.05
-sm7	78	Baltoy	0.04
-sm75	78	Ultra Necrozma-GX	52.81
-sm8	78	Ampharos	0.1
-sm1	79	Alolan Persian	0.05
-sm2	79	Honchkrow	0.08
-sm3	79	Passimian	0.06
-sm4	79	Swablu	0.03
-sm5	79	Alolan Dugtrio	0.09
-sm6	79	Yveltal-GX	1.5
-sm7	79	Claydol	0.07
-sm8	79	Raikou	0.1
-sm1	80	Umbreon-GX	1.72
-sm2	80	Sableye	0.04
-sm3	80	Marshadow-GX	1.75
-sm4	80	Altaria	0.05
-sm5	80	Magnemite	0.05
-sm6	80	Guzzlord	0.1
-sm7	80	Regirock	0.05
-sm8	80	Pachirisu	0.06
-sm1	81	Carvanha	0.04
-sm2	81	Absol	0.15
-sm3	81	Alolan Rattata	0.04
-sm4	81	Starly	0.03
-sm5	81	Magnemite	0.03
-sm6	81	Empoleon	0.11
-sm7	81	Groudon	0.1
-sm8	81	Blitzle	0.06
-sm1	82	Sharpedo	0.15
-sm2	82	Pangoro	0.08
-sm3	82	Alolan Raticate	0.08
-sm4	82	Staravia	0.03
-sm5	82	Magneton	0.04
-sm6	82	Dialga-GX	1.75
-sm7	82	Palossand-GX	1
-sm8	82	Zebstrika	0.83
-sm1	83	Sandile	0.04
-sm2	83	Beldum	0.05
-sm3	83	Alolan Grimer	0.05
-sm4	83	Staraptor	0.09
-sm5	83	Magnezone	0.31
-sm6	83	Flabébé	0.04
-sm7	83	Minior	0.05
-sm8	83	Stunfisk	0.06
-sm1	84	Krokorok	0.05
-sm2	84	Metang	0.02
-sm3	84	Alolan Muk-GX	1.5
-sm4	84	Regigigas	0.15
-sm4	84a	Regigigas	None
-sm5	84	Shieldon	0.04
-sm6	84	Flabébé	0.05
-sm7	84	Alolan Rattata	0.03
-sm8	84	Dedenne	0.06
-sm1	85	Krookodile	0.1
-sm2	85	Metagross-GX	2
-sm3	85	Sneasel	0.03
-sm4	85	Minccino	0.03
-sm5	85	Bastiodon	0.1
-sm6	85	Floette	0.05
-sm7	85	Alolan Raticate-GX	0.81
-sm8	85	Tapu Koko	0.1
-sm1	86	Alolan Diglett	0.04
-sm2	86	Probopass	0.05
-sm3	86	Weavile	0.05
-sm4	86	Cinccino	0.03
-sm5	86	Bronzor	0.03
-sm6	86	Florges	0.09
-sm7	86	Sneasel	0.03
-sm8	86	Zeraora-GX	12.07
-sm1	87	Alolan Dugtrio	0.1
-sm2	87	Solgaleo	0.1
-sm3	87	Darkrai	0.14
-sm4	87	Bunnelby	0.03
-sm5	87	Bronzong	0.03
-sm6	87	Sylveon	0.07
-sm7	87	Tyranitar	0.2
-sm8	87	Natu	0.09
-sm1	88	Skarmory	0.04
-sm2	88	Clefairy	0.04
-sm3	88a	Darkrai-GX	1.82
-sm3	88	Darkrai-GX	1.5
-sm4	88	Diggersby	0.03
-sm5	88	Heatran	0.09
-sm6	88	Dedenne	0.05
-sm7	88	Sableye	0.05
-sm8	88	Xatu	0.09
-sm1	89	Solgaleo-GX	4
-sm2	89	Clefable	0.04
-sm3	89	Inkay	0.04
-sm4	89	Type: Null	0.15
-sm5	89	Solgaleo Prism Star	0.44
-sm6	89	Klefki	0.05
-sm7	89	Steelix	0.2
-sm8	89	Espeon	0.1
-sm1	90	Snubbull	0.03
-sm2	90	Cottonee	0.04
-sm3	90	Malamar	0.06
-sm4	90	Silvally-GX	1.68
-sm5	90	Dusk Mane Necrozma-GX	2.5
-sm6	90	Xerneas-GX	1.49
-sm7	90	Scizor-GX	1.75
-sm8	90	Unown	0.1
-sm1	91	Granbull	0.05
-sm2	91	Whimsicott	0.05
-sm3	91	Ralts	0.04
-sm4	91	Counter Catcher	0.1
-sm5	91	Magearna	0.1
-sm6	91	Goomy	0.05
-sm7	91	Mawile	0.05
-sm8	91	Unown	0.1
-sm1	92	Cutiefly	0.03
-sm2	92	Sylveon-GX	3.49
-sm3	92a	Kirlia	0.8
-sm3	92	Kirlia	0.03
-sm4	92	Dashing Pouch	0.03
-sm5	92	Morelull	0.04
-sm6	92	Goomy	0.03
-sm7	92	Beldum	0.03
-sm8	92	Unown	0.1
-sm1	93	Ribombee	0.1
-sm2	93	Comfey	0.1
-sm3	93	Gardevoir-GX	7.5
-sm4	93	Devoured Field	0.1
-sm5	93	Shiinotic	0.1
-sm6	93	Sliggoo	0.05
-sm7	93	Beldum	0.03
-sm8	93	Wobbuffet	None
-sm1	94	Dratini	0.04
-sm2	94	Goomy	0.04
-sm3	94	Diancie	0.09
-sm4	94	Fighting Memory	0.03
-sm5	94	Tapu Lele	0.2
-sm6	94	Goodra	0.09
-sm7	94	Metang	0.05
-sm8	94	Girafarig	0.09
-sm1	95	Dragonair	0.03
-sm2	95	Sliggoo	0.03
-sm3	95	Cutiefly	0.04
-sm4	95	Gladion	0.08
-sm5	95	Alolan Exeggutor	0.1
-sm6	95	Ultra Necrozma-GX	4.73
-sm7	95	Metagross	0.45
-sm8	95	Shedinja	0.1
-sm1	96	Dragonite	0.19
-sm2	96	Goodra	0.1
-sm3	96	Ribombee	0.05
-sm4	96	Lusamine	0.1
-sm5	96	Gible	0.03
-sm6	96	Arceus Prism Star	0.2
-sm7	96	Registeel	0.07
-sm8	96	Sableye	0.08
-sm1	97	Spearow	0.02
-sm2	97	Drampa	0.12
-sm3	97	Morelull	0.03
-sm4	97	Peeking Red Card	0.07
-sm5	97	Gible	0.03
-sm6	97	Bunnelby	0.03
-sm7	97	Jirachi Prism Star	0.23
-sm8	97	Giratina	3
-sm1	98	Fearow	0.04
-sm2	98	Jangmo-o	0.04
-sm3	98	Shiinotic	0.08
-sm4	98	Psychic Memory	0.03
-sm5	98	Gabite	0.04
-sm6	98	Diggersby	0.05
-sm7	98	Heatran	0.1
-sm8	98	Sigilyph-GX	1.47
-sm1	99	Kangaskhan	0.1
-sm2	99	Hakamo-o	0.02
-sm3	99	Noivern-GX	1.5
-sm4	99	Sea of Nothingness	0.05
-sm5	99	Garchomp	0.09
-sm6	99	Furfrou	0.05
-sm7	99	Solgaleo	0.15
-sm8	99	Yamask	0.05
-sm1	100	Tauros-GX	1.5
-sm2	100	Kommo-o-GX	1.98
-sm3	100	Zygarde	0.13
-sm4	100	Counter Energy	0.17
-sm5	100	Dialga-GX	1.5
-sm6	100	Noibat	0.05
-sm7	100	Celesteela	0.44
-sm8	100	Cofagrigus	0.14
-sm1	101	Eevee	0.24
-sm2	101	Chansey	0.05
-sm3	101	Meowth	0.04
-sm4	101	Gyarados-GX	4.51
-sm5	101	Palkia-GX	1.35
-sm6	101	Noivern	0.08
-sm7	101	Kartana	0.05
-sm8	101	Litwick	0.05
-sm1	102	Spinda	0.06
-sm2	102	Blissey	0.1
-sm3	102	Persian	0.07
-sm4	102	Alolan Golem-GX	1.53
-sm5	102	Lickitung	0.04
-sm6	102	Beast Ring	0.68
-sm7	102	Stakataka-GX	1.99
-sm8	102	Lampent	0.08
-sm1	103	Lillipup	0.04
-sm2	103	Taillow	0.02
-sm3	103	Porygon	0.05
-sm4	103	Nihilego-GX	2.49
-sm5	103	Lickilicky	0.1
-sm6	103	Bonnie	0.06
-sm7	103	Bagon	0.04
-sm8	103	Chandelure	0.1
-sm1	104	Herdier	0.03
-sm2	104	Swellow	0.07
-sm3	104	Porygon2	0.05
-sm4	104	Buzzwole-GX	11
-sm5	104	Eevee	0.04
-sm6	104	Crasher Wake	0.1
-sm7	104	Bagon	0.04
-sm8	104	Meloetta	0.1
-sm1	105	Stoutland	0.09
-sm2	105	Castform	0.04
-sm3	105	Porygon-Z	0.11
-sm3	105a	Porygon-Z	0.5
-sm4	105	Guzzlord-GX	3.39
-sm5	105	Eevee	0.05
-sm6	105	Diantha	0.31
-sm7	105	Shelgon	0.05
-sm8	105	Mareanie	0.05
-sm1	106	Pikipek	0.02
-sm2	106	Rayquaza	0.1
-sm3	106	Hoothoot	0.03
-sm4	106	Kartana-GX	3.44
-sm5	106	Buneary	0.03
-sm6	106	Eneporter	0.05
-sm7	106	Salamence	0.1
-sm8	106	Nihilego	0.15
-sm1	107	Trumbeak	0.03
-sm2	107	Patrat	0.03
-sm3	107	Noctowl	0.05
-sm4	107	Alolan Exeggutor-GX	2.25
-sm5	107	Lopunny	0.04
-sm6	107	Fossil Excavation Map	0.05
-sm7	107	Latias Prism Star	0.2
-sm8	107	Poipole	0.09
-sm1	108	Toucannon	0.05
-sm2	108	Watchog	0.04
-sm3	108	Bouffalant	0.05
-sm4	108	Silvally-GX	2.7
-sm5	108	Glameow	0.03
-sm6	108	Judge	0.19
-sm7	108	Latios Prism Star	0.2
-sm8	108	Naganadel	4.99
-sm1	109	Yungoos	0.03
-sm2	109	Fletchling	0.03
-sm3	109	Noibat	0.04
-sm4	109	Gladion	5.41
-sm5	109	Purugly	0.03
-sm6	109	Lady	0.15
-sm7	109	Rayquaza-GX	13.57
-sm8	109	Onix	0.05
-sm1	110	Gumshoos-GX	1.47
-sm2	110	Fletchinder	0.03
-sm3	110	Stufful	0.03
-sm4	110	Lusamine	8.31
-sm5	110	Fan Rotom	0.1
-sm6	110	Lysandre Prism Star	0.15
-sm7	110	Dunsparce	0.1
-sm8	110	Sudowoodo	0.08
-sm1	111	Stufful	0.03
-sm2	111	Talonflame	0.07
-sm3	111	Bewear	0.07
-sm4	111	Olivia	7.35
-sm5	111	Shaymin	0.07
-sm6	111	Lysandre Labs	0.05
-sm7	111	Wingull	0.03
-sm8	111	Phanpy	0.05
-sm1	112	Bewear	0.05
-sm2	112	Stufful	0.03
-sm3	112	Acerola	0.28
-sm4	112	Gyarados-GX	13.5
-sm5	112	Yungoos	0.04
-sm6	112	Metal Frying Pan	0.1
-sm7	112	Pelipper	0.05
-sm8	112	Donphan	0.1
-sm1	113	Oranguru	6.49
-sm2	113	Bewear	0.04
-sm3	113	Bodybuilding Dumbbells	0.08
-sm4	113	Alolan Golem-GX	5.47
-sm5	113	Gumshoos	0.04
-sm6	113	Mysterious Treasure	0.86
-sm7	113	Slakoth	0.03
-sm8	113	Hitmontop	0.08
-sm1	114	Big Malasada	0.05
-sm2	114	Komala	0.03
-sm3	114	Escape Rope	0.05
-sm4	114	Nihilego-GX	5.39
-sm5	114	Oranguru	0.1
-sm6	114	Ultra Recon Squad	0.05
-sm7	114	Vigoroth	0.05
-sm8	114	Larvitar	0.06
-sm1	115	Crushing Hammer	0.1
-sm2	115	Drampa-GX	1.19
-sm3	115	Guzma	3
-sm4	115	Buzzwole-GX	18
-sm5	115	Type: Null	0.1
-sm6	115	Ultra Space	0.05
-sm7	115	Slaking	0.24
-sm8	115	Larvitar	0.05
-sm1	116	Energy Retrieval	0.05
-sm2	116	Aether Paradise Conservation Area	0.05
-sm3	116	Kiawe	0.04
-sm4	116	Guzzlord-GX	5.75
-sm5	116	Silvally-GX	1.5
-sm6	116	Unidentified Fossil	0.05
-sm7	116	Whismur	0.03
-sm8	116	Pupitar	0.08
-sm1	117	Energy Switch	0.05
-sm2	117	Altar of the Moone	0.03
-sm3	117	Lana	0.09
-sm4	117	Kartana-GX	5.99
-sm5	117	Drampa	0.1
-sm6	117	Beast Energy Prism Star	2.31
-sm7	117	Whismur	0.03
-sm8	117	Carbink	0.05
-sm1	118	Exp. Share	0.07
-sm2	118	Altar of the Sunne	0.03
-sm3	118	Mount Lanakila	0.05
-sm4	118	Alolan Exeggutor-GX	5.54
-sm5	118	Ancient Crystal	0.05
-sm6	118	Unit Energy [F][D][Y]	0.1
-sm7	118	Loudred	0.04
-sm8	118	Alolan Meowth	0.05
-sm1	119	Great Ball	0.05
-sm2	119	Aqua Patch	0.1
-sm3	119	Olivia	0.06
-sm4	119	Silvally-GX	7.04
-sm5	119	Cynthia	5.8
-sm6	119	Palkia-GX	1.94
-sm7	119	Exploud	0.07
-sm8	119	Alolan Persian	0.1
-sm1	120	Hau	0.03
-sm2	120	Brooklet Hill	0.1
-sm3	120	Plumeria	0.05
-sm4	120	Counter Catcher	7.72
-sm5	120	Cyrus Prism Star	0.25
-sm6	120	Greninja-GX	7
-sm7	120	Skitty	0.03
-sm8	120	Umbreon	0.15
-sm1	121	Ilima	0.04
-sm2	121	Choice Band	0.5
-sm3	121	Po Town	0.07
-sm4	121	Wishful Baton	9.92
-sm5	121	Electric Memory	0.04
-sm6	121	Naganadel-GX	5.25
-sm7	121	Delcatty	0.15
-sm8	121	Tyranitar-GX	1.98
-sm1	122	Lillie	0.08
-sm2	122	Energy Loto	0.05
-sm3	122	Rotom Dex Poké Finder Mode	0.04
-sm4	122	Counter Energy	7.93
-sm5	122	Escape Board	0.15
-sm6	122	Lucario-GX	3.79
-sm7	122	Kecleon	0.04
-sm8	122	Alolan Diglett	0.1
-sm1	123	Nest Ball	0.2
-sm2	123	Energy Recycler	0.05
-sm3	123	Sophocles	0.04
-sm4	123	Warp Energy	3.3
-sm5	123	Fire Memory	0.03
-sm6	123	Zygarde-GX	2.89
-sm7	123	Acro Bike	0.45
-sm8	123	Alolan Dugtrio	0.1
-sm1	124	Poison Barb	0.09
-sm2	124	Enhanced Hammer	0.07
-sm3	124	Super Scoop Up	0.04
-sm4	124	Water Energy	23.21
-sm5	124	Gardenia	0.07
-sm6	124	Yveltal-GX	2.5
-sm7	124	Apricorn Maker	0.25
-sm8	124	Forretress	0.08
-sm1	125	Poké Ball	0.05
-sm2	125	Field Blower	0.13
-sm3	125	Tormenting Spray	0.04
-sm5	125	Lillie	0.18
-sm6	125	Dialga-GX	2.41
-sm7	125	Beast Ball	0.08
-sm8	125	Steelix	0.09
-sm1	126	Pokémon Catcher	0.05
-sm2	126	Hala	0.04
-sm3	126	Weakness Policy	0.05
-sm5	126	Looker	0.05
-sm6	126	Xerneas-GX	2.49
-sm7	126	Bill’s Maintenance	0.05
-sm8	126	Scizor	0.1
-sm1	127	Potion	0.05
-sm2	127	Mallow	0.03
-sm3	127	Wicke	0.07
-sm5	127	Looker Whistle	0.06
-sm6	127	Ultra Necrozma-GX	10.38
-sm7	127	Copycat	0.08
-sm8	127	Dialga	0.15
-sm1	128	Professor Kukui	0.09
-sm2	128	Max Potion	0.08
-sm3	128	Wishful Baton	0.12
-sm5	128	Mars	0.1
-sm6	128	Bonnie	3
-sm7	128	Energy Recycle System	0.09
-sm8	128	Durant	0.06
-sm1	129	Rare Candy	0.2
-sm2	129	Multi Switch	0.02
-sm3	129	Golisopod-GX	3
-sm5	129	Missing Clover	0.04
-sm6	129	Crasher Wake	2
-sm7	129	Energy Switch	0.03
-sm8	129	Cobalion	0.1
-sm1	130	Repel	0.08
-sm2	130	Rescue Stretcher	0.1
-sm3	130	Tapu Bulu-GX	3
-sm5	130	Mt. Coronet	0.12
-sm6	130	Diantha	7.07
-sm7	130	Fisherman	0.07
-sm8	130	Genesect-GX	1.35
-sm1	131	Rotom Dex	0.03
-sm2	131	Turtonator-GX	2
-sm3	131	Ho-Oh-GX	3.86
-sm5	131	Order Pad	0.28
-sm6	131	Ultra Recon Squad	3.75
-sm7	131	Friend Ball	0.1
-sm8	131	Magearna	0.1
-sm1	132	Switch	0.07
-sm2	132	Alolan Ninetales-GX	3
-sm3	132	Salazzle-GX	2.7
-sm5	132	Pal Pad	0.18
-sm6	132	Palkia-GX	5.8
-sm7	132	Hau	0.05
-sm8	132	Alolan Ninetales-GX	34
-sm1	133	Team Skull Grunt	0.1
-sm2	133	Wishiwashi-GX	2.54
-sm3	133	Tapu Fini-GX	2
-sm5	133	Pokémon Fan Club	0.1
-sm6	133	Greninja-GX	13.5
-sm7	133	Hiker	0.05
-sm8	133	Jigglypuff	0.05
-sm1	134	Timer Ball	0.08
-sm2	134	Vikavolt-GX	1.89
-sm3	134	Necrozma-GX	6.2
-sm5	134	Unidentified Fossil	0.05
-sm6	134	Naganadel-GX	9
-sm7	134	Hustle Belt	0.1
-sm8	134	Wigglytuff	0.1
-sm1	135	Ultra Ball	0.25
-sm2	135	Tapu Koko-GX	3.2
-sm3	135	Machamp-GX	2
-sm5	135	Volkner	0.23
-sm6	135	Lucario-GX	8.32
-sm7	135	Last Chance Potion	0.09
-sm8	135	Marill	0.05
-sm1	136	Double Colorless Energy	0.62
-sm2	136	Toxapex-GX	2
-sm3	136	Lycanroc-GX	2.95
-sm5	136	Super Boost Energy Prism Star	0.59
-sm6	136	Zygarde-GX	9.25
-sm7	136	Life Herb	0.04
-sm8	136	Azumarill	0.09
-sm1	137	Rainbow Energy	0.1
-sm2	137	Tapu Lele-GX	22.49
-sm3	137	Marshadow-GX	4.44
-sm5	137	Unit Energy [G][R][W]	0.09
-sm6	137	Yveltal-GX	5.88
-sm7	137	Lisia	0.09
-sm8	137	Snubbull	0.09
-sm1	138	Lurantis-GX	2
-sm2	138	Lycanroc-GX	5.44
-sm3	138	Alolan Muk-GX	2.04
-sm5	138	Unit Energy [L][P][M]	0.2
-sm6	138	Dialga-GX	5.15
-sm7	138	Lure Ball	0.05
-sm8	138	Granbull	0.73
-sm1	139	Lapras-GX	2.95
-sm2	139	Metagross-GX	3.63
-sm3	139	Darkrai-GX	2.19
-sm5	139	Leafeon-GX	4.25
-sm6	139	Xerneas-GX	6
-sm7	139	The Masked Royal	0.05
-sm8	139	Ralts	0.06
-sm1	140	Espeon-GX	3.13
-sm2	140	Sylveon-GX	6.44
-sm3	140	Gardevoir-GX	15.2
-sm5	140	Pheromosa-GX	3.25
-sm6	140	Ultra Necrozma-GX	15.49
-sm7	140	PokéNav	0.1
-sm8	140	Kirlia	0.1
-sm1	141	Lunala-GX	2.25
-sm2	141	Kommo-o-GX	2
-sm3	141	Noivern-GX	2.75
-sm5	141	Glaceon-GX	6.56
-sm6	141	Beast Ring	19.05
-sm7	141	Rainbow Brush	0.06
-sm8	141	Gardevoir	0.14
-sm1	142	Umbreon-GX	2
-sm2	142	Drampa-GX	1.98
-sm3	142	Acerola	22.95
-sm5	142	Xurkitree-GX	5.25
-sm6	142	Eneporter	3.8
-sm7	142	Rare Candy	0.7
-sm8	142	Dedenne	0.07
-sm1	143	Solgaleo-GX	6.08
-sm2	143	Hala	2.44
-sm3	143	Guzma	28.94
-sm5	143	Dawn Wings Necrozma-GX	5.39
-sm6	143	Energy Recycler	11.16
-sm7	143	Shrine of Punishment	4.93
-sm8	143	Carbink	0.08
-sm1	144	Tauros-GX	1.72
-sm2	144	Hau	2.83
-sm3	144	Kiawe	7.87
-sm5	144	Celesteela-GX	2
-sm6	144	Metal Frying Pan	6
-sm7	144	Sky Pillar	0.09
-sm8	144	Xerneas Prism Star	0.1
-sm1	145	Gumshoos-GX	1.8
-sm2	145	Mallow	4.2
-sm3	145	Plumeria	8.39
-sm5	145	Dusk Mane Necrozma-GX	6.21
-sm6	145	Mysterious Treasure	22.87
-sm7	145	Steven’s Resolve	1.53
-sm8	145	Cutiefly	0.06
-sm1	146	Ilima	2.23
-sm2	146	Decidueye-GX	13.69
-sm3	146	Sophocles	5.36
-sm5	146	Dialga-GX	2.19
-sm6	146	Unit Energy [F][D][Y]	19.98
-sm7	146	Super Scoop Up	0.05
-sm8	146	Ribombee	0.1
-sm1	147	Lillie	19.79
-sm2	147	Incineroar-GX	7.5
-sm3	147	Wicke	6.94
-sm5	147	Palkia-GX	2.29
-sm7	147	Switch	0.05
-sm8	147	Morelull	0.05
-sm1	148	Professor Kukui	5
-sm2	148	Turtonator-GX	5.33
-sm3	148	Golisopod-GX	6.65
-sm5	148	Cynthia	71.98
-sm7	148	Tate & Liza	0.5
-sm8	148	Shiinotic	0.05
-sm1	149	Team Skull Grunt	3.17
-sm2	149	Primarina-GX	4.75
-sm3	149	Tapu Bulu-GX	6.25
-sm5	149	Gardenia	4.82
-sm7	149	TV Reporter	0.07
-sm8	149	Mimikyu-GX	1.8
-sm1	150	Lurantis-GX	4.69
-sm2	150	Alolan Ninetales-GX	9.11
-sm3	150	Charizard-GX	170.06
-sm5	150	Lana	4.94
-sm7	150	Underground Expedition	0.02
-sm8	150	Tapu Lele	0.1
-sm1	151	Lapras-GX	6.03
-sm2	151	Wishiwashi-GX	6.02
-sm3	151	Salazzle-GX	4.99
-sm5	151	Lillie	40.5
-sm7	151	Rainbow Energy	0.2
-sm8	151	Tapu Fini	0.1
-sm1	152	Espeon-GX	8.23
-sm2	152	Vikavolt-GX	5.6
-sm3	152	Tapu Fini-GX	5.63
-sm5	152	Looker	3
-sm7	152	Shiftry-GX	1.89
-sm8	152	Chansey	0.05
-sm1	153	Lunala-GX	8.94
-sm2	153	Tapu Koko-GX	6.56
-sm3	153	Necrozma-GX	9
-sm5	153	Lusamine	11.18
-sm7	153	Blaziken-GX	4
-sm8	153	Blissey	0.12
-sm1	154	Umbreon-GX	9.16
-sm2	154	Toxapex-GX	4.92
-sm3	154	Machamp-GX	6.98
-sm5	154	Mars	8
-sm7	154	Articuno-GX	4.29
-sm8	154	Ditto Prism Star	3.68
-sm1	155	Solgaleo-GX	12.39
-sm2	155	Tapu Lele-GX	36.86
-sm3	155	Lycanroc-GX	8
-sm5	155	Pokémon Fan Club	4.5
-sm7	155	Electrode-GX	1.95
-sm8	155	Eevee	0.05
-sm1	156	Tauros-GX	4.68
-sm2	156	Lycanroc-GX	9.9
-sm3	156	Marshadow-GX	8
-sm5	156	Volkner	15.3
-sm7	156	Mr. Mime-GX	2.49
-sm8	156	Stantler	0.06
-sm1	157	Gumshoos-GX	4.63
-sm2	157	Metagross-GX	7.99
-sm3	157	Alolan Muk-GX	6
-sm5	157	Leafeon-GX	8
-sm7	157	Banette-GX	6.2
-sm8	157	Smeargle	0.1
-sm1	158	Nest Ball	18.32
-sm2	158	Sylveon-GX	18.75
-sm3	158	Darkrai-GX	8
-sm5	158	Pheromosa-GX	4.67
-sm7	158	Scizor-GX	3.49
-sm8	158	Miltank	0.1
-sm1	159	Rotom Dex	3
-sm2	159	Kommo-o-GX	7.2
-sm3	159	Gardevoir-GX	18.91
-sm5	159	Glaceon-GX	9.44
-sm7	159	Stakataka-GX	3.49
-sm8	159	Lugia-GX	1.5
-sm1	160	Switch	8.96
-sm2	160	Drampa-GX	4.99
-sm3	160	Noivern-GX	5.8
-sm5	160	Xurkitree-GX	6.9
-sm7	160	Rayquaza-GX	16
-sm8	160	Ho-Oh	0.1
-sm1	161	Ultra Ball	39.97
-sm2	161	Aqua Patch	6
-sm3	161	Bodybuilding Dumbbells	0.08
-sm5	161	Dawn Wings Necrozma-GX	11.01
-sm7	161	Apricorn Maker	8.51
-sm8	161	Kecleon	0.1
-sm1	162	Psychic Energy	20.79
-sm2	162	Enhanced Hammer	6.16
-sm3	162	Choice Band	31.96
-sm5	162	Celesteela-GX	4.95
-sm7	162	Bill’s Maintenance	3
-sm8	162	Kecleon	0.08
-sm1	163	Metal Energy	19.1
-sm2	163	Field Blower	10
-sm3	163	Escape Rope	5.82
-sm5	163	Dusk Mane Necrozma-GX	11.3
-sm7	163	Copycat	10.78
-sm8	163	Pikipek	0.05
-sm1	164	Grass Energy	0.05
-sm2	164	Max Potion	10.22
-sm3	164	Multi Switch	5.41
-sm5	164	Dialga-GX	5.89
-sm7	164	Lisia	15.47
-sm8	164	Pikipek	0.05
-sm1	165	Fire Energy	0.04
-sm2	165	Rare Candy	20.48
-sm3	165	Rescue Stretcher	16.6
-sm5	165	Palkia-GX	5.09
-sm7	165	Steven’s Resolve	13.65
-sm8	165	Trumbeak	0.18
-sm1	166	Water Energy	0.04
-sm2	166	Double Colorless Energy	37.39
-sm3	166	Super Scoop Up	4.69
-sm5	166	Crushing Hammer	12.27
-sm7	166	Tate & Liza	16.79
-sm8	166	Toucannon	0.1
-sm1	167	Lightning Energy	0.04
-sm2	167	Grass Energy	22.5
-sm3	167	Fire Energy	30.9
-sm5	167	Escape Board	9.75
-sm7	167	TV Reporter	6.34
-sm8	167	Adventure Bag	0.1
-sm1	168	Psychic Energy	0.04
-sm2	168	Lightning Energy	23.76
-sm3	168	Darkness Energy	35.99
-sm5	168	Missing Clover	3.82
-sm7	168	Underground Expedition	6.95
-sm8	168	Aether Foundation Employee	0.09
-sm1	169	Fighting Energy	0.05
-sm2	169	Fighting Energy	19.8
-sm3	169	Fairy Energy	75.98
-sm5	169	Peeking Red Card	4
-sm7	169	Shiftry-GX	4.59
-sm8	169	Choice Helmet	0.1
-sm1	170	Darkness Energy	0.05
-sm5	170	Unit Energy [G][R][W]	6.6
-sm7	170	Blaziken-GX	7.25
-sm8	170	Counter Gain	0.1
-sm1	171	Metal Energy	0.04
-sm5	171	Unit Energy [L][P][M]	6.89
-sm7	171	Articuno-GX	8.99
-sm8	171	Custom Catcher	0.11
-sm1	172	Fairy Energy	0.05
-sm5	172	Lunala-GX	36.14
-sm7	172	Electrode-GX	4.98
-sm8	172	Electropower	0.17
-sm5	173	Solgaleo-GX	71.94
-sm7	173	Mr. Mime-GX	5.48
-sm8	173	Faba	0.1
-sm7	174	Banette-GX	9.46
-sm8	174	Fairy Charm [G]	0.05
-sm7	175	Scizor-GX	8.52
-sm8	175	Fairy Charm [P]	0.05
-sm7	176	Stakataka-GX	7.8
-sm8	176	Fairy Charm [F]	0.09
-sm7	177	Rayquaza-GX	34
-sm8	177	Fairy Charm [N]	0.05
-sm7	178	Acro Bike	18.13
-sm8	178	Heat Factory Prism Star	0.1
-sm7	179	Hustle Belt	3.08
-sm8	179	Kahili	0.1
-sm7	180	Life Herb	3.16
-sm8	180	Life Forest Prism Star	0.1
-sm7	181	PokéNav	5.46
-sm8	181	Lost Blender	0.25
-sm7	182	Rainbow Brush	5.09
-sm8	182	Lusamine Prism Star	0.19
-sm7	183	Rainbow Energy	26.99
-sm8	183	Mina	0.09
-sm8	184	Mixed Herbs	0.09
-sm8	185	Moomoo Milk	0.06
-sm8	186	Morty	0.1
-sm8	187	Net Ball	0.45
-sm8	188	Professor Elm’s Lecture	1
-sm8	189	Sightseer	0.24
-sm8	190	Spell Tag	0.2
-sm8	191	Thunder Mountain Prism Star	0.24
-sm8	192	Wait and See Hammer	0.09
-sm8	193	Whitney	0.1
-sm8	194	Memory Energy	0.1
-sm8	195	Shuckle-GX	5.25
-sm8	196	Sceptile-GX	7.49
-sm8	197	Virizion-GX	3.19
-sm8	198	Magcargo-GX	4
-sm8	199	Blacephalon-GX	29.87
-sm8	200	Suicune-GX	4.92
-sm8	201	Zeraora-GX	16.95
-sm8	202	Sigilyph-GX	2.4
-sm8	203	Tyranitar-GX	5.3
-sm8	204	Genesect-GX	2.64
-sm8	205	Alolan Ninetales-GX	37
-sm8	206	Mimikyu-GX	5.19
-sm8	207	Lugia-GX	5.5
-sm8	208	Faba	6.75
-sm8	209	Judge	16
-sm8	210	Kahili	4.47
-sm8	211	Mina	8.65
-sm8	212	Morty	4.74
-sm8	213	Professor Elm’s Lecture	32
-sm8	214	Whitney	7.52
-sm8	215	Shuckle-GX	8.91
-sm8	216	Sceptile-GX	7.74
-sm8	217	Virizion-GX	5.82
-sm8	218	Magcargo-GX	7.99
-sm8	219	Blacephalon-GX	31.36
-sm8	220	Suicune-GX	13.64
-sm8	221	Zeraora-GX	17.5
-sm8	222	Sigilyph-GX	5.23
-sm8	223	Tyranitar-GX	11.37
-sm8	224	Genesect-GX	6
-sm8	225	Alolan Ninetales-GX	40
-sm8	226	Mimikyu-GX	9.99
-sm8	227	Lugia-GX	22.75
-sm8	228	Adventure Bag	8
-sm8	229	Choice Helmet	6.48
-sm8	230	Counter Gain	9.74
-sm8	231	Custom Catcher	8
-sm8	232	Electropower	10.75
-sm8	233	Lost Blender	17.48
-sm8	234	Net Ball	17.95
-sm8	235	Spell Tag	11
-sm8	236	Wait and See Hammer	4.01
-base1	1	Alakazam	4.69
-base2	1	Clefable	1.5
-base3	1	Aerodactyl	1
-base4	1	Alakazam	2.49
-base5	1	Dark Alakazam	2.8
-gym1	1	Blaine’s Moltres	4.4
-gym2	1	Blaine’s Arcanine	5.82
-smp	1	Rowlet	1.39
-base1	2	Blastoise	13.25
-base2	2	Electrode	1.18
-base3	2	Articuno	0.65
-base4	2	Blastoise	8.94
-base5	2	Dark Arbok	0.5
-gym1	2	Brock’s Rhydon	1.77
-gym2	2	Blaine’s Charizard	34.21
-smp	2	Litten	0.6
-base1	3	Chansey	1.7
-base2	3	Flareon	5.9
-base3	3	Ditto	2.89
-base4	3	Chansey	0.99
-base5	3	Dark Blastoise	7.75
-gym1	3	Erika’s Clefable	2
-gym2	3	Brock’s Ninetales	5.59
-smp	3	Popplio	1.33
-base1	4	Charizard	42.39
-base2	4	Jolteon	5.46
-base3	4	Dragonite	4.84
-base4	4	Charizard	34.86
-base5	4	Dark Charizard	12.99
-gym1	4	Erika’s Dragonair	5
-gym2	4	Erika’s Venusaur	10.5
-smp	4	Pikachu	1.17
-base1	5	Clefairy	1.73
-base2	5	Kangaskhan	0.56
-base3	5	Gengar	3.28
-base4	5	Clefable	1.18
-base5	5	Dark Dragonite	6
-gym1	5	Erika’s Vileplume	1
-gym2	5	Giovanni’s Gyarados	8.57
-smp	5	Snorlax-GX	1.8
-base1	6	Gyarados	1.17
-base2	6	Mr. Mime	2
-base3	6	Haunter	1.23
-base4	6	Clefairy	0.99
-base5	6	Dark Dugtrio	1.4
-gym1	6	Lt. Surge’s Electabuzz	3.79
-gym2	6	Giovanni’s Machamp	5.56
-smp	6	Rockruff	0.25
-base1	7	Hitmonchan	0.57
-base2	7	Nidoqueen	2.5
-base3	7	Hitmonlee	3.1
-base4	7	Gyarados	1.64
-base5	7	Dark Golbat	1.5
-gym1	7	Lt. Surge’s Fearow	3.28
-gym2	7	Giovanni’s Nidoking	5
-smp	7	Pikipek	0.04
-base1	8	Machamp	6
-base2	8	Pidgeot	2.66
-base3	8	Hypno	2.15
-base4	8	Hitmonchan	1.5
-base5	8	Dark Gyarados	2.44
-gym1	8	Lt. Surge’s Magneton	1.08
-gym2	8	Giovanni’s Persian	2.39
-smp	8	Litten	0.1
-base1	9	Magneton	0.45
-base2	9	Pinsir	1
-base3	9	Kabutops	1.95
-base4	9	Magneton	0.96
-base5	9	Dark Hypno	2
-gym1	9	Misty’s Seadra	1.85
-gym2	9	Koga’s Beedrill	2.4
-smp	9	Togedemaru	0.18
-base1	10	Mewtwo	1.6
-base2	10	Scyther	3.44
-base3	10	Lapras	0.4
-base4	10	Mewtwo	1.51
-base5	10	Dark Machamp	2.85
-gym1	10	Misty’s Tentacruel	0.71
-gym2	10	Koga’s Ditto	5
-smp	10	Shiinotic	2.97
-base1	11	Nidoking	2
-base2	11	Snorlax	3.61
-base3	11	Magneton	1
-base4	11	Nidoking	1.34
-base5	11	Dark Magneton	1
-gym1	11	Rocket’s Hitmonchan	2.94
-gym2	11	Lt. Surge’s Raichu	7
-smp	11	Bruxish	1.17
-base1	12	Ninetales	0.95
-base2	12	Vaporeon	0.98
-base3	12	Moltres	4.9
-base4	12	Nidoqueen	1.44
-base5	12	Dark Slowbro	1.5
-gym1	12	Rocket’s Moltres	7.2
-gym2	12	Misty’s Golduck	3.75
-smp	12	Passimian	6
-base1	13	Poliwrath	0.99
-base2	13	Venomoth	2.2
-base3	13	Muk	0.49
-base4	13	Ninetales	1
-base5	13	Dark Vileplume	1.75
-gym1	13	Rocket’s Scyther	5.75
-gym2	13	Misty’s Gyarados	11.45
-smp	13	Oranguru	12.45
-base1	14	Raichu	2
-base2	14	Victreebel	2.43
-base3	14	Raichu	2.16
-base4	14	Pidgeot	1.55
-base5	14	Dark Weezing	0.45
-gym1	14	Sabrina’s Gengar	6.98
-gym2	14	Rocket’s Mewtwo	14.25
-smp	14	Lycanroc-GX	1.57
-base1	15	Venusaur	9.38
-base2	15	Vileplume	2.49
-base3	15	Zapdos	1.2
-base4	15	Poliwrath	0.95
-base5	15	Here Comes Team Rocket!	1
-gym1	15	Brock	5.03
-gym2	15	Rocket’s Zapdos	7.84
-smp	15	Zygarde	0.25
-base1	16	Zapdos	1.79
-base2	16	Wigglytuff	1.75
-base3	16	Aerodactyl	0.68
-base4	16	Raichu	1.6
-base5	16	Rocket’s Sneak Attack	1
-gym1	16	Erika	3.79
-gym2	16	Sabrina’s Alakazam	3
-smp	16	Solgaleo-GX	2.5
-base1	17	Beedrill	0.25
-base2	17	Clefable	0.75
-base3	17	Articuno	0.65
-base4	17	Scyther	1.49
-base5	17	Rainbow Energy	2.5
-gym1	17	Lt. Surge	0.28
-gym2	17	Blaine	4.28
-smp	17	Lunala-GX	1.63
-base1	18	Dragonair	0.99
-base2	18	Electrode	0.39
-base3	18	Ditto	1.14
-base4	18	Venusaur	6
-base5	18	Dark Alakazam	0.89
-gym1	18	Misty	4.76
-gym2	18	Giovanni	5.18
-smp	18	Alolan Sandslash	1.5
-base1	19	Dugtrio	0.65
-base2	19	Flareon	0.98
-base3	19	Dragonite	0.67
-base4	19	Wigglytuff	0.89
-base5	19	Dark Arbok	0.39
-gym1	19	The Rocket’s Trap	2.79
-gym2	19	Koga	4
-smp	19	Oricorio	0.5
-base1	20	Electabuzz	1.34
-base2	20	Jolteon	0.99
-base3	20	Gengar	1
-base4	20	Zapdos	1.75
-base5	20	Dark Blastoise	0.94
-gym1	20	Brock’s Golem	0.97
-gym2	20	Sabrina	4.99
-smp	20	Mudsdale	1
-base1	21	Electrode	0.3
-base2	21	Kangaskhan	0.42
-base3	21	Haunter	0.49
-base4	21	Beedrill	0.25
-base5	21	Dark Charizard	3.49
-gym1	21	Brock’s Onix	0.68
-gym2	21	Blaine’s Ninetales	1.97
-smp	21	Drampa	0.77
-base1	22	Pidgeotto	0.9
-base2	22	Mr. Mime	0.5
-base3	22	Hitmonlee	0.5
-base4	22	Dragonair	1.39
-base5	22	Dark Dragonite	0.88
-gym1	22	Brock’s Rhyhorn	1.15
-gym2	22	Brock’s Dugtrio	0.75
-smp	22	Rowlet	0.92
-base1	23	Arcanine	0.37
-base2	23	Nidoqueen	0.89
-base3	23	Hypno	0.5
-base4	23	Dugtrio	0.5
-base5	23	Dark Dugtrio	0.39
-gym1	23	Brock’s Sandslash	0.8
-gym2	23	Giovanni’s Nidoqueen	1.58
-smp	23	Litten	0.2
-base1	24	Charmeleon	0.11
-base2	24	Pidgeot	0.89
-base3	24	Kabutops	0.69
-base4	24	Electabuzz	0.73
-base5	24	Dark Golbat	0.4
-gym1	24	Brock’s Zubat	0.99
-gym2	24	Giovanni’s Pinsir	1.28
-smp	24	Popplio	0.31
-base1	25	Dewgong	0.3
-base2	25	Pinsir	0.67
-base3	25	Lapras	0.42
-base4	25	Electrode	0.35
-base5	25	Dark Gyarados	0.35
-gym1	25	Erika’s Clefairy	0.9
-gym2	25	Koga’s Arbok	0.27
-smp	25	Lurantis	3.5
-base1	26	Dratini	0.27
-base2	26	Scyther	0.97
-base3	26	Magneton	0.25
-base4	26	Kangaskhan	0.35
-base5	26	Dark Hypno	0.5
-gym1	26	Erika’s Victreebel	1.73
-gym2	26	Koga’s Muk	1.6
-smp	26	Tsareena	0.19
-base1	27	Farfetch’d	0.18
-base2	27	Snorlax	0.6
-base3	27	Moltres	0.69
-base4	27	Mr. Mime	0.99
-base5	27	Dark Machamp	0.4
-gym1	27	Lt. Surge’s Electabuzz	0.75
-gym2	27	Koga’s Pidgeotto	0.77
-smp	27	Turtonator	0.12
-base1	28	Growlithe	0.15
-base2	28	Vaporeon	0.83
-base3	28	Muk	0.35
-base4	28	Pidgeotto	0.54
-base5	28	Dark Magneton	0.25
-gym1	28	Lt. Surge’s Raichu	6.71
-gym2	28	Lt. Surge’s Jolteon	1.36
-smp	28	Vikavolt	0.59
-base1	29	Haunter	0.15
-base2	29	Venomoth	0.39
-base3	29	Raichu	0.46
-base4	29	Pinsir	0.5
-base5	29	Dark Slowbro	0.56
-gym1	29	Misty’s Cloyster	0.97
-gym2	29	Sabrina’s Gengar	3.83
-smp	29	Mimikyu	0.14
-base1	30	Ivysaur	0.51
-base2	30	Victreebel	0.83
-base3	30	Zapdos	0.5
-base4	30	Snorlax	0.78
-base5	30	Dark Vileplume	0.4
-gym1	30	Misty’s Goldeen	0.23
-gym2	30	Sabrina’s Golduck	1.35
-smp	30	Tapu Koko	1.95
-smp	30a	Tapu Koko	None
-base1	31	Jynx	0.19
-base2	31	Vileplume	0.54
-base3	31	Arbok	0.19
-base4	31	Venomoth	0.52
-base5	31	Dark Weezing	0.4
-gym1	31	Misty’s Poliwrath	2.16
-gym2	31	Blaine’s Charmeleon	0.43
-smp	31	Tapu Koko	2.36
-base1	32	Kadabra	0.19
-base2	32	Wigglytuff	0.46
-base3	32	Cloyster	0.17
-base4	32	Victreebel	0.43
-base5	32	Dark Charmeleon	0.3
-gym1	32	Misty’s Tentacool	0.77
-gym2	32	Blaine’s Dodrio	0.4
-smp	32	Tapu Bulu-GX	1.8
-base1	33	Kakuna	0.09
-base2	33	Butterfree	0.2
-base3	33	Gastly	0.16
-base4	33	Arcanine	0.49
-base5	33	Dark Dragonair	0.25
-gym1	33	Rocket’s Snorlax	1.34
-gym2	33	Blaine’s Rapidash	0.37
-smp	33	Tapu Koko-GX	1.6
-base1	34	Machoke	0.1
-base2	34	Dodrio	0.2
-base3	34	Golbat	0.14
-base4	34	Butterfree	0.25
-base5	34	Dark Electrode	0.1
-gym1	34	Sabrina’s Venomoth	0.78
-gym2	34	Brock’s Graveler	0.14
-smp	34	Bewear-GX	1.75
-base1	35	Magikarp	0.27
-base2	35	Exeggutor	0.24
-base3	35	Golduck	0.26
-base4	35	Charmeleon	0.4
-base5	35	Dark Flareon	0.3
-gym1	35	Blaine’s Growlithe	0.25
-gym2	35	Brock’s Primeape	0.65
-smp	35	Espeon-GX	2.25
-base1	36	Magmar	0.3
-base2	36	Fearow	0.2
-base3	36	Golem	0.2
-base4	36	Dewgong	0.2
-base5	36	Dark Gloom	0.14
-gym1	36	Blaine’s Kangaskhan	0.4
-gym2	36	Brock’s Sandslash	0.63
-smp	36	Umbreon-GX	1.75
-base1	37	Nidorino	0.31
-base2	37	Gloom	0.09
-base3	37	Graveler	0.14
-base4	37	Dodrio	0.28
-base5	37	Dark Golduck	0.25
-gym1	37	Blaine’s Magmar	0.22
-gym2	37	Brock’s Vulpix	0.49
-smp	37	Decidueye-GX	11.92
-base1	38	Poliwhirl	0.2
-base2	38	Lickitung	0.23
-base3	38	Kingler	0.14
-base4	38	Dratini	0.13
-base5	38	Dark Jolteon	0.5
-gym1	38	Brock’s Geodude	0.09
-gym2	38	Erika’s Bellsprout	0.53
-smp	38	Incineroar-GX	3.29
-base1	39	Porygon	0.3
-base2	39	Marowak	0.2
-base3	39	Magmar	0.16
-base4	39	Exeggutor	0.2
-base5	39	Dark Kadabra	0.16
-gym1	39	Brock’s Golbat	0.44
-gym2	39	Erika’s Bulbasaur	0.81
-smp	39	Primarina-GX	2.2
-base1	40	Raticate	0.28
-base2	40	Nidorina	0.1
-base3	40	Omastar	0.17
-base4	40	Farfetch’d	0.2
-base5	40	Dark Machoke	0.2
-gym1	40	Brock’s Graveler	0.2
-gym2	40	Erika’s Clefairy	0.75
-smp	40	Jangmo-o	0.21
-base1	41	Seel	0.1
-base2	41	Parasect	0.14
-base3	41	Sandslash	0.32
-base4	41	Fearow	0.2
-base5	41	Dark Muk	0.17
-gym1	41	Brock’s Lickitung	0.4
-gym2	41	Erika’s Ivysaur	0.59
-smp	41	Komala	0.28
-base1	42	Wartortle	0.25
-base2	42	Persian	0.12
-base3	42	Seadra	0.14
-base4	42	Growlithe	0.25
-base5	42	Dark Persian	0.21
-gym1	42	Erika’s Dratini	0.37
-gym2	42	Giovanni’s Machoke	0.11
-smp	42	Cosmog	0.22
-base1	43	Abra	0.09
-base2	43	Primeape	0.19
-base3	43	Slowbro	0.22
-base4	43	Haunter	0.2
-base5	43	Dark Primeape	0.1
-gym1	43	Erika’s Exeggcute	0.2
-gym2	43	Giovanni’s Meowth	0.45
-smp	43	Alolan Meowth	0.13
-base1	44	Bulbasaur	0.16
-base2	44	Rapidash	0.2
-base3	44	Tentacruel	0.21
-base4	44	Ivysaur	0.67
-base5	44	Dark Rapidash	0.25
-gym1	44	Erika’s Exeggutor	0.2
-gym2	44	Giovanni’s Nidorina	0.47
-smp	44	Togedemaru	2.49
-base1	45	Caterpie	0.1
-base2	45	Rhydon	0.2
-base3	45	Weezing	0.16
-base4	45	Jynx	0.2
-base5	45	Dark Vaporeon	0.17
-gym1	45	Erika’s Gloom	0.2
-gym2	45	Giovanni’s Nidorino	0.45
-smp	45	Tapu Lele	None
-base1	46	Charmander	0.15
-base2	46	Seaking	0.09
-base3	46	Ekans	0.07
-base4	46	Kadabra	0.28
-base5	46	Dark Wartortle	0.13
-gym1	46	Erika’s Gloom	0.34
-gym2	46	Koga’s Golbat	0.4
-smp	46	Seviper	1.05
-base1	47	Diglett	0.04
-base2	47	Tauros	0.18
-base3	47	Geodude	0.04
-base4	47	Kakuna	0.14
-base5	47	Magikarp	0.25
-gym1	47	Erika’s Oddish	0.4
-gym2	47	Koga’s Kakuna	0.51
-smp	47	Crabominable	0.48
-base1	48	Doduo	0.1
-base2	48	Weepinbell	0.09
-base3	48	Grimer	0.09
-base4	48	Lickitung	0.28
-base5	48	Porygon	0.2
-gym1	48	Erika’s Weepinbell	1.12
-gym2	48	Koga’s Koffing	0.32
-smp	48	Zygarde	0.53
-base1	49	Drowzee	0.07
-base2	49	Bellsprout	0.05
-base3	49	Horsea	0.05
-base4	49	Machoke	0.05
-base5	49	Abra	0.08
-gym1	49	Erika’s Weepinbell	0.2
-gym2	49	Koga’s Pidgey	0.43
-smp	49	Bewear	0.92
-base1	50	Gastly	0.08
-base2	50	Cubone	0.09
-base3	50	Kabuto	0.06
-base4	50	Magikarp	0.2
-base5	50	Charmander	0.12
-gym1	50	Lt. Surge’s Magnemite	0.36
-gym2	50	Koga’s Weezing	0.39
-smp	50	Tapu Koko-GX	1.77
-base1	51	Koffing	0.1
-base2	51	Eevee	0.1
-base3	51	Krabby	0.05
-base4	51	Magmar	0.28
-base5	51	Dark Raticate	0.1
-gym1	51	Lt. Surge’s Raticate	0.18
-gym2	51	Lt. Surge’s Eevee	0.89
-smp	51	Alolan Meowth	None
-base1	52	Machop	0.04
-base2	52	Exeggcute	0.03
-base3	52	Omanyte	0.04
-base4	52	Marowak	0.25
-base5	52	Diglett	0.1
-gym1	52	Lt. Surge’s Spearow	0.2
-gym2	52	Lt. Surge’s Electrode	0.57
-smp	52	Golisopod	0.51
-base1	53	Magnemite	0.11
-base2	53	Goldeen	0.09
-base3	53	Psyduck	0.04
-base4	53	Nidorina	0.15
-base5	53	Dratini	0.1
-gym1	53	Misty’s Poliwhirl	0.2
-gym2	53	Lt. Surge’s Raticate	0.32
-smp	53	Dhelmise	0.8
-base1	54	Metapod	0.09
-base2	54	Jigglypuff	0.09
-base3	54	Shellder	0.09
-base4	54	Nidorino	0.35
-base5	54	Drowzee	0.05
-gym1	54	Misty’s Psyduck	0.28
-gym2	54	Misty’s Dewgong	0.67
-smp	54	Lucario	0.62
-base1	55	Nidoran Male	0.05
-base2	55	Mankey	0.08
-base3	55	Slowpoke	0.07
-base4	55	Parasect	0.2
-base5	55	Eevee	0.09
-gym1	55	Misty’s Seaking	0.2
-gym2	55	Sabrina’s Haunter	0.49
-smp	55	Decidueye	0.42
-base1	56	Onix	0.08
-base2	56	Meowth	0.08
-base3	56	Tentacool	0.09
-base4	56	Persian	0.35
-base5	56	Ekans	0.04
-gym1	56	Misty’s Starmie	0.33
-gym2	56	Sabrina’s Hypno	0.48
-smp	56	Tsareena-GX	1.85
-base1	57	Pidgey	0.1
-base2	57	Nidoran Female	0.07
-base3	57	Zubat	0.09
-base4	57	Poliwhirl	0.24
-base5	57	Grimer	0.09
-gym1	57	Misty’s Tentacool	0.2
-gym2	57	Sabrina’s Jynx	0.32
-smp	57	Ho-Oh-GX	2.25
-base1	58	Pikachu	0.15
-base2	58	Oddish	0.08
-base3	58	Mr. Fuji	0.1
-base4	58	Raticate	0.18
-base5	58	Koffing	0.08
-gym1	58	Sabrina’s Haunter	0.57
-gym2	58	Sabrina’s Kadabra	0.76
-smp	58	Necrozma-GX	2.41
-base1	59	Poliwag	0.1
-base2	59	Paras	0.08
-base3	59	Energy Search	0.08
-base4	59	Rhydon	0.36
-base5	59	Machop	0.06
-gym1	59	Sabrina’s Jynx	0.27
-gym2	59	Sabrina’s Mr. Mime	0.5
-smp	59	Marshadow-GX	2
-base1	60	Ponyta	0.09
-base2	60	Pikachu	0.08
-base3	60	Gambler	0.05
-base4	60	Seaking	0.24
-base5	60	Magnemite	0.09
-gym1	60	Sabrina’s Slowbro	0.37
-gym2	60	Blaine’s Charmander	0.48
-smp	60	Charizard-GX	5.76
-base1	61	Rattata	0.1
-base2	61	Rhyhorn	0.08
-base3	61	Recycle	0.01
-base4	61	Seel	0.12
-base5	61	Mankey	0.09
-gym1	61	Blaine’s Charmander	0.03
-gym2	61	Blaine’s Doduo	0.21
-smp	61	Tapu Bulu	0.68
-base1	62	Sandshrew	0.09
-base2	62	Spearow	0.09
-base3	62	Mysterious Fossil	0.03
-base4	62	Tauros	0.25
-base5	62	Meowth	0.09
-gym1	62	Blaine’s Growlithe	0.1
-gym2	62	Blaine’s Growlithe	0.31
-smp	62	Golisopod-GX	1.51
-base1	63	Squirtle	0.16
-base2	63	Venonat	0.07
-base4	63	Wartortle	0.3
-base5	63	Oddish	0.08
-gym1	63	Blaine’s Ponyta	0.23
-gym2	63	Blaine’s Mankey	0.21
-smp	63	Salazzle-GX	1.4
-base1	64	Starmie	0.09
-base2	64	Poké Ball	0.04
-base4	64	Weepinbell	0.25
-base5	64	Ponyta	0.1
-gym1	64	Blaine’s Tauros	0.21
-gym2	64	Blaine’s Ponyta	0.21
-smp	64	Silvally	3.65
-base1	65	Staryu	0.07
-base4	65	Abra	0.09
-base5	65	Psyduck	0.05
-gym1	65	Blaine’s Vulpix	0.18
-gym2	65	Blaine’s Rhyhorn	0.15
-smp	65	Alolan Raichu	0.85
-base1	66	Tangela	0.09
-base4	66	Bellsprout	0.09
-base5	66	Rattata	0.09
-gym1	66	Brock’s Geodude	0.13
-gym2	66	Blaine’s Vulpix	0.21
-smp	66	Pheromosa-GX	2.39
-base1	67	Voltorb	0.2
-base4	67	Bulbasaur	0.34
-base5	67	Slowpoke	0.1
-gym1	67	Brock’s Mankey	0.14
-gym2	67	Brock’s Diglett	0.11
-smp	67	Celesteela-GX	2
-base1	68	Vulpix	0.12
-base4	68	Caterpie	0.19
-base5	68	Squirtle	0.1
-gym1	68	Brock’s Mankey	0.23
-gym2	68	Brock’s Geodude	0.27
-smp	68	Xurkitree-GX	3.75
-base1	69	Weedle	0.09
-base4	69	Charmander	0.17
-base5	69	Voltorb	0.1
-gym1	69	Brock’s Onix	0.15
-gym2	69	Erika’s Jigglypuff	0.32
-smp	69	Buzzwole-GX	7.5
-base1	70	Clefairy Doll	0.38
-base4	70	Cubone	0.13
-base5	70	Zubat	0.06
-gym1	70	Brock’s Rhyhorn	0.15
-gym2	70	Erika’s Oddish	0.24
-smp	70	Shining Ho-Oh	1.04
-base1	71	Computer Search	1.25
-base4	71	Diglett	0.08
-base5	71	Here Comes Team Rocket!	0.4
-gym1	71	Brock’s Sandshrew	0.18
-gym2	71	Erika’s Paras	0.24
-smp	71	Kommo-o-GX	1.7
-base1	72	Devolution Spray	0.32
-base4	72	Doduo	0.1
-base5	72	Rocket’s Sneak Attack	0.65
-gym1	72	Brock’s Sandshrew	0.27
-gym2	72	Giovanni’s Machop	0.12
-smp	72	Alolan Raichu	1.56
-base1	73	Impostor Professor Oak	0.36
-base4	73	Drowzee	0.12
-base5	73	The Boss’s Way	0.18
-gym1	73	Brock’s Vulpix	0.21
-gym2	73	Giovanni’s Magikarp	0.31
-smp	73	Salazzle	0.75
-base1	74	Item Finder	1.76
-base4	74	Exeggcute	0.09
-base5	74	Challenge!	0.2
-gym1	74	Brock’s Zubat	0.18
-gym2	74	Giovanni’s Meowth	0.22
-smp	74	Regirock	0.5
-base1	75	Lass	0.39
-base4	75	Gastly	0.13
-base5	75	Digger	0.2
-gym1	75	Erika’s Bellsprout	0.1
-gym2	75	Giovanni’s Nidoran Female	0.21
-smp	75	Registeel	2.72
-base1	76	Pokémon Breeder	0.99
-base4	76	Goldeen	0.07
-base5	76	Imposter Oak’s Revenge	0.17
-gym1	76	Erika’s Bellsprout	0.15
-gym2	76	Giovanni’s Nidoran Male	0.21
-smp	76	Pikachu	0.2
-base1	77	Pokémon Trader	0.5
-base4	77	Jigglypuff	0.09
-base5	77	Nightly Garbage Run	0.09
-gym1	77	Erika’s Exeggcute	0.13
-gym2	77	Koga’s Ekans	0.2
-smp	77	Mewtwo	0.65
-base1	78	Scoop Up	1.22
-base4	78	Machop	0.09
-base5	78	Goop Gas Attack	0.07
-gym1	78	Erika’s Oddish	0.09
-gym2	78	Koga’s Grimer	0.19
-smp	78	Champions Festival	None
-base1	79	Super Energy Removal	0.5
-base4	79	Magnemite	0.08
-base5	79	Sleep!	0.04
-gym1	79	Erika’s Tangela	0.08
-gym2	79	Koga’s Koffing	0.2
-smp	79	Shining Celebi	2
-base1	80	Defender	0.24
-base4	80	Meowth	0.1
-base5	80	Rainbow Energy	0.75
-gym1	80	Lt. Surge’s Magnemite	0.12
-gym2	80	Koga’s Pidgey	0.18
-smp	80	Ho-Oh-GX	3
-base1	81	Energy Retrieval	0.1
-base4	81	Metapod	0.1
-base5	81	Full Heal Energy	0.09
-gym1	81	Lt. Surge’s Pikachu	0.38
-gym2	81	Koga’s Tangela	0.2
-smp	81	Pikachu	0.25
-base1	82	Full Heal	0.05
-base4	82	Nidoran Female	0.09
-base5	82	Potion Energy	0.18
-gym1	82	Lt. Surge’s Rattata	0.1
-gym2	82	Koga’s Weedle	0.24
-smp	82	Shining Lugia	6.73
-base1	83	Maintenance	0.09
-base4	83	Nidoran Male	0.07
-base5	83	Dark Raichu	4
-gym1	83	Lt. Surge’s Spearow	0.13
-gym2	83	Koga’s Zubat	0.21
-smp	83	Zorua	0.49
-base1	84	PlusPower	0.1
-base4	84	Onix	0.09
-gym1	84	Lt. Surge’s Voltorb	0.12
-gym2	84	Lt. Surge’s Pikachu	0.28
-smp	84	Zoroark-GX	5.5
-base1	85	Pokémon Center	0.2
-base4	85	Paras	0.1
-gym1	85	Misty’s Goldeen	0.2
-gym2	85	Lt. Surge’s Rattata	0.21
-smp	85	Marshadow	None
-base1	86	Pokémon Flute	0.15
-base4	86	Pidgey	0.13
-gym1	86	Misty’s Horsea	0.16
-gym2	86	Lt. Surge’s Voltorb	0.23
-smp	86	Pikachu	1
-base1	87	Pokédex	0.05
-base4	87	Pikachu	0.17
-gym1	87	Misty’s Poliwag	0.13
-gym2	87	Misty’s Horsea	0.23
-smp	87	Latias	0.6
-base1	88	Professor Oak	0.25
-base4	88	Poliwag	0.09
-gym1	88	Misty’s Seel	0.22
-gym2	88	Misty’s Magikarp	0.2
-smp	88	Latios	0.65
-base1	89	Revive	0.2
-base4	89	Rattata	0.1
-gym1	89	Misty’s Shellder	0.14
-gym2	89	Misty’s Poliwag	0.22
-smp	89	Zoroark	0.19
-base1	90	Super Potion	0.05
-base4	90	Rhyhorn	0.1
-gym1	90	Misty’s Staryu	0.11
-gym2	90	Misty’s Psyduck	0.36
-smp	90	Raichu-GX	2.99
-base1	91	Bill	0.13
-base4	91	Sandshrew	0.08
-gym1	91	Sabrina’s Abra	0.18
-gym2	91	Misty’s Seel	0.21
-smp	91	Silvally-GX	1.78
-base1	92	Energy Removal	0.1
-base4	92	Spearow	0.1
-gym1	92	Sabrina’s Drowzee	0.09
-gym2	92	Misty’s Staryu	0.2
-smp	92	Tapu Fini	1.25
-base1	93	Gust of Wind	0.09
-base4	93	Squirtle	0.1
-gym1	93	Sabrina’s Gastly	0.17
-gym2	93	Sabrina’s Abra	0.22
-smp	93	Marshadow	0.41
-base1	94	Potion	0.05
-base4	94	Starmie	0.1
-gym1	94	Sabrina’s Mr. Mime	0.19
-gym2	94	Sabrina’s Abra	0.3
-smp	94	Wash Rotom	0.43
-base1	95	Switch	0.05
-base4	95	Staryu	0.08
-gym1	95	Sabrina’s Slowpoke	0.17
-gym2	95	Sabrina’s Drowzee	0.2
-smp	95	Lucario	0.65
-base1	96	Double Colorless Energy	0.74
-base4	96	Tangela	0.09
-gym1	96	Sabrina’s Venonat	0.21
-gym2	96	Sabrina’s Gastly	0.18
-smp	96	Heatran	0.4
-base1	97	Fighting Energy	0.1
-base4	97	Venonat	0.1
-gym1	97	Blaine’s Quiz #1	0.99
-gym2	97	Sabrina’s Gastly	0.36
-smp	97	Gumshoos	0.25
-base1	98	Fire Energy	0.14
-base4	98	Voltorb	0.09
-gym1	98	Brock	0.25
-gym2	98	Sabrina’s Porygon	0.28
-smp	98	Pikachu	4.99
-base1	99	Grass Energy	0.1
-base4	99	Vulpix	0.17
-gym1	99	Charity	0.65
-gym2	99	Sabrina’s Psyduck	0.26
-smp	99	Mimikyu	24.99
-base1	100	Lightning Energy	0.1
-base4	100	Weedle	0.06
-gym1	100	Erika	1.11
-gym2	100	Blaine	0.62
-smp	100	Lucario-GX	1.7
-base1	101	Psychic Energy	0.11
-base4	101	Computer Search	1
-gym1	101	Lt. Surge	0.28
-gym2	101	Brock’s Protection	0.8
-smp	101	Dawn Wings Necrozma-GX	2.5
-base1	102	Water Energy	0.1
-base4	102	Imposter Professor Oak	0.26
-gym1	102	Misty	0.5
-gym2	102	Chaos Gym	1.47
-smp	102	Dusk Mane Necrozma-GX	2.99
-base4	103	Item Finder	1.76
-gym1	103	No Removal Gym	0.79
-gym2	103	Erika’s Kindness	1.41
-smp	103	Lunala-GX	3.75
-base4	104	Lass	0.34
-gym1	104	The Rocket’s Training Gym	0.99
-gym2	104	Giovanni	0.69
-smp	104	Solgaleo-GX	15.99
-base4	105	Pokémon Breeder	0.75
-gym1	105	Blaine’s Last Resort	0.2
-gym2	105	Giovanni’s Last Resort	0.87
-smp	105	Lycanroc	0.32
-base4	106	Pokémon Trader	0.48
-gym1	106	Brock’s Training Method	0.2
-gym2	106	Koga	0.54
-smp	106	Dawn Wings Necrozma	0.99
-base4	107	Scoop Up	0.38
-gym1	107	Celadon City Gym	0.1
-gym2	107	Lt. Surge’s Secret Plan	0.5
-smp	107	Dusk Mane Necrozma	1.99
-base4	108	Super Energy Removal	0.8
-gym1	108	Cerulean City Gym	0.22
-gym2	108	Misty’s Wish	1
-smp	108	Ash’s Pikachu	0.75
-base4	109	Defender	0.04
-gym1	109	Erika’s Maids	0.36
-gym2	109	Resistance Gym	0.85
-smp	109	Ash’s Pikachu	1.94
-base4	110	Energy Retrieval	0.08
-gym1	110	Erika’s Perfume	0.2
-gym2	110	Sabrina	0.8
-smp	110	Ash’s Pikachu	0.8
-base4	111	Full Heal	0.1
-gym1	111	Good Manners	0.74
-gym2	111	Blaine’s Quiz #2	0.9
-smp	111	Ash’s Pikachu	1.18
-base4	112	Maintenance	0.1
-gym1	112	Lt. Surge’s Treaty	0.4
-gym2	112	Blaine’s Quiz #3	0.97
-smp	112	Ash’s Pikachu	1.8
-base4	113	PlusPower	0.1
-gym1	113	Minion of Team Rocket	0.5
-gym2	113	Cinnabar City Gym	0.2
-smp	113	Ash’s Pikachu	0.93
-base4	114	Pokémon Center	0.13
-gym1	114	Misty’s Wrath	0.92
-gym2	114	Fuchsia City Gym	0.26
-smp	114	Ash’s Pikachu	1.62
-base4	115	Pokédex	0.13
-gym1	115	Pewter City Gym	0.2
-gym2	115	Koga’s Ninja Trick	0.49
-smp	115	Pheromosa	0.5
-base4	116	Professor Oak	0.3
-gym1	116	Recall	0.53
-gym2	116	Master Ball	0.75
-smp	116	Xurkitree	0.5
-base4	117	Super Potion	0.1
-gym1	117	Sabrina’s ESP	0.23
-gym2	117	Max Revive	0.39
-smp	117	Malamar	4.62
-base4	118	Bill	0.05
-gym1	118	Secret Mission	0.4
-gym2	118	Misty’s Tears	1.5
-smp	118	Lycanroc	0.49
-base4	119	Energy Removal	0.1
-gym1	119	Tickling Machine	0.65
-gym2	119	Rocket’s Minefield Gym	0.56
-smp	119	Exeggcute	None
-base4	120	Gust of Wind	0.1
-gym1	120	Vermilion City Gym	0.2
-gym2	120	Rocket’s Secret Experiment	0.7
-smp	120	Rockruff	None
-base4	121	Poké Ball	0.05
-gym1	121	Blaine’s Gamble	0.14
-gym2	121	Sabrina’s Psychic Control	0.44
-smp	121	Raikou-GX	3.33
-base4	122	Potion	0.04
-gym1	122	Energy Flow	0.21
-gym2	122	Saffron City Gym	0.25
-smp	122	Zygarde-GX	None
-base4	123	Switch	0.05
-gym1	123	Misty’s Duel	0.28
-gym2	123	Viridian City Gym	0.31
-smp	123	Dawn Wings Necrozma	1.8
-base4	124	Double Colorless Energy	0.46
-gym1	124	Narrow Gym	0.21
-gym2	124	Fervor	0.18
-smp	124	Dusk Mane Necrozma	3.75
-base4	125	Fighting Energy	0.09
-gym1	125	Sabrina’s Gaze	0.16
-gym2	125	Transparent Walls	0.25
-smp	125	Naganadel-GX	1.47
-base4	126	Fire Energy	0.2
-gym1	126	Trash Exchange	0.18
-gym2	126	Warp Point	0.3
-smp	126	Ultra Necrozma GX	4
-base4	127	Grass Energy	0.1
-gym1	127	Fighting Energy	0.15
-gym2	127	Fighting Energy	0.37
-smp	127	Alolan Sandslash	2.99
-base4	128	Lightning Energy	0.05
-gym1	128	Fire Energy	0.2
-gym2	128	Fire Energy	0.32
-smp	128	Alolan Ninetales	2.75
-base4	129	Psychic Energy	0.09
-gym1	129	Grass Energy	0.2
-gym2	129	Grass Energy	0.18
-smp	129	Kyogre	2
-base4	130	Water Energy	0.1
-gym1	130	Lightning Energy	0.15
-gym2	130	Lightning Energy	0.45
-smp	130	Manectric	0.99
-gym1	131	Psychic Energy	0.19
-gym2	131	Psychic Energy	0.37
-smp	131	Celesteela	2
-gym1	132	Water Energy	0.24
-gym2	132	Water Energy	0.47
-smp	132	Delcatty	1
-smp	133	Thundurus-GX	2.84
-smp	134	Tornadus-GX	2.5
-smp	135	Latias	0.1
-smp	136	Latios	0.37
-smp	137	Reshiram-GX	3.75
-smp	138	Zekrom-GX	3.99
-smp	139	Salamence-GX	7
-smp	140	Salamence	3.99
-smp	141	White Kyurem-GX	6.96
-smp	142	Kyurem	3.99
-smp	143	Moltres	3
-smp	144	Articuno	2.97
-smp	146	Leafeon-GX	2.75
-smp	146	Zapdos	None
-smp	147	Glaceon-GX	None
-smp	148	Champions Festival	None
-smp	149	Suicune	None
-smp	150	Raikou	None
-smp	151	Giratina	None
-smp	152	Tapu Lele	None
-smp	153	Rowlet	6.95
-smp	154	Salandit	None
-smp	155	Kingdra-GX	5
-smp	156	Dragonite-GX	6
-smp	157	Pikachu	3.92
-basep	1	Pikachu	0.81
-basep	2	Electabuzz	0.20
-basep	3	Mewtwo	0.79
-basep	4	Pikachu	0.99
-basep	5	Dragonite	0.49
-basep	6	Arcanine	0.91
-basep	7	Jigglypuff	1.80
-basep	8	Mew	0.09
-basep	9	Mew	4.95
-basep	10	Meowth	0.94
-basep	11	Eevee	1.00
-basep	12	Mewtwo	6.09
-basep	13	Venusaur	10.65
-basep	14	Mewtwo	0.48
-basep	15	Cool Porygon	3.95
-basep	16	Computer Error	0.25
-basep	17	Dark Persian	2.50
-basep	18	Team Rocket’s Meowth	0.49
-basep	19	Sabrina’s Abra	4.26
-basep	20	Psyduck	0.39
-basep	21	Moltres	0.98
-basep	22	Articuno	0.74
-basep	23	Zapdos	0.50
-basep	24	Birthday Pikachu	28.46
-basep	25	Flying Pikachu	4.99
-basep	26	Pikachu	3.83
-basep	27	Pikachu	0.81
-basep	28	Surfing Pikachu	0.89
-basep	29	Marill	0.30
-basep	30	Togepi	0.64
-basep	31	Cleffa	0.50
-basep	32	Smeargle	0.20
-basep	33	Scizor	0.82
-basep	34	Entei	0.26
-basep	35	Pichu	2.59
-basep	36	Igglybuff	0.94
-basep	37	Hitmontop	0.50
-basep	38	Unown J	1.25
-basep	39	Misdreavus	0.44
-basep	40	Pokémon Center	149.99
-basep	41	Lucky Stadium	399.94
-basep	42	Pokémon Tower	1.50
-basep	43	Machamp	1.45
-basep	44	Magmar	1.80
-basep	45	Scyther	2.74
-basep	46	Electabuzz	1.34
-basep	47	Mew	4.99
-basep	48	Articuno	9.00
-basep	49	Snorlax	14.99
-basep	50	Celebi	1.82
-basep	51	Rapidash	None
-basep	52	Ho-oh	3.58
-basep	53	Suicune	3.97
+set	num	price
+sm1	1	0.04
+sm2	1	0.01
+sm3	1	0.03
+sm35	1	0.05
+sm4	1	0.03
+sm5	1	0.04
+sm6	1	0.04
+sm7	1	0.04
+sm75	1	0.09
+sm8	1	0.05
+sm1	2	0.04
+sm2	2	0.04
+sm3	2	0.03
+sm35	2	0.05
+sm4	2	0.05
+sm5	2	0.03
+sm6	2	0.77
+sm7	2	0.05
+sm75	2	0.12
+sm8	2	0.1
+sm1	3	0.09
+sm2	3	0.08
+sm3	3	0.08
+sm35	3	0.15
+sm4	3	0.09
+sm5	3	0.05
+sm6	3	0.03
+sm7	3	0.14
+sm75	3	1.7
+sm8	3	0.05
+sm1	4	0.03
+sm2	4	0.04
+sm3	4	0.03
+sm35	4	0.04
+sm4	4	0.04
+sm5	4	0.03
+sm6	4	0.06
+sm7	4	0.09
+sm75	4	0.1
+sm8	4	0.06
+sm1	5	0.08
+sm2	5	0.04
+sm3	5	0.03
+sm35	5	0.06
+sm4	5	0.04
+sm5	5	0.07
+sm6	5	0.02
+sm7	5	0.03
+sm75	5	0.1
+sm8	5	0.05
+sm1	6	0.05
+sm2	6	0.04
+sm3	6	0.1
+sm35	6	0.05
+sm4	6	0.09
+sm5	6	0.03
+sm6	6	0.02
+sm7	6	0.2
+sm75	6	0.04
+sm8	6	0.05
+sm1	7	0.02
+sm2	7	0.08
+sm3	7	0.03
+sm35	7	0.1
+sm4	7	0.03
+sm5	7	0.02
+sm6	7	0.03
+sm7	7	0.05
+sm75	7	0.48
+sm8	7	0.09
+sm1	8	0.05
+sm2	8	0.02
+sm3	8	0.1
+sm35	8	0.15
+sm4	8	0.03
+sm5	8	0.03
+sm6	8	0.07
+sm7	8	0.03
+sm75	8	0.1
+sm8	8	0.15
+sm1	9	0.06
+sm2	9	0.1
+sm3	9	0.03
+sm35	9	5
+sm4	9	0.04
+sm5	9	0.2
+sm6	9	0.03
+sm7	9	0.05
+sm75	9	0.1
+sm8	9	0.05
+sm1	10	0.08
+sm2	10	0.1
+sm3	10	0.09
+sm35	10a	1.75
+sm35	10	1.66
+sm4	10	0.03
+sm5	10	0.03
+sm6	10	0.04
+sm7	10	0.15
+sm75	10	0.1
+sm8	10	0.06
+sm1	11	0.05
+sm2	11	0.04
+sm3	11	0.09
+sm35	11	0.05
+sm4	11	0.1
+sm5	11	0.04
+sm6	11	0.16
+sm7	11	0.03
+sm75	11	1.8
+sm8	11	0.05
+sm1	12	7.99
+sm2	12	0.04
+sm3	12	0.03
+sm35	12	0.04
+sm4	12	0.3
+sm5	12	0.04
+sm6	12	0.1
+sm7	12	0.03
+sm75	12	0.1
+sm8	12	0.06
+sm1	13	0.05
+sm2	13	0.09
+sm3	13	0.05
+sm35	13	0.07
+sm4	13	0.01
+sm5	13	2
+sm6	13	0.07
+sm7	13	0.05
+sm75	13	0.1
+sm8	13	0.15
+sm1	14	0.05
+sm2	14	0.08
+sm3	14	0.03
+sm35	14	0.1
+sm4	14	0.07
+sm5	14	0.09
+sm6	14	0.04
+sm7	14	1.74
+sm75	14	0.1
+sm8	14	4
+sm1	15	1.5
+sm2	15	0.03
+sm3	15	0.05
+sm35	15	0.04
+sm4	15	0.03
+sm5	15	0.13
+sm6	15	0.04
+sm7	15	0.03
+sm75	15	0.05
+sm8	15	0.05
+sm1	16	0.03
+sm2	16	0.09
+sm3	16	0.04
+sm35	16	0.06
+sm4	16	0.08
+sm5	16	0.03
+sm6	16	0.05
+sm7	16	0.05
+sm75	16	0.05
+sm8	16	0.14
+sm1	17	0.18
+sm2	17	0.07
+sm3	17	1.58
+sm35	17	0.07
+sm4	17	0.04
+sm5	17	0.06
+sm6	17	0.1
+sm7	17	0.05
+sm75	17	0.1
+sm8	17	2.6
+sm1	18	0.03
+sm2	18	1.5
+sm3	18	0.05
+sm35	18	0.05
+sm4	18	1.75
+sm5	18	0.04
+sm6	18	0.02
+sm7	18	0.05
+sm75	18	2
+sm8	18	0.08
+sm1	19	0.05
+sm2	19a	None
+sm2	19	0.04
+sm3	19	0.04
+sm35	19	0.05
+sm4	19	0.03
+sm5	19	0.11
+sm6	19	0.1
+sm7	19	0.05
+sm75	19	0.05
+sm8	19	0.1
+sm1	20	0.1
+sm2	20	0.05
+sm3	20	6.74
+sm35	20	0.09
+sm4	20	0.03
+sm5	20	0.04
+sm6	20	1
+sm7	20	0.05
+sm75	20	0.1
+sm8	20	0.05
+sm1	21	0.04
+sm2	21a	None
+sm2	21	0.09
+sm3	21	1.99
+sm35	21	0.05
+sm4	21	0.09
+sm5	21	0.03
+sm6	21	0.04
+sm7	21	0.05
+sm75	21	0.1
+sm8	21	0.1
+sm1	22	0.25
+sm2	22	1.8
+sm3	22	0.03
+sm35	22	0.06
+sm4	22	0.03
+sm5	22	0.05
+sm6	22	0.05
+sm7	22	0.08
+sm75	22	0.05
+sm8	22	4.73
+sm1	23	0.03
+sm2	23	0.04
+sm3	23	0.03
+sm35	23	0.05
+sm4	23	0.05
+sm5	23	0.25
+sm6	23	0.08
+sm7	23	0.05
+sm75	23	0.1
+sm8	23	0.05
+sm1	24	0.03
+sm2	24	0.04
+sm3	24	0.05
+sm35	24	0.1
+sm4	24	0.03
+sm5	24	0.1
+sm6	24	4
+sm7	24	0.45
+sm75	24	0.1
+sm8	24	0.05
+sm1	25	0.05
+sm2	25	0.1
+sm3	25	1.74
+sm35	25	0.09
+sm4	25	0.1
+sm5	25	0.04
+sm6	25	0.04
+sm7	25	0.03
+sm75	25	0.1
+sm8	25	0.06
+sm1	26	0.09
+sm2	26	0.04
+sm35	26	0.05
+sm4	26	0.03
+sm5	26	0.1
+sm6	26	0.01
+sm7	26	0.03
+sm75	26	0.36
+sm8	26	0.1
+sm1	27	2.8
+sm2	27	0.04
+sm3	26	0.05
+sm3	27	0.03
+sm35	27	2.5
+sm4	27	0.09
+sm5	27	0.04
+sm6	27	0.04
+sm7	27	0.05
+sm75	27	0.05
+sm8	27	0.06
+sm1	28	0.03
+sm2	28	0.05
+sm3	28	0.28
+sm35	28	0.05
+sm4	28	0.1
+sm5	28	0.05
+sm6	28	0.1
+sm7	28	1.74
+sm75	28	0.05
+sm8	28	0.1
+sm1	29	0.04
+sm2	29	0.03
+sm3	29	0.05
+sm35	29	1.99
+sm4	29	0.01
+sm5	29	0.09
+sm6	29	0.03
+sm7	29	0.05
+sm75	29	0.09
+sm8	29	0.06
+sm1	30	0.04
+sm2	30	0.08
+sm3	30	0.05
+sm35	30	0.04
+sm4	30	0.05
+sm5	30	0.04
+sm6	30	0.07
+sm7	30	0.04
+sm75	30	0.1
+sm8	30	0.05
+sm1	31	0.05
+sm2	31	0.04
+sm3	31	0.12
+sm35	31	0.05
+sm4	31	0.21
+sm5	31	0.04
+sm6	31	0.45
+sm7	31	1.73
+sm75	31	0.1
+sm8	31	0.05
+sm1	32	0.2
+sm2	32	0.04
+sm3	32	0.05
+sm35	32	0.1
+sm4	32	0.04
+sm5	32	0.04
+sm6	32	0.05
+sm7	32	0.03
+sm75	32	0.05
+sm8	32	0.1
+sm1	33	0.04
+sm2	33	0.04
+sm3	33	0.15
+sm35	33	0.05
+sm4	33	0.05
+sm5	33	0.04
+sm6	33	0.02
+sm7	33	0.03
+sm75	33	0.1
+sm8	33	0.1
+sm1	34	0.09
+sm2	34	0.01
+sm3	34	0.03
+sm35	34	0.04
+sm4	34	1.99
+sm5	34	0.12
+sm6	34	0.03
+sm7	34	0.05
+sm75	34	0.1
+sm8	34	1.59
+sm1	35	1.75
+sm2	35	0.08
+sm3	35	0.06
+sm35	35	0.12
+sm4	35	0.04
+sm5	35	0.04
+sm6	35	0.05
+sm7	35	0.15
+sm75	35	0.1
+sm8	35	0.05
+sm1	36	0.05
+sm2	36	0.02
+sm3	36	0.02
+sm35	36	0.04
+sm4	36	0.03
+sm5	36	0.04
+sm6	36	0.1
+sm7	36	0.03
+sm75	36	0.1
+sm8	36	0.05
+sm1	37	0.04
+sm2	37	0.03
+sm3	37	0.03
+sm35	37	0.06
+sm4	37	0.05
+sm5	37	0.04
+sm6	37	0.04
+sm7	37	0.05
+sm75	37	2.75
+sm8	37	0.1
+sm1	38	0.04
+sm2	38	1.65
+sm3	38	0.09
+sm35	38	0.03
+sm4	38	0.44
+sm5	38	0.08
+sm6	38	0.05
+sm7	38	0.49
+sm75	38	0.1
+sm8	38	0.1
+sm1	39	0.01
+sm2	39	0.04
+sm3	39	1.69
+sm35	39	2.29
+sm4	39	0.02
+sm5	39	2
+sm6	39	0.1
+sm7	39	0.03
+sm75	39	0.1
+sm8	39	0.06
+sm1	40	0.03
+sm2	40	0.04
+sm3	40	0.04
+sm35	40	7.92
+sm4	40	0.08
+sm5	40	0.09
+sm6	40	0.07
+sm7	40	0.1
+sm75	40	0.1
+sm8	40	0.06
+sm1	41	0.1
+sm2	41	0.04
+sm3	41	0.18
+sm35	41	0.09
+sm4	41	0.03
+sm5	41	0.1
+sm6	41	0.05
+sm7	41	0.04
+sm75	41	1.98
+sm8	41	0.08
+sm1	42	1.84
+sm2	42	0.11
+sm3	42	0.03
+sm35	42	1.99
+sm4	42	0.03
+sm5	42	0.04
+sm6	42	0.05
+sm7	42	0.05
+sm75	42	0.1
+sm8	42	0.2
+sm1	43	0.09
+sm2	43	0.04
+sm3	43	0.08
+sm35	43	0.03
+sm4	43	0.03
+sm5	43	0.04
+sm6	43	0.05
+sm7	43	0.05
+sm75	43	0.1
+sm8	43	0.06
+sm1	44	0.02
+sm2	44	0.09
+sm3	44	0.03
+sm35	44	0.07
+sm4	44	0.04
+sm5	44	0.08
+sm6	44	0.04
+sm7	44	0.03
+sm75	44	0.99
+sm8	44	2
+sm1	45	0.03
+sm2	45	1.5
+sm3	45	0.05
+sm35	45	1.24
+sm4	45	0.1
+sm5	45	0.04
+sm6	45	0.05
+sm7	45	0.04
+sm75	45	0.1
+sm8	45	0.06
+sm1	46	0.05
+sm2	46	0.05
+sm3	46	0.06
+sm35	46	0.04
+sm4	46	0.04
+sm5	46	0.03
+sm6	46	0.05
+sm7	46	0.15
+sm75	46	0.1
+sm8	46	0.1
+sm1	47	0.05
+sm2	47	1
+sm3	47	0.05
+sm35	47	0.06
+sm4	47	0.25
+sm5	47	0.04
+sm6	47	0.02
+sm7	47	0.03
+sm75	47	0.1
+sm8	47	0.1
+sm1	48	0.06
+sm2	48	0.03
+sm3	48	0.08
+sm35	48	0.04
+sm4	48	0.1
+sm5	48	0.18
+sm6	48	0.04
+sm7	48	1.66
+sm75	48	1.7
+sm8	48	0.1
+sm1	49	0.03
+sm2	49	0.03
+sm3	49	0.05
+sm35	49	0.05
+sm4	49	1.99
+sm5	49	0.03
+sm6	49	0.09
+sm7	49	0.03
+sm75	49	0.1
+sm8	49	0.1
+sm1	50	0.08
+sm2	50	0.05
+sm3	50	0.05
+sm35	50	0.04
+sm4	50	0.03
+sm5	50	0.04
+sm6	50	0.05
+sm7	50	0.03
+sm75	50	0.1
+sm8	50	0.05
+sm1	51	0.08
+sm2	51	0.17
+sm2	51a	None
+sm3	51	0.03
+sm35	51	0.01
+sm4	51	0.08
+sm5	51	0.04
+sm6	51	1.71
+sm7	51	0.04
+sm75	51	0.1
+sm8	51	0.1
+sm1	52	1.07
+sm2	52	0.01
+sm3	52	0.05
+sm35	52	0.05
+sm4	52	0.04
+sm5	52	0.05
+sm6	52	0.02
+sm7	52	0.07
+sm75	52	0.1
+sm8	52	22.99
+sm1	53	0.03
+sm2	53	0.03
+sm3	53	0.1
+sm35	53	5.47
+sm4	53	0.09
+sm5	53	0.04
+sm6	53	0.1
+sm7	53	0.01
+sm75	53	0.05
+sm8	53	0.05
+sm1	54	0.02
+sm2	54	0.05
+sm3	54	0.04
+sm35	54	0.1
+sm4	54	0.03
+sm5	54	0.03
+sm6	54	0.05
+sm7	54	0.03
+sm75	54	0.1
+sm8	54	0.05
+sm1	55	0.05
+sm2	55	0.08
+sm3	55	0.1
+sm35	55	0.25
+sm4	55	0.03
+sm5	55	0.07
+sm6	55	0.1
+sm7	55	0.05
+sm75	55	0.05
+sm8	55	0.09
+sm1	56	0.1
+sm2	56	0.08
+sm3	56	0.05
+sm35	56	4.25
+sm4	56	0.12
+sm5	56	0.03
+sm6	56	1.49
+sm7	56	1.65
+sm75	56	0.05
+sm8	56	0.1
+sm1	57	0.03
+sm2	57	1.74
+sm3	57	0.05
+sm35	57	8
+sm4	57	6.96
+sm5	57	0.09
+sm6	57	0.02
+sm7	57	0.03
+sm75	57	0.05
+sm8	57	0.09
+sm1	58	0.25
+sm2	58	0.14
+sm3	58	0.08
+sm35	58	0.02
+sm4	58	0.04
+sm5	58	0.2
+sm6	58	0.1
+sm7	58	0.03
+sm75	58	0.1
+sm8	58	0.06
+sm1	59	0.03
+sm2	59	0.07
+sm3	59	0.03
+sm35	59	0.1
+sm4	59	0.1
+sm5	59	0.13
+sm6	59	0.09
+sm7	59	0.03
+sm75	59	0.1
+sm8	59	0.14
+sm1	60	0.04
+sm2	60	18
+sm3	60	0.05
+sm35	60	0.08
+sm4	60	0.03
+sm5	60	0.05
+sm6	60	0.04
+sm7	60	0.05
+sm75	60	0.4
+sm8	60	1.27
+sm1	61	1.7
+sm2	61	0.1
+sm3	61	0.04
+sm35	61	0.08
+sm4	61	0.03
+sm5	61	0.07
+sm6	61	0.07
+sm7	61	0.1
+sm75	61	0.5
+sm8	61	0.05
+sm1	62	0.05
+sm2	62	0.04
+sm3	62	0.09
+sm35	62	0.08
+sm4	62	0.1
+sm5	62	0.5
+sm6	62	0.7
+sm7	62	0.03
+sm75	62	0.24
+sm8	62	0.1
+sm1	63	0.17
+sm2	63	0.03
+sm3	63	2.92
+sm35	63	0.1
+sm4	63	1.89
+sm4	63a	2
+sm5	63	1.95
+sm6	63	0.03
+sm7	63	0.03
+sm75	63	0.14
+sm8	63	0.75
+sm1	64	0.04
+sm2	64	0.04
+sm3	64	1.78
+sm35	64	0.07
+sm4	64	0.03
+sm5	64	0.04
+sm6	64	0.07
+sm7	64	0.04
+sm75	64	0.05
+sm8	64	0.05
+sm1	65	0.09
+sm2	65	0.1
+sm3	65	0.05
+sm35	65	0.05
+sm4	65	0.03
+sm5	65	0.15
+sm6	65	0.05
+sm7	65	0.05
+sm75	65	5
+sm8	65	0.05
+sm1	66	1.5
+sm2	66	0.04
+sm3	66	0.05
+sm35	66	0.09
+sm4	66	0.03
+sm5	66	0.04
+sm6	66	0.03
+sm7	66	1.8
+sm75	66	5
+sm8	66	0.06
+sm1	67	0.02
+sm2	67	0.02
+sm3	67	0.13
+sm35	67	0.09
+sm4	67	0.16
+sm5	67	0.45
+sm6	67	0.08
+sm7	67	3
+sm75	67	6.75
+sm8	67	0.1
+sm1	68	0.09
+sm2	68	0.04
+sm3	68	0.05
+sm35	68	0.2
+sm4	68	0.1
+sm5	68	0.04
+sm6	68	0.05
+sm7	68	0.05
+sm75	68	2.7
+sm8	68	0.05
+sm1	69	0.01
+sm2	69	0.04
+sm3	69	0.05
+sm35	69	0.67
+sm4	69	0.08
+sm5	69	0.05
+sm6	69	0.13
+sm7	69	0.05
+sm75	69	4.2
+sm8	69	0.1
+sm1	70	0.01
+sm2	70	0.02
+sm3	70	0.05
+sm35	70	0.05
+sm4	70	1.75
+sm5	70	0.03
+sm6	70	0.04
+sm7	70	0.14
+sm75	70	11.23
+sm8	70	0.05
+sm1	71	0.09
+sm2	71	0.07
+sm3	71	0.12
+sm35	71	1.49
+sm4	71	0.05
+sm5	71	0.04
+sm6	71	0.04
+sm7	71	0.03
+sm75	71	10
+sm8	71	0.05
+sm1	72	0.04
+sm2	72	0.04
+sm3	72	0.05
+sm35	72	2.79
+sm4	72	0.08
+sm5	72	0.05
+sm6	72	0.08
+sm7	72	0.03
+sm75	72	7
+sm8	72	0.1
+sm1	73	0.03
+sm2	73	0.04
+sm3	73	0.03
+sm35	73	1.7
+sm4	73	0.19
+sm5	73	0.05
+sm6	73	2.42
+sm7	73	0.05
+sm75	73	9.39
+sm8	73	0.06
+sm1	74	0.02
+sm2	74	4
+sm3	74	0.06
+sm35	74	10.76
+sm4	74	1.97
+sm5	74	2
+sm6	74	1.93
+sm7	74	0.03
+sm75	74	8.5
+sm8	74	0.1
+sm1	75	0.06
+sm2	75	0.04
+sm3	75	0.1
+sm35	75	12
+sm4	75	0.03
+sm5	75	0.04
+sm6	75	0.02
+sm7	75	0.05
+sm75	75	6.26
+sm8	75	0.06
+sm1	76	0.04
+sm2	76	0.1
+sm3	76	0.08
+sm35	76	27.08
+sm4	76	0.03
+sm5	76	0.03
+sm6	76	0.08
+sm7	76	0.03
+sm75	76	8
+sm8	76	0.05
+sm1	77	0.05
+sm2	77	0.12
+sm3	77	0.03
+sm35	77	18.28
+sm4	77	0.08
+sm5	77	0.2
+sm6	77	0.95
+sm7	77	0.05
+sm75	77	8.86
+sm8	77	0.09
+sm1	78	0.04
+sm2	78	0.04
+sm3	78	0.06
+sm35	78	11.75
+sm4	78	0.04
+sm5	78	0.04
+sm6	78	0.05
+sm7	78	0.04
+sm75	78	52.81
+sm8	78	0.1
+sm1	79	0.05
+sm2	79	0.08
+sm3	79	0.06
+sm4	79	0.03
+sm5	79	0.09
+sm6	79	1.5
+sm7	79	0.07
+sm8	79	0.1
+sm1	80	1.72
+sm2	80	0.04
+sm3	80	1.75
+sm4	80	0.05
+sm5	80	0.05
+sm6	80	0.1
+sm7	80	0.05
+sm8	80	0.06
+sm1	81	0.04
+sm2	81	0.15
+sm3	81	0.04
+sm4	81	0.03
+sm5	81	0.03
+sm6	81	0.11
+sm7	81	0.1
+sm8	81	0.06
+sm1	82	0.15
+sm2	82	0.08
+sm3	82	0.08
+sm4	82	0.03
+sm5	82	0.04
+sm6	82	1.75
+sm7	82	1
+sm8	82	0.83
+sm1	83	0.04
+sm2	83	0.05
+sm3	83	0.05
+sm4	83	0.09
+sm5	83	0.31
+sm6	83	0.04
+sm7	83	0.05
+sm8	83	0.06
+sm1	84	0.05
+sm2	84	0.02
+sm3	84	1.5
+sm4	84	0.15
+sm4	84a	None
+sm5	84	0.04
+sm6	84	0.05
+sm7	84	0.03
+sm8	84	0.06
+sm1	85	0.1
+sm2	85	2
+sm3	85	0.03
+sm4	85	0.03
+sm5	85	0.1
+sm6	85	0.05
+sm7	85	0.81
+sm8	85	0.1
+sm1	86	0.04
+sm2	86	0.05
+sm3	86	0.05
+sm4	86	0.03
+sm5	86	0.03
+sm6	86	0.09
+sm7	86	0.03
+sm8	86	12.07
+sm1	87	0.1
+sm2	87	0.1
+sm3	87	0.14
+sm4	87	0.03
+sm5	87	0.03
+sm6	87	0.07
+sm7	87	0.2
+sm8	87	0.09
+sm1	88	0.04
+sm2	88	0.04
+sm3	88a	1.82
+sm3	88	1.5
+sm4	88	0.03
+sm5	88	0.09
+sm6	88	0.05
+sm7	88	0.05
+sm8	88	0.09
+sm1	89	4
+sm2	89	0.04
+sm3	89	0.04
+sm4	89	0.15
+sm5	89	0.44
+sm6	89	0.05
+sm7	89	0.2
+sm8	89	0.1
+sm1	90	0.03
+sm2	90	0.04
+sm3	90	0.06
+sm4	90	1.68
+sm5	90	2.5
+sm6	90	1.49
+sm7	90	1.75
+sm8	90	0.1
+sm1	91	0.05
+sm2	91	0.05
+sm3	91	0.04
+sm4	91	0.1
+sm5	91	0.1
+sm6	91	0.05
+sm7	91	0.05
+sm8	91	0.1
+sm1	92	0.03
+sm2	92	3.49
+sm3	92a	0.8
+sm3	92	0.03
+sm4	92	0.03
+sm5	92	0.04
+sm6	92	0.03
+sm7	92	0.03
+sm8	92	0.1
+sm1	93	0.1
+sm2	93	0.1
+sm3	93	7.5
+sm4	93	0.1
+sm5	93	0.1
+sm6	93	0.05
+sm7	93	0.03
+sm8	93	None
+sm1	94	0.04
+sm2	94	0.04
+sm3	94	0.09
+sm4	94	0.03
+sm5	94	0.2
+sm6	94	0.09
+sm7	94	0.05
+sm8	94	0.09
+sm1	95	0.03
+sm2	95	0.03
+sm3	95	0.04
+sm4	95	0.08
+sm5	95	0.1
+sm6	95	4.73
+sm7	95	0.45
+sm8	95	0.1
+sm1	96	0.19
+sm2	96	0.1
+sm3	96	0.05
+sm4	96	0.1
+sm5	96	0.03
+sm6	96	0.2
+sm7	96	0.07
+sm8	96	0.08
+sm1	97	0.02
+sm2	97	0.12
+sm3	97	0.03
+sm4	97	0.07
+sm5	97	0.03
+sm6	97	0.03
+sm7	97	0.23
+sm8	97	3
+sm1	98	0.04
+sm2	98	0.04
+sm3	98	0.08
+sm4	98	0.03
+sm5	98	0.04
+sm6	98	0.05
+sm7	98	0.1
+sm8	98	1.47
+sm1	99	0.1
+sm2	99	0.02
+sm3	99	1.5
+sm4	99	0.05
+sm5	99	0.09
+sm6	99	0.05
+sm7	99	0.15
+sm8	99	0.05
+sm1	100	1.5
+sm2	100	1.98
+sm3	100	0.13
+sm4	100	0.17
+sm5	100	1.5
+sm6	100	0.05
+sm7	100	0.44
+sm8	100	0.14
+sm1	101	0.24
+sm2	101	0.05
+sm3	101	0.04
+sm4	101	4.51
+sm5	101	1.35
+sm6	101	0.08
+sm7	101	0.05
+sm8	101	0.05
+sm1	102	0.06
+sm2	102	0.1
+sm3	102	0.07
+sm4	102	1.53
+sm5	102	0.04
+sm6	102	0.68
+sm7	102	1.99
+sm8	102	0.08
+sm1	103	0.04
+sm2	103	0.02
+sm3	103	0.05
+sm4	103	2.49
+sm5	103	0.1
+sm6	103	0.06
+sm7	103	0.04
+sm8	103	0.1
+sm1	104	0.03
+sm2	104	0.07
+sm3	104	0.05
+sm4	104	11
+sm5	104	0.04
+sm6	104	0.1
+sm7	104	0.04
+sm8	104	0.1
+sm1	105	0.09
+sm2	105	0.04
+sm3	105	0.11
+sm3	105a	0.5
+sm4	105	3.39
+sm5	105	0.05
+sm6	105	0.31
+sm7	105	0.05
+sm8	105	0.05
+sm1	106	0.02
+sm2	106	0.1
+sm3	106	0.03
+sm4	106	3.44
+sm5	106	0.03
+sm6	106	0.05
+sm7	106	0.1
+sm8	106	0.15
+sm1	107	0.03
+sm2	107	0.03
+sm3	107	0.05
+sm4	107	2.25
+sm5	107	0.04
+sm6	107	0.05
+sm7	107	0.2
+sm8	107	0.09
+sm1	108	0.05
+sm2	108	0.04
+sm3	108	0.05
+sm4	108	2.7
+sm5	108	0.03
+sm6	108	0.19
+sm7	108	0.2
+sm8	108	4.99
+sm1	109	0.03
+sm2	109	0.03
+sm3	109	0.04
+sm4	109	5.41
+sm5	109	0.03
+sm6	109	0.15
+sm7	109	13.57
+sm8	109	0.05
+sm1	110	1.47
+sm2	110	0.03
+sm3	110	0.03
+sm4	110	8.31
+sm5	110	0.1
+sm6	110	0.15
+sm7	110	0.1
+sm8	110	0.08
+sm1	111	0.03
+sm2	111	0.07
+sm3	111	0.07
+sm4	111	7.35
+sm5	111	0.07
+sm6	111	0.05
+sm7	111	0.03
+sm8	111	0.05
+sm1	112	0.05
+sm2	112	0.03
+sm3	112	0.28
+sm4	112	13.5
+sm5	112	0.04
+sm6	112	0.1
+sm7	112	0.05
+sm8	112	0.1
+sm1	113	6.49
+sm2	113	0.04
+sm3	113	0.08
+sm4	113	5.47
+sm5	113	0.04
+sm6	113	0.86
+sm7	113	0.03
+sm8	113	0.08
+sm1	114	0.05
+sm2	114	0.03
+sm3	114	0.05
+sm4	114	5.39
+sm5	114	0.1
+sm6	114	0.05
+sm7	114	0.05
+sm8	114	0.06
+sm1	115	0.1
+sm2	115	1.19
+sm3	115	3
+sm4	115	18
+sm5	115	0.1
+sm6	115	0.05
+sm7	115	0.24
+sm8	115	0.05
+sm1	116	0.05
+sm2	116	0.05
+sm3	116	0.04
+sm4	116	5.75
+sm5	116	1.5
+sm6	116	0.05
+sm7	116	0.03
+sm8	116	0.08
+sm1	117	0.05
+sm2	117	0.03
+sm3	117	0.09
+sm4	117	5.99
+sm5	117	0.1
+sm6	117	2.31
+sm7	117	0.03
+sm8	117	0.05
+sm1	118	0.07
+sm2	118	0.03
+sm3	118	0.05
+sm4	118	5.54
+sm5	118	0.05
+sm6	118	0.1
+sm7	118	0.04
+sm8	118	0.05
+sm1	119	0.05
+sm2	119	0.1
+sm3	119	0.06
+sm4	119	7.04
+sm5	119	5.8
+sm6	119	1.94
+sm7	119	0.07
+sm8	119	0.1
+sm1	120	0.03
+sm2	120	0.1
+sm3	120	0.05
+sm4	120	7.72
+sm5	120	0.25
+sm6	120	7
+sm7	120	0.03
+sm8	120	0.15
+sm1	121	0.04
+sm2	121	0.5
+sm3	121	0.07
+sm4	121	9.92
+sm5	121	0.04
+sm6	121	5.25
+sm7	121	0.15
+sm8	121	1.98
+sm1	122	0.08
+sm2	122	0.05
+sm3	122	0.04
+sm4	122	7.93
+sm5	122	0.15
+sm6	122	3.79
+sm7	122	0.04
+sm8	122	0.1
+sm1	123	0.2
+sm2	123	0.05
+sm3	123	0.04
+sm4	123	3.3
+sm5	123	0.03
+sm6	123	2.89
+sm7	123	0.45
+sm8	123	0.1
+sm1	124	0.09
+sm2	124	0.07
+sm3	124	0.04
+sm4	124	23.21
+sm5	124	0.07
+sm6	124	2.5
+sm7	124	0.25
+sm8	124	0.08
+sm1	125	0.05
+sm2	125	0.13
+sm3	125	0.04
+sm5	125	0.18
+sm6	125	2.41
+sm7	125	0.08
+sm8	125	0.09
+sm1	126	0.05
+sm2	126	0.04
+sm3	126	0.05
+sm5	126	0.05
+sm6	126	2.49
+sm7	126	0.05
+sm8	126	0.1
+sm1	127	0.05
+sm2	127	0.03
+sm3	127	0.07
+sm5	127	0.06
+sm6	127	10.38
+sm7	127	0.08
+sm8	127	0.15
+sm1	128	0.09
+sm2	128	0.08
+sm3	128	0.12
+sm5	128	0.1
+sm6	128	3
+sm7	128	0.09
+sm8	128	0.06
+sm1	129	0.2
+sm2	129	0.02
+sm3	129	3
+sm5	129	0.04
+sm6	129	2
+sm7	129	0.03
+sm8	129	0.1
+sm1	130	0.08
+sm2	130	0.1
+sm3	130	3
+sm5	130	0.12
+sm6	130	7.07
+sm7	130	0.07
+sm8	130	1.35
+sm1	131	0.03
+sm2	131	2
+sm3	131	3.86
+sm5	131	0.28
+sm6	131	3.75
+sm7	131	0.1
+sm8	131	0.1
+sm1	132	0.07
+sm2	132	3
+sm3	132	2.7
+sm5	132	0.18
+sm6	132	5.8
+sm7	132	0.05
+sm8	132	34
+sm1	133	0.1
+sm2	133	2.54
+sm3	133	2
+sm5	133	0.1
+sm6	133	13.5
+sm7	133	0.05
+sm8	133	0.05
+sm1	134	0.08
+sm2	134	1.89
+sm3	134	6.2
+sm5	134	0.05
+sm6	134	9
+sm7	134	0.1
+sm8	134	0.1
+sm1	135	0.25
+sm2	135	3.2
+sm3	135	2
+sm5	135	0.23
+sm6	135	8.32
+sm7	135	0.09
+sm8	135	0.05
+sm1	136	0.62
+sm2	136	2
+sm3	136	2.95
+sm5	136	0.59
+sm6	136	9.25
+sm7	136	0.04
+sm8	136	0.09
+sm1	137	0.1
+sm2	137	22.49
+sm3	137	4.44
+sm5	137	0.09
+sm6	137	5.88
+sm7	137	0.09
+sm8	137	0.09
+sm1	138	2
+sm2	138	5.44
+sm3	138	2.04
+sm5	138	0.2
+sm6	138	5.15
+sm7	138	0.05
+sm8	138	0.73
+sm1	139	2.95
+sm2	139	3.63
+sm3	139	2.19
+sm5	139	4.25
+sm6	139	6
+sm7	139	0.05
+sm8	139	0.06
+sm1	140	3.13
+sm2	140	6.44
+sm3	140	15.2
+sm5	140	3.25
+sm6	140	15.49
+sm7	140	0.1
+sm8	140	0.1
+sm1	141	2.25
+sm2	141	2
+sm3	141	2.75
+sm5	141	6.56
+sm6	141	19.05
+sm7	141	0.06
+sm8	141	0.14
+sm1	142	2
+sm2	142	1.98
+sm3	142	22.95
+sm5	142	5.25
+sm6	142	3.8
+sm7	142	0.7
+sm8	142	0.07
+sm1	143	6.08
+sm2	143	2.44
+sm3	143	28.94
+sm5	143	5.39
+sm6	143	11.16
+sm7	143	4.93
+sm8	143	0.08
+sm1	144	1.72
+sm2	144	2.83
+sm3	144	7.87
+sm5	144	2
+sm6	144	6
+sm7	144	0.09
+sm8	144	0.1
+sm1	145	1.8
+sm2	145	4.2
+sm3	145	8.39
+sm5	145	6.21
+sm6	145	22.87
+sm7	145	1.53
+sm8	145	0.06
+sm1	146	2.23
+sm2	146	13.69
+sm3	146	5.36
+sm5	146	2.19
+sm6	146	19.98
+sm7	146	0.05
+sm8	146	0.1
+sm1	147	19.79
+sm2	147	7.5
+sm3	147	6.94
+sm5	147	2.29
+sm7	147	0.05
+sm8	147	0.05
+sm1	148	5
+sm2	148	5.33
+sm3	148	6.65
+sm5	148	71.98
+sm7	148	0.5
+sm8	148	0.05
+sm1	149	3.17
+sm2	149	4.75
+sm3	149	6.25
+sm5	149	4.82
+sm7	149	0.07
+sm8	149	1.8
+sm1	150	4.69
+sm2	150	9.11
+sm3	150	170.06
+sm5	150	4.94
+sm7	150	0.02
+sm8	150	0.1
+sm1	151	6.03
+sm2	151	6.02
+sm3	151	4.99
+sm5	151	40.5
+sm7	151	0.2
+sm8	151	0.1
+sm1	152	8.23
+sm2	152	5.6
+sm3	152	5.63
+sm5	152	3
+sm7	152	1.89
+sm8	152	0.05
+sm1	153	8.94
+sm2	153	6.56
+sm3	153	9
+sm5	153	11.18
+sm7	153	4
+sm8	153	0.12
+sm1	154	9.16
+sm2	154	4.92
+sm3	154	6.98
+sm5	154	8
+sm7	154	4.29
+sm8	154	3.68
+sm1	155	12.39
+sm2	155	36.86
+sm3	155	8
+sm5	155	4.5
+sm7	155	1.95
+sm8	155	0.05
+sm1	156	4.68
+sm2	156	9.9
+sm3	156	8
+sm5	156	15.3
+sm7	156	2.49
+sm8	156	0.06
+sm1	157	4.63
+sm2	157	7.99
+sm3	157	6
+sm5	157	8
+sm7	157	6.2
+sm8	157	0.1
+sm1	158	18.32
+sm2	158	18.75
+sm3	158	8
+sm5	158	4.67
+sm7	158	3.49
+sm8	158	0.1
+sm1	159	3
+sm2	159	7.2
+sm3	159	18.91
+sm5	159	9.44
+sm7	159	3.49
+sm8	159	1.5
+sm1	160	8.96
+sm2	160	4.99
+sm3	160	5.8
+sm5	160	6.9
+sm7	160	16
+sm8	160	0.1
+sm1	161	39.97
+sm2	161	6
+sm3	161	0.08
+sm5	161	11.01
+sm7	161	8.51
+sm8	161	0.1
+sm1	162	20.79
+sm2	162	6.16
+sm3	162	31.96
+sm5	162	4.95
+sm7	162	3
+sm8	162	0.08
+sm1	163	19.1
+sm2	163	10
+sm3	163	5.82
+sm5	163	11.3
+sm7	163	10.78
+sm8	163	0.05
+sm1	164	0.05
+sm2	164	10.22
+sm3	164	5.41
+sm5	164	5.89
+sm7	164	15.47
+sm8	164	0.05
+sm1	165	0.04
+sm2	165	20.48
+sm3	165	16.6
+sm5	165	5.09
+sm7	165	13.65
+sm8	165	0.18
+sm1	166	0.04
+sm2	166	37.39
+sm3	166	4.69
+sm5	166	12.27
+sm7	166	16.79
+sm8	166	0.1
+sm1	167	0.04
+sm2	167	22.5
+sm3	167	30.9
+sm5	167	9.75
+sm7	167	6.34
+sm8	167	0.1
+sm1	168	0.04
+sm2	168	23.76
+sm3	168	35.99
+sm5	168	3.82
+sm7	168	6.95
+sm8	168	0.09
+sm1	169	0.05
+sm2	169	19.8
+sm3	169	75.98
+sm5	169	4
+sm7	169	4.59
+sm8	169	0.1
+sm1	170	0.05
+sm5	170	6.6
+sm7	170	7.25
+sm8	170	0.1
+sm1	171	0.04
+sm5	171	6.89
+sm7	171	8.99
+sm8	171	0.11
+sm1	172	0.05
+sm5	172	36.14
+sm7	172	4.98
+sm8	172	0.17
+sm5	173	71.94
+sm7	173	5.48
+sm8	173	0.1
+sm7	174	9.46
+sm8	174	0.05
+sm7	175	8.52
+sm8	175	0.05
+sm7	176	7.8
+sm8	176	0.09
+sm7	177	34
+sm8	177	0.05
+sm7	178	18.13
+sm8	178	0.1
+sm7	179	3.08
+sm8	179	0.1
+sm7	180	3.16
+sm8	180	0.1
+sm7	181	5.46
+sm8	181	0.25
+sm7	182	5.09
+sm8	182	0.19
+sm7	183	26.99
+sm8	183	0.09
+sm8	184	0.09
+sm8	185	0.06
+sm8	186	0.1
+sm8	187	0.45
+sm8	188	1
+sm8	189	0.24
+sm8	190	0.2
+sm8	191	0.24
+sm8	192	0.09
+sm8	193	0.1
+sm8	194	0.1
+sm8	195	5.25
+sm8	196	7.49
+sm8	197	3.19
+sm8	198	4
+sm8	199	29.87
+sm8	200	4.92
+sm8	201	16.95
+sm8	202	2.4
+sm8	203	5.3
+sm8	204	2.64
+sm8	205	37
+sm8	206	5.19
+sm8	207	5.5
+sm8	208	6.75
+sm8	209	16
+sm8	210	4.47
+sm8	211	8.65
+sm8	212	4.74
+sm8	213	32
+sm8	214	7.52
+sm8	215	8.91
+sm8	216	7.74
+sm8	217	5.82
+sm8	218	7.99
+sm8	219	31.36
+sm8	220	13.64
+sm8	221	17.5
+sm8	222	5.23
+sm8	223	11.37
+sm8	224	6
+sm8	225	40
+sm8	226	9.99
+sm8	227	22.75
+sm8	228	8
+sm8	229	6.48
+sm8	230	9.74
+sm8	231	8
+sm8	232	10.75
+sm8	233	17.48
+sm8	234	17.95
+sm8	235	11
+sm8	236	4.01
+base1	1	4.69
+base2	1	1.5
+base3	1	1
+base4	1	2.49
+base5	1	2.8
+gym1	1	4.4
+gym2	1	5.82
+smp	1	1.39
+base1	2	13.25
+base2	2	1.18
+base3	2	0.65
+base4	2	8.94
+base5	2	0.5
+gym1	2	1.77
+gym2	2	34.21
+smp	2	0.6
+base1	3	1.7
+base2	3	5.9
+base3	3	2.89
+base4	3	0.99
+base5	3	7.75
+gym1	3	2
+gym2	3	5.59
+smp	3	1.33
+base1	4	42.39
+base2	4	5.46
+base3	4	4.84
+base4	4	34.86
+base5	4	12.99
+gym1	4	5
+gym2	4	10.5
+smp	4	1.17
+base1	5	1.73
+base2	5	0.56
+base3	5	3.28
+base4	5	1.18
+base5	5	6
+gym1	5	1
+gym2	5	8.57
+smp	5	1.8
+base1	6	1.17
+base2	6	2
+base3	6	1.23
+base4	6	0.99
+base5	6	1.4
+gym1	6	3.79
+gym2	6	5.56
+smp	6	0.25
+base1	7	0.57
+base2	7	2.5
+base3	7	3.1
+base4	7	1.64
+base5	7	1.5
+gym1	7	3.28
+gym2	7	5
+smp	7	0.04
+base1	8	6
+base2	8	2.66
+base3	8	2.15
+base4	8	1.5
+base5	8	2.44
+gym1	8	1.08
+gym2	8	2.39
+smp	8	0.1
+base1	9	0.45
+base2	9	1
+base3	9	1.95
+base4	9	0.96
+base5	9	2
+gym1	9	1.85
+gym2	9	2.4
+smp	9	0.18
+base1	10	1.6
+base2	10	3.44
+base3	10	0.4
+base4	10	1.51
+base5	10	2.85
+gym1	10	0.71
+gym2	10	5
+smp	10	2.97
+base1	11	2
+base2	11	3.61
+base3	11	1
+base4	11	1.34
+base5	11	1
+gym1	11	2.94
+gym2	11	7
+smp	11	1.17
+base1	12	0.95
+base2	12	0.98
+base3	12	4.9
+base4	12	1.44
+base5	12	1.5
+gym1	12	7.2
+gym2	12	3.75
+smp	12	6
+base1	13	0.99
+base2	13	2.2
+base3	13	0.49
+base4	13	1
+base5	13	1.75
+gym1	13	5.75
+gym2	13	11.45
+smp	13	12.45
+base1	14	2
+base2	14	2.43
+base3	14	2.16
+base4	14	1.55
+base5	14	0.45
+gym1	14	6.98
+gym2	14	14.25
+smp	14	1.57
+base1	15	9.38
+base2	15	2.49
+base3	15	1.2
+base4	15	0.95
+base5	15	1
+gym1	15	5.03
+gym2	15	7.84
+smp	15	0.25
+base1	16	1.79
+base2	16	1.75
+base3	16	0.68
+base4	16	1.6
+base5	16	1
+gym1	16	3.79
+gym2	16	3
+smp	16	2.5
+base1	17	0.25
+base2	17	0.75
+base3	17	0.65
+base4	17	1.49
+base5	17	2.5
+gym1	17	0.28
+gym2	17	4.28
+smp	17	1.63
+base1	18	0.99
+base2	18	0.39
+base3	18	1.14
+base4	18	6
+base5	18	0.89
+gym1	18	4.76
+gym2	18	5.18
+smp	18	1.5
+base1	19	0.65
+base2	19	0.98
+base3	19	0.67
+base4	19	0.89
+base5	19	0.39
+gym1	19	2.79
+gym2	19	4
+smp	19	0.5
+base1	20	1.34
+base2	20	0.99
+base3	20	1
+base4	20	1.75
+base5	20	0.94
+gym1	20	0.97
+gym2	20	4.99
+smp	20	1
+base1	21	0.3
+base2	21	0.42
+base3	21	0.49
+base4	21	0.25
+base5	21	3.49
+gym1	21	0.68
+gym2	21	1.97
+smp	21	0.77
+base1	22	0.9
+base2	22	0.5
+base3	22	0.5
+base4	22	1.39
+base5	22	0.88
+gym1	22	1.15
+gym2	22	0.75
+smp	22	0.92
+base1	23	0.37
+base2	23	0.89
+base3	23	0.5
+base4	23	0.5
+base5	23	0.39
+gym1	23	0.8
+gym2	23	1.58
+smp	23	0.2
+base1	24	0.11
+base2	24	0.89
+base3	24	0.69
+base4	24	0.73
+base5	24	0.4
+gym1	24	0.99
+gym2	24	1.28
+smp	24	0.31
+base1	25	0.3
+base2	25	0.67
+base3	25	0.42
+base4	25	0.35
+base5	25	0.35
+gym1	25	0.9
+gym2	25	0.27
+smp	25	3.5
+base1	26	0.27
+base2	26	0.97
+base3	26	0.25
+base4	26	0.35
+base5	26	0.5
+gym1	26	1.73
+gym2	26	1.6
+smp	26	0.19
+base1	27	0.18
+base2	27	0.6
+base3	27	0.69
+base4	27	0.99
+base5	27	0.4
+gym1	27	0.75
+gym2	27	0.77
+smp	27	0.12
+base1	28	0.15
+base2	28	0.83
+base3	28	0.35
+base4	28	0.54
+base5	28	0.25
+gym1	28	6.71
+gym2	28	1.36
+smp	28	0.59
+base1	29	0.15
+base2	29	0.39
+base3	29	0.46
+base4	29	0.5
+base5	29	0.56
+gym1	29	0.97
+gym2	29	3.83
+smp	29	0.14
+base1	30	0.51
+base2	30	0.83
+base3	30	0.5
+base4	30	0.78
+base5	30	0.4
+gym1	30	0.23
+gym2	30	1.35
+smp	30	1.95
+smp	30a	None
+base1	31	0.19
+base2	31	0.54
+base3	31	0.19
+base4	31	0.52
+base5	31	0.4
+gym1	31	2.16
+gym2	31	0.43
+smp	31	2.36
+base1	32	0.19
+base2	32	0.46
+base3	32	0.17
+base4	32	0.43
+base5	32	0.3
+gym1	32	0.77
+gym2	32	0.4
+smp	32	1.8
+base1	33	0.09
+base2	33	0.2
+base3	33	0.16
+base4	33	0.49
+base5	33	0.25
+gym1	33	1.34
+gym2	33	0.37
+smp	33	1.6
+base1	34	0.1
+base2	34	0.2
+base3	34	0.14
+base4	34	0.25
+base5	34	0.1
+gym1	34	0.78
+gym2	34	0.14
+smp	34	1.75
+base1	35	0.27
+base2	35	0.24
+base3	35	0.26
+base4	35	0.4
+base5	35	0.3
+gym1	35	0.25
+gym2	35	0.65
+smp	35	2.25
+base1	36	0.3
+base2	36	0.2
+base3	36	0.2
+base4	36	0.2
+base5	36	0.14
+gym1	36	0.4
+gym2	36	0.63
+smp	36	1.75
+base1	37	0.31
+base2	37	0.09
+base3	37	0.14
+base4	37	0.28
+base5	37	0.25
+gym1	37	0.22
+gym2	37	0.49
+smp	37	11.92
+base1	38	0.2
+base2	38	0.23
+base3	38	0.14
+base4	38	0.13
+base5	38	0.5
+gym1	38	0.09
+gym2	38	0.53
+smp	38	3.29
+base1	39	0.3
+base2	39	0.2
+base3	39	0.16
+base4	39	0.2
+base5	39	0.16
+gym1	39	0.44
+gym2	39	0.81
+smp	39	2.2
+base1	40	0.28
+base2	40	0.1
+base3	40	0.17
+base4	40	0.2
+base5	40	0.2
+gym1	40	0.2
+gym2	40	0.75
+smp	40	0.21
+base1	41	0.1
+base2	41	0.14
+base3	41	0.32
+base4	41	0.2
+base5	41	0.17
+gym1	41	0.4
+gym2	41	0.59
+smp	41	0.28
+base1	42	0.25
+base2	42	0.12
+base3	42	0.14
+base4	42	0.25
+base5	42	0.21
+gym1	42	0.37
+gym2	42	0.11
+smp	42	0.22
+base1	43	0.09
+base2	43	0.19
+base3	43	0.22
+base4	43	0.2
+base5	43	0.1
+gym1	43	0.2
+gym2	43	0.45
+smp	43	0.13
+base1	44	0.16
+base2	44	0.2
+base3	44	0.21
+base4	44	0.67
+base5	44	0.25
+gym1	44	0.2
+gym2	44	0.47
+smp	44	2.49
+base1	45	0.1
+base2	45	0.2
+base3	45	0.16
+base4	45	0.2
+base5	45	0.17
+gym1	45	0.2
+gym2	45	0.45
+smp	45	None
+base1	46	0.15
+base2	46	0.09
+base3	46	0.07
+base4	46	0.28
+base5	46	0.13
+gym1	46	0.34
+gym2	46	0.4
+smp	46	1.05
+base1	47	0.04
+base2	47	0.18
+base3	47	0.04
+base4	47	0.14
+base5	47	0.25
+gym1	47	0.4
+gym2	47	0.51
+smp	47	0.48
+base1	48	0.1
+base2	48	0.09
+base3	48	0.09
+base4	48	0.28
+base5	48	0.2
+gym1	48	1.12
+gym2	48	0.32
+smp	48	0.53
+base1	49	0.07
+base2	49	0.05
+base3	49	0.05
+base4	49	0.05
+base5	49	0.08
+gym1	49	0.2
+gym2	49	0.43
+smp	49	0.92
+base1	50	0.08
+base2	50	0.09
+base3	50	0.06
+base4	50	0.2
+base5	50	0.12
+gym1	50	0.36
+gym2	50	0.39
+smp	50	1.77
+base1	51	0.1
+base2	51	0.1
+base3	51	0.05
+base4	51	0.28
+base5	51	0.1
+gym1	51	0.18
+gym2	51	0.89
+smp	51	None
+base1	52	0.04
+base2	52	0.03
+base3	52	0.04
+base4	52	0.25
+base5	52	0.1
+gym1	52	0.2
+gym2	52	0.57
+smp	52	0.51
+base1	53	0.11
+base2	53	0.09
+base3	53	0.04
+base4	53	0.15
+base5	53	0.1
+gym1	53	0.2
+gym2	53	0.32
+smp	53	0.8
+base1	54	0.09
+base2	54	0.09
+base3	54	0.09
+base4	54	0.35
+base5	54	0.05
+gym1	54	0.28
+gym2	54	0.67
+smp	54	0.62
+base1	55	0.05
+base2	55	0.08
+base3	55	0.07
+base4	55	0.2
+base5	55	0.09
+gym1	55	0.2
+gym2	55	0.49
+smp	55	0.42
+base1	56	0.08
+base2	56	0.08
+base3	56	0.09
+base4	56	0.35
+base5	56	0.04
+gym1	56	0.33
+gym2	56	0.48
+smp	56	1.85
+base1	57	0.1
+base2	57	0.07
+base3	57	0.09
+base4	57	0.24
+base5	57	0.09
+gym1	57	0.2
+gym2	57	0.32
+smp	57	2.25
+base1	58	0.15
+base2	58	0.08
+base3	58	0.1
+base4	58	0.18
+base5	58	0.08
+gym1	58	0.57
+gym2	58	0.76
+smp	58	2.41
+base1	59	0.1
+base2	59	0.08
+base3	59	0.08
+base4	59	0.36
+base5	59	0.06
+gym1	59	0.27
+gym2	59	0.5
+smp	59	2
+base1	60	0.09
+base2	60	0.08
+base3	60	0.05
+base4	60	0.24
+base5	60	0.09
+gym1	60	0.37
+gym2	60	0.48
+smp	60	5.76
+base1	61	0.1
+base2	61	0.08
+base3	61	0.01
+base4	61	0.12
+base5	61	0.09
+gym1	61	0.03
+gym2	61	0.21
+smp	61	0.68
+base1	62	0.09
+base2	62	0.09
+base3	62	0.03
+base4	62	0.25
+base5	62	0.09
+gym1	62	0.1
+gym2	62	0.31
+smp	62	1.51
+base1	63	0.16
+base2	63	0.07
+base4	63	0.3
+base5	63	0.08
+gym1	63	0.23
+gym2	63	0.21
+smp	63	1.4
+base1	64	0.09
+base2	64	0.04
+base4	64	0.25
+base5	64	0.1
+gym1	64	0.21
+gym2	64	0.21
+smp	64	3.65
+base1	65	0.07
+base4	65	0.09
+base5	65	0.05
+gym1	65	0.18
+gym2	65	0.15
+smp	65	0.85
+base1	66	0.09
+base4	66	0.09
+base5	66	0.09
+gym1	66	0.13
+gym2	66	0.21
+smp	66	2.39
+base1	67	0.2
+base4	67	0.34
+base5	67	0.1
+gym1	67	0.14
+gym2	67	0.11
+smp	67	2
+base1	68	0.12
+base4	68	0.19
+base5	68	0.1
+gym1	68	0.23
+gym2	68	0.27
+smp	68	3.75
+base1	69	0.09
+base4	69	0.17
+base5	69	0.1
+gym1	69	0.15
+gym2	69	0.32
+smp	69	7.5
+base1	70	0.38
+base4	70	0.13
+base5	70	0.06
+gym1	70	0.15
+gym2	70	0.24
+smp	70	1.04
+base1	71	1.25
+base4	71	0.08
+base5	71	0.4
+gym1	71	0.18
+gym2	71	0.24
+smp	71	1.7
+base1	72	0.32
+base4	72	0.1
+base5	72	0.65
+gym1	72	0.27
+gym2	72	0.12
+smp	72	1.56
+base1	73	0.36
+base4	73	0.12
+base5	73	0.18
+gym1	73	0.21
+gym2	73	0.31
+smp	73	0.75
+base1	74	1.76
+base4	74	0.09
+base5	74	0.2
+gym1	74	0.18
+gym2	74	0.22
+smp	74	0.5
+base1	75	0.39
+base4	75	0.13
+base5	75	0.2
+gym1	75	0.1
+gym2	75	0.21
+smp	75	2.72
+base1	76	0.99
+base4	76	0.07
+base5	76	0.17
+gym1	76	0.15
+gym2	76	0.21
+smp	76	0.2
+base1	77	0.5
+base4	77	0.09
+base5	77	0.09
+gym1	77	0.13
+gym2	77	0.2
+smp	77	0.65
+base1	78	1.22
+base4	78	0.09
+base5	78	0.07
+gym1	78	0.09
+gym2	78	0.19
+smp	78	None
+base1	79	0.5
+base4	79	0.08
+base5	79	0.04
+gym1	79	0.08
+gym2	79	0.2
+smp	79	2
+base1	80	0.24
+base4	80	0.1
+base5	80	0.75
+gym1	80	0.12
+gym2	80	0.18
+smp	80	3
+base1	81	0.1
+base4	81	0.1
+base5	81	0.09
+gym1	81	0.38
+gym2	81	0.2
+smp	81	0.25
+base1	82	0.05
+base4	82	0.09
+base5	82	0.18
+gym1	82	0.1
+gym2	82	0.24
+smp	82	6.73
+base1	83	0.09
+base4	83	0.07
+base5	83	4
+gym1	83	0.13
+gym2	83	0.21
+smp	83	0.49
+base1	84	0.1
+base4	84	0.09
+gym1	84	0.12
+gym2	84	0.28
+smp	84	5.5
+base1	85	0.2
+base4	85	0.1
+gym1	85	0.2
+gym2	85	0.21
+smp	85	None
+base1	86	0.15
+base4	86	0.13
+gym1	86	0.16
+gym2	86	0.23
+smp	86	1
+base1	87	0.05
+base4	87	0.17
+gym1	87	0.13
+gym2	87	0.23
+smp	87	0.6
+base1	88	0.25
+base4	88	0.09
+gym1	88	0.22
+gym2	88	0.2
+smp	88	0.65
+base1	89	0.2
+base4	89	0.1
+gym1	89	0.14
+gym2	89	0.22
+smp	89	0.19
+base1	90	0.05
+base4	90	0.1
+gym1	90	0.11
+gym2	90	0.36
+smp	90	2.99
+base1	91	0.13
+base4	91	0.08
+gym1	91	0.18
+gym2	91	0.21
+smp	91	1.78
+base1	92	0.1
+base4	92	0.1
+gym1	92	0.09
+gym2	92	0.2
+smp	92	1.25
+base1	93	0.09
+base4	93	0.1
+gym1	93	0.17
+gym2	93	0.22
+smp	93	0.41
+base1	94	0.05
+base4	94	0.1
+gym1	94	0.19
+gym2	94	0.3
+smp	94	0.43
+base1	95	0.05
+base4	95	0.08
+gym1	95	0.17
+gym2	95	0.2
+smp	95	0.65
+base1	96	0.74
+base4	96	0.09
+gym1	96	0.21
+gym2	96	0.18
+smp	96	0.4
+base1	97	0.1
+base4	97	0.1
+gym1	97	0.99
+gym2	97	0.36
+smp	97	0.25
+base1	98	0.14
+base4	98	0.09
+gym1	98	0.25
+gym2	98	0.28
+smp	98	4.99
+base1	99	0.1
+base4	99	0.17
+gym1	99	0.65
+gym2	99	0.26
+smp	99	24.99
+base1	100	0.1
+base4	100	0.06
+gym1	100	1.11
+gym2	100	0.62
+smp	100	1.7
+base1	101	0.11
+base4	101	1
+gym1	101	0.28
+gym2	101	0.8
+smp	101	2.5
+base1	102	0.1
+base4	102	0.26
+gym1	102	0.5
+gym2	102	1.47
+smp	102	2.99
+base4	103	1.76
+gym1	103	0.79
+gym2	103	1.41
+smp	103	3.75
+base4	104	0.34
+gym1	104	0.99
+gym2	104	0.69
+smp	104	15.99
+base4	105	0.75
+gym1	105	0.2
+gym2	105	0.87
+smp	105	0.32
+base4	106	0.48
+gym1	106	0.2
+gym2	106	0.54
+smp	106	0.99
+base4	107	0.38
+gym1	107	0.1
+gym2	107	0.5
+smp	107	1.99
+base4	108	0.8
+gym1	108	0.22
+gym2	108	1
+smp	108	0.75
+base4	109	0.04
+gym1	109	0.36
+gym2	109	0.85
+smp	109	1.94
+base4	110	0.08
+gym1	110	0.2
+gym2	110	0.8
+smp	110	0.8
+base4	111	0.1
+gym1	111	0.74
+gym2	111	0.9
+smp	111	1.18
+base4	112	0.1
+gym1	112	0.4
+gym2	112	0.97
+smp	112	1.8
+base4	113	0.1
+gym1	113	0.5
+gym2	113	0.2
+smp	113	0.93
+base4	114	0.13
+gym1	114	0.92
+gym2	114	0.26
+smp	114	1.62
+base4	115	0.13
+gym1	115	0.2
+gym2	115	0.49
+smp	115	0.5
+base4	116	0.3
+gym1	116	0.53
+gym2	116	0.75
+smp	116	0.5
+base4	117	0.1
+gym1	117	0.23
+gym2	117	0.39
+smp	117	4.62
+base4	118	0.05
+gym1	118	0.4
+gym2	118	1.5
+smp	118	0.49
+base4	119	0.1
+gym1	119	0.65
+gym2	119	0.56
+smp	119	None
+base4	120	0.1
+gym1	120	0.2
+gym2	120	0.7
+smp	120	None
+base4	121	0.05
+gym1	121	0.14
+gym2	121	0.44
+smp	121	3.33
+base4	122	0.04
+gym1	122	0.21
+gym2	122	0.25
+smp	122	None
+base4	123	0.05
+gym1	123	0.28
+gym2	123	0.31
+smp	123	1.8
+base4	124	0.46
+gym1	124	0.21
+gym2	124	0.18
+smp	124	3.75
+base4	125	0.09
+gym1	125	0.16
+gym2	125	0.25
+smp	125	1.47
+base4	126	0.2
+gym1	126	0.18
+gym2	126	0.3
+smp	126	4
+base4	127	0.1
+gym1	127	0.15
+gym2	127	0.37
+smp	127	2.99
+base4	128	0.05
+gym1	128	0.2
+gym2	128	0.32
+smp	128	2.75
+base4	129	0.09
+gym1	129	0.2
+gym2	129	0.18
+smp	129	2
+base4	130	0.1
+gym1	130	0.15
+gym2	130	0.45
+smp	130	0.99
+gym1	131	0.19
+gym2	131	0.37
+smp	131	2
+gym1	132	0.24
+gym2	132	0.47
+smp	132	1
+smp	133	2.84
+smp	134	2.5
+smp	135	0.1
+smp	136	0.37
+smp	137	3.75
+smp	138	3.99
+smp	139	7
+smp	140	3.99
+smp	141	6.96
+smp	142	3.99
+smp	143	3
+smp	144	2.97
+smp	146	2.75
+smp	146	None
+smp	147	None
+smp	148	None
+smp	149	None
+smp	150	None
+smp	151	None
+smp	152	None
+smp	153	6.95
+smp	154	None
+smp	155	5
+smp	156	6
+smp	157	3.92
+basep	1	0.81
+basep	2	0.20
+basep	3	0.79
+basep	4	0.99
+basep	5	0.49
+basep	6	0.91
+basep	7	1.80
+basep	8	0.09
+basep	9	4.95
+basep	10	0.94
+basep	11	1.00
+basep	12	6.09
+basep	13	10.65
+basep	14	0.48
+basep	15	3.95
+basep	16	0.25
+basep	17	2.50
+basep	18	0.49
+basep	19	4.26
+basep	20	0.39
+basep	21	0.98
+basep	22	0.74
+basep	23	0.50
+basep	24	28.46
+basep	25	4.99
+basep	26	3.83
+basep	27	0.81
+basep	28	0.89
+basep	29	0.30
+basep	30	0.64
+basep	31	0.50
+basep	32	0.20
+basep	33	0.82
+basep	34	0.26
+basep	35	2.59
+basep	36	0.94
+basep	37	0.50
+basep	38	1.25
+basep	39	0.44
+basep	40	149.99
+basep	41	399.94
+basep	42	1.50
+basep	43	1.45
+basep	44	1.80
+basep	45	2.74
+basep	46	1.34
+basep	47	4.99
+basep	48	9.00
+basep	49	14.99
+basep	50	1.82
+basep	51	None
+basep	52	3.58
+basep	53	3.97

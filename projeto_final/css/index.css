@@ -58,13 +58,14 @@ div.comment {
 
 .sampled-cards {
   display: flex;
-  /*height: 330px;*/
+  height: 208px;
   width: 100%;
   justify-content: space-around;
 }
 
 .sampled-cards > img {
   margin: 0 10px;
+  height: 100%;
 }
 
 .price-tool,
@@ -85,4 +86,19 @@ div.comment {
 #gen1-pop-by-cards {
   height: 550px;
   width: 100%;
+}
+
+#filter-remover {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  font-size: 0.8rem;
+  height: 4rem;
+  width: 6rem;
+  border: 3px solid black;
+  background-color: white;
 }

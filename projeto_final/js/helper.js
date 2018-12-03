@@ -6,6 +6,10 @@ export function shuffleArray(array) {
     return array;
 }
 
+export function indexer(key) {
+  return (xs) => new Map(xs.map(x => [x[key], x]));
+};
+
 export function groupBy(xs, key) {
   let m = new Map();
   for (let x of xs) {
@@ -15,3 +19,52 @@ export function groupBy(xs, key) {
   }
   return m;
 };
+
+function reduceAddAvg(attr) {
+  return function(p,v) {
+    ++p.count
+    p.sum += v[attr];
+    p.avg = p.sum/p.count;
+    return p;
+  };
+}
+function reduceRemoveAvg(attr) {
+  return function(p,v) {
+    --p.count
+    p.sum -= v[attr];
+    if (p.count == 0) {
+      p.avg = -1;
+    } else {
+      p.avg = p.sum/p.count;
+    }
+    return p;
+  };
+}
+function reduceInitAvg() {
+  const obj = {count:0, sum:0, avg:0};
+  obj.valueOf = function() {
+    return this.avg;
+  };
+  return obj;
+}
+
+export const avgReducer = (attr) => [
+  reduceAddAvg(attr), reduceRemoveAvg(attr), reduceInitAvg
+];
+
+export const currencyFormatter = d3.format('.2f');
+
+export class Filterable {
+  constructor(builder) {
+    this.builder = builder;
+    this.value = builder();
+  }
+
+  refresh() {
+    this.value = this.builder();
+  }
+
+  valueOf() {
+    return this.value;
+  }
+}

@@ -40,7 +40,7 @@ export function makePokeItem(iconData, text) {
 
   li.appendChild(e);
   e.appendChild(icon);
-  e.appendChild(document.createTextNode(text));
+  if (text) e.appendChild(document.createTextNode(text));
   return li;
 }
 
@@ -50,5 +50,8 @@ export function makePokeList(selector, list, attrSelector) {
 
   let fragments = document.createDocumentFragment();
   list.forEach(o => fragments.appendChild(makePokeItem(...attrSelector(o))));
+  for (let i = list.length; i < 10; i++) {
+    fragments.appendChild(makePokeItem([0]));
+  }
   tag.appendChild(fragments);
 }

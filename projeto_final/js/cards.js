@@ -1,3 +1,5 @@
+import { indexer } from './helper.js';
+
 const damageRegex = /(\d+)(\+|×|-)?/u;
 
 const legalSets = [
@@ -41,7 +43,7 @@ function cleanCard(card) {
         damage: +matches[1],
         isSpecial: !!matches[2],
       };
-    } else if (a.damage === '') {
+    } else if (a.damage === '' || a.damage === '?') {
       return {
         name: a.name,
         damage: 0,
@@ -51,7 +53,7 @@ function cleanCard(card) {
     return null;
   });
 
-  return [id,{
+  return {
     // Basic information
     name,
     set,
@@ -68,36 +70,52 @@ function cleanCard(card) {
     types,
     weaknesses,
     retreatCost: card.convertedRetreatCost,
-  }];
+  };
 }
 
-function loadAndCleanSet(set) {
-  return Promise.all(set.map(s => d3.json(`data/${s}.json`)))
-         .then(d => [].concat(...d))
-         .then(d => d.filter(x => x.supertype === 'Pokémon').map(cleanCard));
+async function getCards(setNames) {
+  const set = await Promise.all(setNames.map(s => d3.json(`data/${s}.json`)));
+  const cards = [].concat(...set);
+  const pokemon = cards.filter(x => x.supertype === 'Pokémon').map(cleanCard);
+  return pokemon;
 }
 
-const prices = d3.tsv('data/prices.tsv');
-function setPricesAndIndex(cleanedCards) {
-  return Promise.all([cleanedCards,prices]).then(d => {
-    const [ cards, prices ] = d;
-    const indexedCards = new Map(cards);
-    for (const entry of prices) {
-      const card = indexedCards.get(`${entry.set}-${entry.num}`);
-      if (card && +entry.price) {
-        card.price = +entry.price;
-      }
-    }
-    return indexedCards;
-  });
+const pricesPromise = d3.tsv('data/prices.tsv');
+const cpPromise = d3.csv('data/cp.csv');
+
+async function setPrices(cardsPromise) {
+  const cards = await cardsPromise;
+  const prices = await pricesPromise;
+
+  for (const entry of prices) {
+    const card = cards.get(`${entry.set}-${entry.num}`);
+    if (card && +entry.price) card.price = +entry.price;
+  }
+
+  return cards;
 }
 
-export const legalCardsPromise = setPricesAndIndex(loadAndCleanSet(legalSets));
-export const baseCardsPromise = setPricesAndIndex(
-  loadAndCleanSet(originalSets).then( cards =>
-    cards.filter(x => x[1].nationalPokedexNumber <= 151)
-  )
+async function setCP(cardsPromise) {
+  const cards = await cardsPromise;
+  const cps = await cpPromise;
+
+  for (const entry of cps) {
+    const card = cards.get(`${entry.set}-${entry.num}`);
+    if (card && +entry['mean cp']) card.cp = +entry['mean cp'];
+  }
+
+  return cards;
+}
+
+const indexById = indexer('id');
+export const legalCardsPromise = (
+  getCards(legalSets).then(indexById)
+                     .then(setPrices)
+                     .then(setCP)
 );
+export const baseCardsPromise = getCards(originalSets).then( cards =>
+  cards.filter(x => x.nationalPokedexNumber <= 151)
+).then(indexById).then(setPrices);
 
 export const types = {
   'Grass'    : '#7DB808',

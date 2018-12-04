@@ -18,8 +18,6 @@ dc.config.defaultColors(d3.schemeAccent);
 
 const spreadGroup = x => [x.key, x.value];
 
-let favoriteFirstGen = '1';
-const firstGenSelector = document.querySelector('#gen1-favorite');
 const priceTicks = [
   0.01, 0.02, 0.05,  0.10,  0.20,  0.30,  0.50,
   1.00, 2.00, 5.00, 10.00, 20.00, 30.00, 50.00,
@@ -28,6 +26,9 @@ const priceTicks = [
 (async () => {
   const cards = await baseCardsPromise;
   const pokedex = await pokedexPromise;
+
+  let favoriteFirstGen = '1';
+  const firstGenSelector = document.querySelector('#gen1-favorite');
 
   const gen1Ranks = (() => {
     const firstGen = [...pokedex.entries()].filter(x => x[1].generation == 1);
@@ -43,17 +44,14 @@ const priceTicks = [
   const maps = {};
   const lists = {};
   const charts = {};
-  const filterables = {};
-  
-  window.cards = cards;
-  window.cfCards = cfCards;
-  window.pokedex = pokedex;
-  window.groups = groups;
   window.dimensions = dimensions;
+  window.groups = groups;
   window.maps = maps;
+  window.lists = lists;
+  window.charts = charts;
 
   dimensions.rarity = cfCards.dimension(x => x.rarity || 'Black Star');
-  dimensions.price = cfCards.dimension(x => x.price);
+  dimensions.price = cfCards.dimension(x => x.price || 0);
   dimensions.type = cfCards.dimension(x => x.types, true);
   dimensions.pokedexNumber = cfCards.dimension(x => x.nationalPokedexNumber);
   dimensions.artist = cfCards.dimension(x => x.artist);
@@ -95,7 +93,6 @@ const priceTicks = [
 
   cfCards.onChange(() => {
     for (let key in maps) maps[key].refresh();
-    for (let key in filterables) filterables[key].refresh();
     for (let key in lists) lists[key]();
   });
 
@@ -135,7 +132,7 @@ const priceTicks = [
       let priceText;
       if (price >= 0)
         priceText = currencyFormatter(price)+'$';
-      else 
+      else
         priceText = '[nenhuma carta no filtro atual]';
       const li = makePokeItem(
         [+favoriteFirstGen, undefined, favorite.name],
@@ -195,7 +192,7 @@ const priceTicks = [
 
   {
     const yDomain = [
-      dimensions.price.bottom(1)[0].price,
+      dimensions.price.bottom(1)[0].price || 0.01,
       dimensions.price.top(1)[0].price
     ];
     const yScale = d3.scaleLog().domain(yDomain).nice();
@@ -217,6 +214,7 @@ const priceTicks = [
     charts['gen1-prices-by-rarity'] = dc.boxPlot('#gen1-prices-by-rarity');
     chart = charts['gen1-prices-by-rarity'];
     chart.height(550)
+         .boldOutlier(true)
          .dimension(dimensions.rarity)
          .group(groups.logPriceByRarity)
          .y(d3.scaleLinear().domain([yScale(0.009),yScale(50)]))
@@ -239,6 +237,10 @@ const priceTicks = [
         case 'Rare': return 2;
         case 'Black Star': return 3;
       }
+    });
+    chart.on('pretransition.add-tip', (chart, filter) => {
+      chart.selectAll('circle.outlierBold')
+           .selectAll('title').remove();
     });
   }
 
@@ -291,7 +293,9 @@ const priceTicks = [
       setNode.style.fontSize = '0.5rem';
       setNode.innerHTML = `${card.set} - ${card.number}`;
       e.appendChild(setNode);
-      e.appendChild(document.createTextNode(`Preço: ${price}\$`));
+      e.appendChild(document.createTextNode(
+        `Preço: ${currencyFormatter(price)}\$`
+      ));
       e.appendChild(document.createElement('br'));
       e.appendChild(document.createTextNode(`Rank: ${rank}`));
 
@@ -356,7 +360,7 @@ const priceTicks = [
 
   {
     const yDomain = [
-      dimensions.price.bottom(1)[0].price,
+      dimensions.price.bottom(1)[0].price || 0.01,
       dimensions.price.top(1)[0].price
     ];
     const yScale = d3.scaleLog().domain(yDomain).nice();
@@ -378,6 +382,7 @@ const priceTicks = [
     charts['gen1-price-by-artist'] = dc.boxPlot('#gen1-price-by-artist');
     chart = charts['gen1-price-by-artist'];
     chart.height(550)
+         .boldOutlier(true)
          .elasticX(true)
          .dimension(dimensions.artist)
          .group(groups.logPriceByArtist)
@@ -399,13 +404,17 @@ const priceTicks = [
            if (x >= 1) return `${currencyFormatter(x)}\$`
            else return `${Math.round(x*100)}¢`
           });
-    
+
     chart.xAxis().tickFormat(a =>{
       let cards = maps.cardsByArtist.value.get(a);
       return `${a} - ${cards.length}`;
     });
     chart.margins().left = 50;
     chart.ordering(x => -x.value.length);
+    chart.on('pretransition.add-tip', (chart, filter) => {
+      chart.selectAll('circle.outlierBold')
+           .selectAll('title').remove();
+    });
   }
 
   lists.pricesByDexNumber = () => makePokeList(
@@ -442,3 +451,4 @@ const priceTicks = [
   for (let key in lists) lists[key]();
   dc.renderAll();
 })();
+

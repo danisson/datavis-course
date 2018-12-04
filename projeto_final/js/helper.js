@@ -22,20 +22,21 @@ export function groupBy(xs, key) {
 
 function reduceAddAvg(attr) {
   return function(p,v) {
-    ++p.count
-    p.sum += v[attr];
-    p.avg = p.sum/p.count;
+    if (!isNaN(v[attr])) {
+      ++p.count
+      p.sum += v[attr];
+      p.avg = p.sum/p.count;
+    }
     return p;
   };
 }
 function reduceRemoveAvg(attr) {
   return function(p,v) {
-    --p.count
-    p.sum -= v[attr];
-    if (p.count == 0) {
-      p.avg = -1;
-    } else {
-      p.avg = p.sum/p.count;
+    if (!isNaN(v[attr])) {
+      --p.count
+      p.sum -= v[attr];
+      if (p.count > 0) p.avg = p.sum/p.count;
+      else p.avg = -1;
     }
     return p;
   };

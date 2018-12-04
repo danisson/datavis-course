@@ -58,14 +58,15 @@ div.comment {
 
 .sampled-cards {
   display: flex;
-  height: 208px;
+  min-height: 200px;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .sampled-cards > img {
-  margin: 0 10px;
-  height: 100%;
+  margin: 10px 10px;
+  height: 200px;
 }
 
 .price-tool,

@@ -33,14 +33,18 @@ export function createPokémonIcon(dexNumber, type, title) {
   return span;
 }
 
-export function makePokeItem(iconData, text) {
+export function makePokeItem(iconData, html) {
   let li = document.createElement('li');
   let e = document.createElement('span');
   let icon = createPokémonIcon(...iconData);
 
   li.appendChild(e);
   e.appendChild(icon);
-  if (text) e.appendChild(document.createTextNode(text));
+  if (html) {
+    const text = document.createElement('span');
+    e.appendChild(text);
+    text.innerHTML = html;
+  };
   return li;
 }
 

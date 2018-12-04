@@ -2,7 +2,7 @@ import { indexer } from './helper.js';
 
 const damageRegex = /(\d+)(\+|×|-)?/u;
 
-const legalSets = [
+export const legalSets = [
   'Sun & Moon',
   'Guardians Rising',
   'Burning Shadows',
@@ -16,7 +16,7 @@ const legalSets = [
   'Sun & Moon Black Star Promos',
 ];
 
-const originalSets = [
+export const originalSets = [
   'Base',
   'Jungle',
   'Fossil',
@@ -133,3 +133,19 @@ export const types = {
 }
 
 export const typesColors = (x) => types[x];
+
+export function rarityOrder(rarity) {
+  switch(rarity) {
+    case 'Common': return 0;
+    case 'Uncommon': return 1;
+    case 'Rare': return 2;
+    case 'Rare Holo': return 3;
+    case 'Rare Holo GX': return 4;
+    case 'Rare Ultra': return 5;
+    case 'Rare Secret': return 6;
+    case 'Shining': return 7;
+    case 'Black Star': return 8;
+  }
+}
+
+export const rarityColors = (x) => d3.interpolateMagma((8-rarityOrder(x))/8)

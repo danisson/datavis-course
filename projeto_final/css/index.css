@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 75rem;
+  line-height: 1.45;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
 span.spriteHolder {
   height: 40px !important;
   width: 40px;
@@ -19,6 +29,19 @@ i.sprite {
 ol.pokelist,
 ul.pokelist {
   columns: 2;
+}
+
+ol.pokelist.plh,
+ul.pokelist.plh {
+  columns: initial;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ol.pokelist.plh li,
+ul.pokelist.plh li, {
+  width: 50%;
 }
 
 ol.pokelist li,
@@ -44,10 +67,6 @@ div.favorite {
   margin: 1.3rem;
 }
 
-p {
-  text-align: justify;
-}
-
 div.comment {
   width: 100%;
   text-align: center;
@@ -58,7 +77,7 @@ div.comment {
 
 .sampled-cards {
   display: flex;
-  min-height: 200px;
+  min-height: 240px;
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -66,7 +85,7 @@ div.comment {
 
 .sampled-cards > img {
   margin: 10px 10px;
-  height: 200px;
+  height: 240px;
 }
 
 .price-tool,
@@ -102,4 +121,20 @@ div.comment {
   width: 6rem;
   border: 3px solid black;
   background-color: white;
+}
+
+#legal-gen-pie .pie-slice,
+#legal-pie .pie-slice,
+#gen1-pie .pie-slice {
+  fill: black;
+}
+
+#intro, #gen1, #legal {
+  display: none;
+}
+
+#intro.active,
+#gen1.active,
+#legal.active {
+  display: block;
 }

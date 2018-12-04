@@ -3,82 +3,224 @@
 <head>
   <meta charset=utf-8>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Test</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <title>Um panorama do Pokémon TCG</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/flatly/bulmaswatch.min.css">
   <link rel="stylesheet" type="text/css" href="third-party/css/dc.min.css">
   <link rel="stylesheet" type="text/css" href="third-party/css/pokesprite.min.css">
-  <link rel="stylesheet" type="text/css" href="third-party/css/modest.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-  <main>
-    <h1>Pokémon TCG</h1>
-    <h3>O que é?</h3>
-
-    <p>Pokémon Trading Card Game (TCG) é um jogo que envolve a coleção, a
-    troca e o jogo de cartas baseadas na franquia Pokémon. Apesar do TCG
-    seguir suas próprias regras, há influências claras dos jogos e filmes da
-    franquia.</p>
-
-    <h3>Primeira Geração</h3>
-
-    <p>Iremos começar nossa análise com as cartas da primeira geração. Essas
-    cartas são as que contém os monstrinhos mais reconhecíveis, ela foi lançada junto com os primeiros jogos da série Pokémon.</p>
-
-    <p>Cada carta tem um Pokémon, um tipo, HP e ataques. Vamos dar uma olhada nos top dez Pokémon que mais tem cartas:</p>
-
-    <ol class="pokelist" id="gen1-most-represented"></ol><br>
-
-    <p>O Pokémon que você mais gosta está nessa lista do dez primeiros? Para
-    todas as análises, podemos mostrar onde seu Pokémon favorito está em
-    relação aos outros. Basta escolher ele aqui:</p>
-
-    <div class="favorite">
-      <span class="gen1f-icon"> </span>
-      <div id="gen1-favorite" class="select is-medium">
-        <select class="favorite"></select>
+  <section id="hero" class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1">
+          Um panorama do Pokémon Trading Card Game
+        </h1>
+        <h2 class="subtitle">
+          Análise do colecionamento, venda e uso em torneio
+        </h2>
       </div>
     </div>
+    <div class="hero-foot">
+    <nav id="main-nav" class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li class="is-active" data-section="intro">
+            <a>O que é?</a>
+          </li>
+          <li data-section="gen1">
+            <a>Primeira Geração</a>
+          </li>
+          <li data-section="legal">
+            <a>Cartas Atuais</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </section>
+  <main>
+    <section id="intro" class="active has-text-justified section content">
+      <h3 class="title is-3">O que é?</h3>
+      <p>Pokémon é uma das franquias mais lucrativas do mundo, com um rendimento total estimado de 85 milhões de dólares desde a sua criação em 1996. Nesse projeto, queremos focar numa submarca específica de produtos, o Pokémon Trading Card Game (TCG). Esses produtos são cartas colecionáveis, também usadas em torneios competitivos.
+      As cartas são lançadas em lotes desde 1996 e têm várias características que influenciam no valor monetário, competitivo e colecionável.</p>
 
-    <p>Por exemplo, podemos ver que <span class="gen1f-name"></span> tem <span class="gen1f-cards"></span>. <span class="gen1f-cards-count"></span></p>
+      <p>Pokémon TCG é um jogo que envolve a coleção, a
+      troca e o jogo de cartas baseadas na franquia Pokémon. Apesar do TCG
+      seguir suas próprias regras, há influências claras dos jogos e filmes da
+      franquia.</p>
 
-    <div class="sampled-cards" id="gen1f-sampled-cards"></div><br>
 
-    <p>Também podemos ver qual a quantidade de cartas por tipo de carta:</p>
+      <p>Até Março de 2018, foram vendidas mais de 25.7 bilhões de cartas no mundo todo. E em 2017, o jogo tinha uma fatia de 87% no mercado de jogos de cartas na Europa. Além das vendas, a Pokémon Company Internacional também organiza torneios competitivos no mundo todo. No sistema atual, cada região tem seus torneios locais e regionais onde os vencedores eventualmente chegam no torneio internacional. O importante é que em todo torneio oficial, cada jogador ganha Championship Points nas suas vitórias.</p>
 
-    <div id="gen1-types"></div>
-    <div class="comment">Ao selecionar alguma região do gráfico, a lista <a href="#gen1-most-represented">acima</a> irá atualizar automaticamente.</div>
-    <p>Aqui temos um fato curioso, ao contrário da tendência dos jogos, temos mais cartas do tipo <em>Grass</em> do que do tipo <em>Water</em>, que é o tipo mais comum nos jogos de videogame.</p>
+      <p>Para essa análise, colhemos dados coletados por fãs e disponíveis publicamente com o intuito de tentar adivinhar ou confirmar tendências que jogadores veteranos tem sobre o mercado e competição do jogo.</p>
 
-    <p>As cartas de Pokémon TCG, com exceção das cartas especiais para eventos, não são distribuídas individualmente. Elas são dadas um nível de raridade e isso determina a probabilidade de uma certa carta estar no pacote de dez cartas aleatórias. Vamos análisar qual a distribuição dos preços dos revendedores das cartas em relação à raridade dela:</p>
+      <div style="display: flex;width: 70%;margin: 0 auto;" class="box">
+        <img src="https://images.pokemontcg.io/sm35/52.png">
+        <div style="padding: 0.8rem;">
+          <p >Por exemplo, aqui temos uma carta de um Pokémon popular. Os atributos básicos dela são:</p>
+          <ul>
+            <li>Pokémon: Zorua (#570)</li>
+            <li>Tipo: Darkness</li>
+            <li>Expansão: Shining Legends</li>
+            <li>Raridade: Common</li>
+            <li>Artista: kodama</li>
+            <li>Preço: 0.05$</li>
+            <li>Championship Points médio: 195.21</li>
+            <li>Popularidade no Pokémon General Election: 148º lugar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="gen1" class="has-text-justified section content">
+      <h3 class="title is-3">Primeira Geração</h3>
 
-    <div id="gen1-prices-by-rarity"></div>
+      <p>Iremos começar nossa análise com as cartas da primeira geração. Essas
+      cartas são as que contém os monstrinhos mais reconhecíveis, ela foi lançada junto com os primeiros jogos da série Pokémon.</p>
 
-    <p>Podemos ver que há uma tendência esperada na raridade de uma carta e o preço dela de mercado. Também podemos ver que as cartas de evento tem um <em>spread</em> maior nos preços porque havia diversos meios de distribuição e quantidades para cada carta.</p>
+      <p>Cada carta está relacionada com algum Pokémon da franquia. Vamos dar uma olhada nos top dez Pokémon que mais tem cartas:</p>
 
-    <p>Vamos dar uma olhada nas cinco cartas mais caras:</p>
+      <ol class="pokelist" id="gen1-most-represented"></ol><br>
 
-    <div class="sampled-cards" id="gen1-expensive-cards"></div><br>
+      <p>O Pokémon que você mais gosta está nessa lista do dez primeiros? Para
+      todas as análises, podemos mostrar onde seu Pokémon favorito está em
+      relação aos outros. Basta escolher ele aqui:</p>
 
-    <p>Agora, vamos análisar qual espécie de Pokémon tem as cartas mais caras em média:</p>
-    <ol class="pokelist" id="gen1-prices-by-dexnumber"></ol>
-    <ul class="pokelist"><li class="gen1f-price"></li></ul><br>
+      <div class="favorite">
+        <span class="gen1f-icon"> </span>
+        <div id="gen1-favorite" class="select is-medium">
+          <select class="favorite"></select>
+        </div>
+      </div>
 
-    <p>Parece que talvez exista uma correlação entre o preço de uma carta e a popularidade do Pokémon dela, porque Pokémon bem populares no dez primeiros. Vamos tentar visualizar se existe uma tendência entre essas duas variáveis. O seu pokémon favorito está colorido de preto nesse gráfico.</p>
+      <p>Por exemplo, podemos ver que <span class="gen1f-name"></span> tem <span class="gen1f-cards"></span>. <span class="gen1f-cards-count"></span></p>
 
-    <div id="gen1-pop-by-price"></div>
+      <div class="sampled-cards" id="gen1f-sampled-cards"></div><br>
 
-    <p>Podemos ver nesse gráfico uma tendência clara, quanto mais popular é um Pokémon, maior o preço máximo dele.</p>
+      <p>Uma pergunta que logo podemos fazer é perguntar se existe alguma relação entre a representação de um Pokémon e a popularidade dele entre os fãs:</p>
 
-    <p>Agora vamos ver a quantidade de cartas por popularidade:</p>
+      <div id="gen1-pop-by-cards"></div>
 
-    <div id="gen1-pop-by-cards"></div>
+      <p>Parece que exceto Pokémon muito popular como Pikachu, não parece haver uma relação entre quantidade de cartas lançadas e popularidade.</p>
 
-    <p>Parece que exceto Pokémon muito popular como Pikachu, não parece haver uma relação entre quantidade de cartas lançadas e popularidade. Outro fator que pode afetar o colecionamento de uma carta é qual artista desenhou ela, vamos ver a distribuição de preço entre os artistas que ilustraram mais cartas:</p>
+      <p>Outro atributo presente em todas as cartas é qual o tipo dela. Esse tipo influência a resistência e fraquezas que este Pokémon pode ter, outra influência é estética, Pokémon de um certo tipo tem temas em comum, por exemplo, Pokémon do tipo <em>Water</em> normalmente são relacionados com vida marinha e fluvial.</p>
 
-    <div id="gen1-price-by-artist"></div>
+      <p>Segue um gráfico mostrando a distribuição de cartas por tipo:</p>
 
-    <p>Pelo os gráficos, não parece ter uma relação clara entre a distribuição dos preços pelo artista que ilustrou a carta. Exceto no caso do Shin-ichi Yoshida que ilustrou várias cartas raras e isso levou sua distribuição para cima.</p>
+      <div id="gen1-types"></div>
+      <div class="comment">Ao selecionar alguma região do gráfico, a lista <a href="#gen1-most-represented">acima</a> irá atualizar automaticamente.</div>
+      <p>Aqui temos um fato curioso, ao contrário da tendência dos jogos, temos mais cartas do tipo <em>Grass</em> do que do tipo <em>Water</em>, que é o tipo mais comum nos jogos de videogame.</p>
+
+      <p>As cartas de Pokémon TCG, com exceção das cartas especiais para eventos, não são distribuídas individualmente e são dividas em expansões. A compra oficial das cartas é feitas apartir de pacotes chamados <em>Boosters</em> que contém uma seleção aleatória de cartas de uma certa expansão.</p>
+
+      <p>O conjunto de cartas que estamos vendo engloba todas as expansões lançadas antes do lançamento dos jogos da segunda geração. Aqui podemos ver a composição do conjunto por expansão:</p>
+
+      <div id="gen1-pie"></div>
+      <div class="comment">Selecionar alguma expansão irá restringir todas as visualizações para ele.</div>
+
+      <p>Apesar dos <em>booster</em> terem uma seleção aleatória de dez cartas, isso não significa que todas as cartas tem a mesma chance de aparecerem. Cada carta tem um nível de raridade e isso determina a probabilidade dela estar num pacote ou não.</p>
+
+      <p>Outro fato importante é que também existe um mercado de revenda dessas cartas. Ou seja, apesar de um pacote de dez cartas custar 4.00$, 40 cents por carta, isso não significa que esse é o preço médio de revenda de uma carta. Um dos fatores que esperamos que altere completamente o preço de uma carta é a raridade dela. Vamos ver as distribuições de preço por raridade:</p>
+
+      <div id="gen1-prices-by-rarity"></div>
+
+      <p>Claramente há uma tendência esperada na raridade de uma carta e o preço dela de mercado. Também podemos ver que as cartas de evento tem um <em>spread</em> maior nos preços porque havia diversos meios de distribuição e quantidades para cada carta.</p>
+
+      <p>Vamos dar uma olhada nas quinze cartas mais caras:</p>
+
+      <div class="sampled-cards" id="gen1-expensive-cards"></div><br>
+      <ol class="pokelist" start="6" id="gen1-expensive-cards-rest"></ol><br>
+
+      <p>Agora, vamos analisar qual espécie de Pokémon tem as cartas mais caras em média:</p>
+      <ol class="pokelist" id="gen1-prices-by-dexnumber"></ol>
+      <ul class="pokelist"><li class="gen1f-price"></li></ul><br>
+
+      <p>Parece que talvez exista uma correlação entre o preço de uma carta e a popularidade do Pokémon dela, porque Pokémon bem populares no dez primeiros. Vamos tentar visualizar se existe uma tendência entre essas duas variáveis.</p>
+
+      <div id="gen1-pop-by-price"></div>
+      <div class="comment">O seu Pokémon favorito está colorido de preto nesse gráfico.</div>
+
+      <p>Podemos ver nesse gráfico uma tendência clara, quanto mais popular é um Pokémon, maior o preço máximo dele. Outro fator que pode afetar o colecionamento de uma carta é qual artista desenhou ela, vamos ver a distribuição de preço entre os artistas que ilustraram mais cartas:</p>
+
+      <div id="gen1-price-by-artist"></div>
+
+      <p>Pelo os gráficos, não parece ter uma relação clara entre a distribuição dos preços pelo artista que ilustrou a carta. Exceto no caso do Shin-ichi Yoshida que ilustrou várias cartas raras e isso levou sua distribuição para cima.</p>
+
+      <a href="#hero">Agora, vamos voltar para o topo para ver o que mudou na última geração de cartas.</a>
+    </section>
+    <section id="legal" class="has-text-justified section content">
+      <h3 class="title is-3">Cartas Atuais</h3>
+
+      <p>Até agora, analisamos apenas as cartas que foram lançadas nos anos inciais da franquia. Essas cartas são boas para ter uma noção de como funciona o colecionamento das cartas porque elas não são influenciadas pelos torneios competitivos.</p>
+
+      <p>Contudo, nos vinte anos da franquia, inúmeras cartas foram lançadas e apenas um subconjunto delas podem ser usadas oficialmente em torneio. Em geral, as cartas permitidas são apenas as mais recentes e são essas que iremos explorar agora.</p>
+
+      <p>Vamos começar escolhendo o Pokémon favorito:</p>
+
+      <div class="favorite">
+        <span class="legalf-icon"> </span>
+        <div id="legal-favorite" class="select is-medium">
+          <select class="favorite"></select>
+        </div>
+      </div>
+
+      <p>O seu favorito tem <span class="legalf-cards"></span>. <span class="legalf-cards-count"></span></p>
+
+      <div class="sampled-cards" id="legalf-sampled-cards"></div><br>
+
+      <p>Novamente, vamos ver os Pokémon mais bem representados dessa vez:</p>
+
+      <ol class="pokelist" id="legal-most-represented"></ol><br>
+
+      <p>Por estarmos trabalhando com cartas mais recentes, temos acesso a muito mais expansões. Vamos ver quais expansões estão no conjunto permitido para uso em torneio:</p>
+      <div id="legal-pie"></div>
+
+      <p>Um outro fator interessante, é ver qual geração de Pokémon é melhor representada:</p>
+      <div id="legal-gen-pie"></div>
+
+      <p>Podemos ver que a última e a primeira geração são as mais bem representadas. Isso faz todo sentido porque a sinergia entre o jogo de cartas e os jogos de videogames é bem forte, é esperado que as pessoas tenham mais interesses por Pokémon mais novos. O fato da primeira também ser bem representada ocorre porque ela ainda é a que contem os monstrinhos mais reconhecíveis.</p>
+
+      <p>Em relação as cartas da primeira geração, podemos ver que houve a adição de mais quatro tipos de cartas, isso se deve à adição de tipos novos de Pokémon nos jogos. Vamos ver a distribuição de cartas por tipo novamente:</p>
+      
+      <div id="legal-types"></div>
+
+      <p>Assim como na primeira geração, as cartas ainda tem uma raridade inerente que é imposta na sua distribuição nos <em>booster</em>. Contudo, atualmente existem diversos tipos de cartas mais raras. Será que isso vai mudar a distribuição dos preços de revenda?</p>
+      
+      <div id="legal-prices-by-rarity"></div>
+
+      <p>Podemos ver que a curva é muito mais ingrime dessa vez. Talvez esse aumento na estratificação na raridade fez que as cartas mais comuns (Common, Uncommon e Rare) ocupasse o espaço das cartas Common da primeira geração e as novas categorias ocupam um novo patamar de preço.</p>
+
+      <p>Por exemplo, na primeira geração, o menor preço de uma Rare era 23 cents, no conjunto atual, temos que o menor preço de uma Rare é 5 cents. Outro fator que pode explicar essa diferença de preço é que as cartas analisadas aqui ainda estão sendo impressas enquanto que as cartas da primeira geração não estão mais em distribuição.</p>
+
+      <p>Aproveitando o assunto sobre preço, vamos dar uma olhada nas quinze cartas mais caras:</p>
+
+      <div class="sampled-cards" id="legal-expensive-cards"></div><br>
+      <ol class="pokelist" start="6" id="legal-expensive-cards-rest"></ol><br>
+
+      <p>Também vamos ver os Pokémon que tem as maiores médias de preço por carta:</p>
+
+      <ol class="pokelist" id="legal-prices-by-dexnumber"></ol>
+      <ul class="pokelist"><li class="legalf-price"></li></ul><br>
+
+      <p>Um fato interessante que podemos ver que mesmo vinte anos depois, Charizard continua sendo o Pokémon com a maior média de preço de cartas. Provando assim o seu posto de terceiro Pokémon mais popular. Agora que estamos analisando cartas mais recentes, será que a correlação entre artista e preço de carta existe? Afinal, agora que a série está muito mais popular, temos uma presença mais diversa de artistas:</p>
+
+      <div id="legal-price-by-artist"></div>
+
+      <p>Mas novamente, exceto por um outlier (5ban Graphics), não parece ter nenhuma relação entre o artista e o preço de revenda de uma carta. De forma interessante, assim como na última vez, o nosso outlier também é um grupo de artistas sem muitos dados a respeito que tem o costume de ilustrar cartas com raridades bem altas.</p>
+
+      <p>Até agora fizemos análises muito parecidas com a da primeira geração, contudo, analisar o conjunto atual de cartas permite a gente olhar um outro aspecto mais dinâmico do jogo: o uso em torneios. Como explicado anteriormente, para cada vitória que um jogador tem em um torneio oficial, uma quantia de <em>Championship Points</em> (CP) é dada para ele. Observando todos os torneios do ano de 2018, podemos ver quais cartas aqueles jogadores usavam e assinalar os CP que os jogadores receberam nas suas cartas.</p>
+
+      <p>O cálculo que usamos é uma média ponderada do CP do deck com a quantidade de vezes que aquela carta apareceu naquele deck. Depois disso, somamos todos os CP médio que uma carta em todos os decks já utilizados. Segue uma lista das quinze cartas que mais tem CP nessa temporada:</p>
+
+      <div class="sampled-cards" id="legal-cp-cards"></div>
+      <ol class="pokelist" start="6" id="legal-cp-cards-rest"></ol><br>
+
+      <p>Para quem conhece a cena competitiva de Pokémon TCG, esses resultados não parecem trazer nenhuma surpresa. Por exemplo, a carta Tapu Lele GX que é considerada por muitos como essencial em todos os decks ocupa o primeiro lugar da lista. Uma hipótese que essa lista levanta é que já que Tapu Lele GX que é uma das cartas mais caras está em primeiro lugar, é esperado que o sucesso competitivo de uma carta esteja diretamente relacionada com o seu preço no mercado. Vamos tentar visualizar isso no próximo gráfico:</p>
+
+      <div id="legal-cp-by-price"></div>
+
+      <p>Como podemos ver, não parece haver nenhuma correlação entre o CP médio de uma carta e o seu preço de mercado. A única coisa que podemos deduzir é que decks de sucesso normalmente contém cartas caras mas ainda precisamos de uma quantidade considerável de cartas baratas.</p>
+    </section>
   </main>
   <script src="third-party/js/crossfilter.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
